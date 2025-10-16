@@ -1,0 +1,2655 @@
+@font-face {
+    font-family: "CoFo Sans-Regular";
+    src: url('../fonts/CoFoSans-Regular-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CoFo Sans-Medium";
+    src: url('../fonts/CoFoSans-Medium-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CoFo Sans-Black";
+    src: url('../fonts/CoFoSans-Black-Trial.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CoFo Sans-Bold";
+    src: url('../fonts/CoFoSans-Bold-Trial.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.visually-hidden {
+    opacity: 0;
+}
+
+body {
+    background-color: #EEEEEE;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+
+}
+
+.element {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.element .header {
+    z-index: 12;
+    margin-top: 19px;
+    width: 100%;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.element .top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex: 0 0 auto;
+    padding: 0 20px;
+
+}
+
+.element .navbar {
+    display: flex;
+    width: 572px;
+    height: 17px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+.trigger {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pagination {
+    background-color: white;
+    border-radius: 19px;
+    padding: 13px 11px;
+}
+
+.pagination-list {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-item {
+    display: flex;
+}
+
+.arrow {
+    display: flex;
+    cursor: pointer;
+}
+
+.arrow-left {
+    opacity: 0.2;
+}
+
+.pagination-item::before {
+    content: ' ';
+    border-radius: 100%;
+    padding: 3px 3px;
+    background-color: #DDDDDD;
+}
+
+.pagination-active::before {
+    border-radius: 10px;
+    padding: 3px 11px;
+    background: #00B4A0;
+}
+
+.element .div-2 {
+    gap: 16px;
+}
+
+.element .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.50px;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    color: #848b8c;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .contacts {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .div {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #00b4a0;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #848b8c;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.element .div-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.element .frame {
+    display: inline-flex;
+    height: 73px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--black);
+    border-radius: 15px;
+}
+
+.element .vuesax-bulk-category {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.element .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    font-family: "CoFo Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .div-3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .tagler-logotype-CMYK {
+    position: relative;
+    width: 145px;
+    height: 47px;
+}
+
+.element .p {
+    position: relative;
+    width: 198px;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .span {
+    color: #848b8c;
+}
+
+.element .frame-2 {
+    position: relative;
+    background-color: #fafafa;
+    border-radius: 15px;
+    overflow: hidden;
+    /* Добавляем padding, чтобы текст не налезал на иконку */
+    /* Пробел под иконку справа */
+    box-sizing: border-box;
+}
+
+.element .vector {
+    position: absolute;
+    width: 18px;
+    top: calc(50.00% - 9px);
+    right: 20px;
+    height: 18px;
+    pointer-events: none;
+}
+
+/* --- Стили для обертки и позиционирования --- */
+.search-wrapper {
+    max-width: 366px;
+    /* Обязательно для позиционирования выпадающего списка */
+    width: 100%;
+    /* Или задайте конкретную ширину */
+    /* Например */
+}
+
+/* Стили для вашего блока с инпутом (можно адаптировать) */
+.frame-2 {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.frame-2 .search-input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    height: 68px;
+    padding-left: 20px;
+    padding-right: 40px;
+    font-family: "CoFo Sans-Regular", Helvetica;
+}
+
+.frame-2 .vector {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+
+/* --- Стили для выпадающего списка --- */
+.search-results {
+    display: none;
+    /* По умолчанию скрыт */
+    position: absolute;
+    top: calc(100% + 8px);
+    /* Позиция под инпутом с небольшим отступом */
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+    max-height: 70vh;
+    /* Ограничение высоты */
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* Полоса прокрутки, если много результатов */
+}
+
+.search-results.visible {
+    display: block;
+    /* Показываем список */
+}
+
+/* --- Стили для элементов списка --- */
+
+/* 1. Элемент "Категория" */
+.result-item.category {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+    color: #333;
+    padding: 31px 29px;
+}
+
+.result-item.category:hover {
+    background-color: #F9F9F9;
+}
+
+.category-title {
+    display: flex;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    align-items: center;
+    color: #0E131A;
+}
+
+.category-title img {
+    width: 17px;
+    height: 17px;
+    margin-right: 20px;
+}
+
+.category-count {
+    color: #0E131A;
+    font-size: 15px;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    transform: translateY(2px);
+}
+
+/* 2. Элемент "Товар" */
+.result-item.product {
+    display: flex;
+    align-items: center;
+    padding: 21px 8px;
+    text-decoration: none;
+    color: inherit;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    transition: background-color 0.2s ease;
+    border-radius: 8px;
+}
+
+.result-item.product:hover {
+    background-color: #F9F9F9;
+
+}
+
+.product-image {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.product-info {
+    flex-grow: 1;
+}
+
+.product-category {
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 4px;
+}
+
+.product-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product-price .current-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-price .old-price {
+    font-size: 16px;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.product-add-btn {
+    background-color: #00b894;
+    /* Бирюзовый цвет с картинки */
+    color: white;
+    border: none;
+    padding: 18.5px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    white-space: nowrap;
+    font-size: 15px;
+    /* Чтобы текст не переносился */
+}
+
+.product-add-btn:hover {
+    background-color: #00a383;
+}
+
+/* --- Стили для состояния "Ничего не найдено" --- */
+.no-results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* Расстояние между блоком истории и сообщением */
+    font-family: "CoFo Sans-Regular", Helvetica;
+}
+
+.search-history-title {
+    font-size: 17px;
+    color: #0E131A;
+    margin: 0 0 16px 0;
+    font-weight: 600;
+}
+
+.search-history-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.search-history-tag {
+    background-color: transparent;
+    border: 1px solid #4285fa23;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 15px;
+    color: #5D5D5D;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    font-family: "CoFo Sans-Regular", Helvetica;
+
+}
+
+.search-history-tag:hover {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+}
+
+.no-results-message {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(0, 184, 148, 0.08);
+    /* Светло-бирюзовый фон */
+    border-radius: 12px;
+    padding: 28px 16px;
+    color: #00b894;
+    align-items: center;
+    justify-content: center;
+    /* Бирюзовый цвет текста */
+    font-size: 16px;
+    font-family: "CoFo Sans-Regular", Helvetica;
+}
+
+.no-results-message .icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+/* Для скрытия стандартных элементов (если нужно) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.element .div-4 {
+    position: absolute;
+    top: calc(50.00% - 9px);
+    left: 21px;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-4 {
+    color: #9f9f9f;
+}
+
+.element .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+    position: relative;
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+.element .vuesax-bulk-bag {
+    position: relative;
+    width: 28px;
+    height: 28px;
+}
+
+.element .frame-3 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .text-wrapper-5 {
+    font-size: 17px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-6 {
+    position: relative;
+    width: fit-content;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #a0a0a0;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: underline;
+}
+
+.element .div-wrapper a {
+    display: flex;
+    flex-direction: column;
+    height: 73px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 16px;
+    position: relative;
+    background-color: #00b4a0;
+    border-radius: 15px;
+}
+
+.element .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    font-family: "CoFo Sans-Black", Helvetica;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* Ваши оригинальные стили (удален префикс .element для простоты) */
+.hero {
+    z-index: 1;
+    position: relative;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.hero .container {
+    display: flex;
+    gap: 28px;
+    width: 100%;
+    flex-direction: column;
+    height: 545px;
+    align-items: center;
+}
+
+/* Контейнер swiper теперь является баннером */
+.hero .banner {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 486px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* Слайд должен занимать все пространство баннера */
+.hero .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.hero .bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* cover лучше, чем 100% 100% для адаптивности */
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.hero .div-6 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(82, 82, 82, 0) 60%,
+            rgba(82, 82, 82, 1) 100%);
+}
+
+.hero .group {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 536px;
+    height: 148px;
+}
+
+.hero .div-wrapper-2 {
+    display: inline-flex;
+    height: 88px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00b4a0;
+    border-radius: 15px;
+}
+
+.hero .div-7 {
+    position: relative;
+    width: fit-content;
+    font-family: "Stapel-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: 45px;
+    white-space: nowrap;
+}
+
+.hero .text-wrapper-8 {
+    font-family: "Stapel-Bold", Helvetica;
+    color: #ffffff;
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: 45px;
+    font-weight: 900;
+}
+
+.hero .div-wrapper-3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 73px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow:
+        0px -3px 6px #0000001a, 0px -11px 11px #00000017, 0px -24px 14px #0000000d, 0px -42px 17px #00000003, 0px -66px 18px transparent;
+}
+
+.hero .text-wrapper-9 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Stapel-Bold", Helvetica;
+    font-weight: 900;
+    color: var(--black);
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: 45px;
+    white-space: nowrap;
+}
+
+.hero .text-wrapper-10 {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 399px;
+    font-size: 16px;
+    line-height: normal;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0;
+}
+
+/* Расположение блока управления */
+.hero .trigger {
+    position: relative;
+    display: flex;
+    /* Используем flex для удобного выравнивания */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* Расстояние между стрелками и пагинацией */
+    flex: 0 0 auto;
+    margin-bottom: -22.00px;
+    /* Ваш оригинальный стиль */
+}
+
+/* Стили для стрелок навигации */
+.hero .arrow {
+    cursor: pointer;
+    /* Можно добавить стили для hover/focus */
+    transition: opacity 0.2s;
+}
+
+.hero .arrow:hover {
+    opacity: 0.7;
+}
+
+.hero .arrow.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Убираем стандартные иконки Swiper, так как у нас свои img */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+.arrow-left {
+    position: absolute;
+    left: -30px;
+}
+
+.arrow-right {
+    position: absolute;
+    right: -30px;
+}
+
+
+/* --- НОВЫЕ СТИЛИ ДЛЯ ПАГИНАЦИИ SWIPER --- */
+.hero .swiper-pagination {
+    position: static;
+    /* Убираем абсолютное позиционирование по умолчанию */
+    width: auto;
+    /* Ширина по контенту */
+    display: flex;
+    gap: 6px;
+}
+
+.hero .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    opacity: 1;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.hero .swiper-pagination-bullet-active {
+    width: 18px;
+    border-radius: 10px;
+    background-color: #00b4a0;
+    /* Цвет для активной точки */
+    transform: scale(1.2);
+    /* Немного увеличим активную точку */
+}
+
+main {
+    width: 100%;
+}
+
+.element .products {
+    z-index: 2;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.element .titlle {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.element .text-wrapper-11 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Stapel-Bold", Helvetica;
+    font-weight: 900;
+    color: var(--black);
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .img {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 135px;
+    gap: 15px;
+}
+
+.btn {
+    background-color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.prev {
+    transform: rotate(180deg);
+}
+
+.element .cards {
+    position: relative;
+    margin-top: 30px;
+    overflow: visible !important;
+}
+
+.element .frame-4 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.frame-4 .content {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.element .photo {
+    padding: 5px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.element .image {
+    height: 235px;
+    margin-left: 1px;
+    width: 184px;
+}
+
+.element .content-2 {
+    display: flex;
+    flex-direction: column;
+    width: 389px;
+    align-items: flex-start;
+    gap: 23px;
+    top: 261px;
+    left: 5px;
+}
+
+.element .content-3 {
+    display: flex;
+    flex-direction: column;
+    width: 371px;
+    align-items: flex-start;
+    gap: 18px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .div-9 {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .vuesax-bulk-verify {
+    position: relative;
+    width: 22px;
+    height: 22px;
+}
+
+.element .text-wrapper-12 {
+    position: relative;
+    width: fit-content;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #0bca21;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-13 {
+    position: relative;
+    width: fit-content;
+    font-family: "CoFo Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-14 {
+    position: relative;
+    width: 262.8px;
+    transform: rotate(0.02deg);
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #848b8c;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .price {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .price-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .price-2 {
+    display: flex;
+    align-self: stretch;
+    width: 100%;
+    align-items: center;
+    gap: 14px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .text-wrapper-15 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-16 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #848b8c;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .group-2 {
+    position: relative;
+    width: 15px;
+    height: 15px;
+}
+
+.content .btns {
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex: 0 0 auto;
+    gap: 11px;
+}
+
+.element .btns-2 button {
+    width: 100%;
+    padding: 22px 0;
+    background-color: #00b4a0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.element .text-wrapper-17 {
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .btns-3 button {
+    background-color: #f8f8f8;
+    width: 100%;
+    padding: 22px 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.element .text-wrapper-18 {
+    top: calc(50.00% - 9px);
+    left: calc(50.00% - 39px);
+    transform: rotate(0.02deg);
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #848b8c;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .image-2 {
+    height: 235px;
+    margin-left: -46px;
+    width: 137px;
+}
+
+.element .frame-5 {
+    display: flex;
+    align-self: center;
+    position: relative;
+    margin: 48px auto 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 26px 27px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.element .text-wrapper-19 {
+    position: relative;
+    width: fit-content;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #848b8c;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .div-10 {
+    z-index: 10;
+    position: relative;
+    margin-top: 100px;
+}
+
+.equipments .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.element .div-11 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "Stapel-Bold", Helvetica;
+    font-weight: 900;
+    color: var(--black);
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .div-12 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 9px 9px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+}
+
+.element .div-13 {
+    padding: 33px 19px 15px 19px;
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 28px;
+    height: 100%;
+}
+
+.element .text-wrapper-20 {
+    padding-left: 11px;
+    max-width: 256px;
+    font-family: "CoFo Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .image-wrapper {
+    width: 100%;
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+}
+
+.element .image-3 {
+    margin-top: -12px;
+}
+
+.div-13 .btn {
+    border-radius: 100%;
+    background-color: #FAFAFA;
+    justify-self: end;
+    align-self: start;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 51px;
+    height: 51px;
+}
+
+.element .text-wrapper-21 {
+    padding-left: 11px;
+    font-family: "CoFo Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 23px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .image-4 {
+    margin-top: -9px;
+    object-fit: cover;
+}
+
+.element .image-5 {
+    margin-top: -12px;
+    object-fit: cover;
+}
+
+.element .text-wrapper-22 {
+    padding-left: 11px;
+    font-family: "Stapel-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .img-wrapper {
+    width: 100%;
+    grid-column: 1 / 3;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.element .image-6 {
+    margin-top: 24px;
+    margin-left: 41px;
+}
+
+.element .div-14 {
+    height: 100%;
+    position: relative;
+    background-color: #00b4a0;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 33px 30px;
+}
+
+.element .text-wrapper-23 {
+    font-family: "CoFo Sans-Bold", Helvetica;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .photo-2 {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
+
+.element .about {
+    padding: 50px 0;
+    z-index: 3;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #ffffff;
+}
+
+.element .TAGLER {
+    max-width: 910px;
+    font-family: "Stapel-Bold", Helvetica;
+    font-weight: 900;
+    color: var(--black);
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-25 {
+    color: #00b4a0;
+}
+
+.element .text-wrapper-26 {
+    color: #0d1219;
+}
+
+.element .txt {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.element .text-wrapper-27 {
+    position: relative;
+    max-width: 570px;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #818181;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.element .TAGLER-2 {
+    position: relative;
+    max-width: 718px;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #818181;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.about-up {
+    display: flex;
+    gap: 50px;
+}
+
+.element .cards-2 {
+    max-width: 910px;
+    margin-top: 30px;
+    align-items: center;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.element .div-18 {
+    height: 109px;
+    background-color: #fafafa;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding: 36px 29px 35px 29px;
+    position: relative;
+}
+
+
+.element .text-wrapper-28 {
+    font-family: "Stapel-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.div-18:nth-child(2) {
+    width: 105%;
+}
+
+.element .text-wrapper-29 {
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #818181;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.element .vector-2 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 16px;
+    height: 21px;
+}
+
+.element .vector-3 {
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+}
+
+.element .rectangle {
+    width: 100%;
+    max-width: 499px;
+    height: 100%;
+    max-height: 318px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.element .usage {
+    z-index: 4;
+    position: relative;
+    margin-top: 100px;
+}
+
+.usage .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.element .cards-3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 422px);
+}
+
+.element .div-21 {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+
+.div-21 .img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.element .element-wrapper {
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.element .div-22 {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(29, 39, 53, 0) 38%,
+            rgba(29, 39, 53, 1) 95%);
+}
+
+.element .text-2 {
+    display: flex;
+    flex-direction: column;
+    width: 496px;
+    z-index: 2;
+    align-items: flex-start;
+    gap: 15px;
+    position: absolute;
+    bottom: 34px;
+    left: 30px;
+}
+
+.element .frame-7 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #00b4a0;
+    border-radius: 15px;
+}
+
+.element .text-wrapper-32 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-size: 22px;
+    line-height: normal;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0;
+}
+
+.element .text-wrapper-33 {
+    position: relative;
+    align-self: stretch;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0;
+}
+
+.element .text-wrapper-34 {
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    left: 40px;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .docs {
+    z-index: 8;
+    position: relative;
+    margin-top: 100px;
+}
+
+.docs .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.element .titlle-2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.element .text-wrapper-35 {
+    position: relative;
+    width: fit-content;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #b1b1b1;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .group-3 {
+    position: relative;
+    width: 100%;
+    height: 366px;
+}
+
+.docs .btn,
+.commits .btn {
+    position: absolute;
+    top: calc(50.00% - (53px / 2));
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn img {
+    width: 8px;
+}
+
+.btn-left {
+    left: calc(-92px);
+    transform: rotate(180deg);
+}
+
+.btn-right {
+    right: calc(-92px);
+}
+
+.element .row {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.element .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 366px);
+    padding: 16px 24px;
+    display: flex;
+}
+
+.element .content-4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.element .titlle-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 21px;
+}
+
+.element .frame-8 {
+    display: inline-flex;
+    width: fit-content;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 26px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.element .text-wrapper-36 {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.99px;
+    transform: rotate(0.02deg);
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--black);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-37 {
+    max-width: 275px;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--black);
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .row-2 {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.element .div-24 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.element .text-wrapper-38 {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.99px;
+    transform: rotate(0.02deg);
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #848b8c;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .ellipse {
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background-color: #848b8c;
+    border-radius: 2.5px;
+}
+
+.element .vuesax-bulk-document-wrapper {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: #f2f2f2;
+    border-radius: 500px;
+}
+
+.element .vuesax-bulk-document {
+    position: absolute;
+    top: calc(50.00% - 12px);
+    left: calc(50.00% - 12px);
+    width: 24px;
+    height: 24px;
+}
+
+.element .image-8 {
+    width: 108px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.element .frame-9 {
+    width: 133.01px;
+    display: inline-flex;
+    height: 44.03px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 26px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.element .frame-10 {
+    width: 151.01px;
+    display: inline-flex;
+    height: 44.03px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 26px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.element .text-wrapper-39 {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.98px;
+    transform: rotate(0.02deg);
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--black);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .div-25 {
+    z-index: 9;
+    position: relative;
+    margin-top: 100px;
+}
+
+.partners .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.element .text-wrapper-40 {
+    color: #0d1219;
+    font-size: 35px;
+    letter-spacing: 0;
+}
+
+.element .cards-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.element .frame-wrapper {
+    background-color: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.element .frame-11 {
+    padding: 62px 52px;
+    display: flex;
+    transition: all 300ms;
+}
+
+.logos {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.logos-item a {
+    display: flex;
+}
+
+.element .sk-block-ru-2 {
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    display: flex;
+    transition: all 300ms;
+}
+
+.element a:hover .sk-block-ru-2 {
+    filter: grayscale(0%);
+}
+
+.element .div-26 {
+    z-index: 5;
+    position: relative;
+    margin-top: 100px;
+}
+
+.commits .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.element .titlle-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.element .content-5 {
+    width: 100%;
+    position: relative;
+}
+
+.element .cards-5 {
+    max-width: 1360px;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.element .card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 25px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.element .content-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.element .text-wrapper-41 {
+    align-self: stretch;
+    margin-top: -0.93px;
+    transform: rotate(0.02deg);
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    position: relative;
+    color: var(--black);
+    letter-spacing: 0;
+}
+
+.element .block {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.element .titlle-5 {
+    display: flex;
+    flex-direction: column;
+    width: 154px;
+    align-items: flex-start;
+    gap: 5px;
+    position: relative;
+}
+
+.element .text-wrapper-42 {
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: normal;
+    position: relative;
+    color: var(--black);
+    letter-spacing: 0;
+}
+
+.element .text-wrapper-43 {
+    position: relative;
+    align-self: stretch;
+    transform: rotate(0.02deg);
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #848b8c;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .frame-12 {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .text-wrapper-44 {
+    width: fit-content;
+    margin-top: -1.00px;
+    transform: rotate(0.02deg);
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: normal;
+    position: relative;
+    color: var(--black);
+    letter-spacing: 0;
+}
+
+.element .star-wrapper {
+    position: relative;
+    width: 21.43px;
+    height: 21.43px;
+}
+
+.element .star {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    width: 20px;
+    height: 19px;
+}
+
+.element .arrows-2 {
+    position: absolute;
+    width: 100%;
+    height: 17.85%;
+    top: 41.05%;
+    left: 0;
+}
+
+.news {
+    z-index: 6;
+    position: relative;
+    margin-top: 100px;
+}
+
+.news .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.news .cards-4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 359px);
+    gap: 20px;
+}
+
+.element .frame-13 {
+    height: 100%;
+    padding: 25px 20px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.element .content-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.element .titlle-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.element .text-wrapper-45 {
+    position: relative;
+    max-width: 223px;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--black);
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .view {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.element .view-2 {
+    display: flex;
+    gap: 12px;
+    align-items: end;
+}
+
+.element .text-wrapper-46 {
+    top: 0;
+    left: 0;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--black);
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-47 {
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #a7a7a7;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 22px;
+    white-space: nowrap;
+}
+
+.element .text-wrapper-48 {
+    position: relative;
+    width: fit-content;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #848b8c;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 22px;
+    white-space: nowrap;
+}
+
+.element .footer {
+    display: flex;
+    z-index: 7;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #ffffff;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.element .content-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.element .main {
+    display: flex;
+    align-items: flex-start;
+    gap: 126px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.element .logo {
+    display: flex;
+    flex-direction: column;
+    width: 272.54px;
+    align-items: flex-start;
+    gap: 25px;
+    position: relative;
+}
+
+.element .tagler-logotype-CMYK-2 {
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
+.element .text-wrapper-49 {
+    position: relative;
+    align-self: stretch;
+    transform: rotate(0.02deg);
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #a0a0a0;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.element .list {
+    gap: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .text-wrapper-50 {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.97px;
+    transform: rotate(0.02deg);
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #a0a0a0;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element .text-wrapper-51 {
+    position: relative;
+    width: fit-content;
+    transform: rotate(0.02deg);
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #a0a0a0;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.element .div-28 {
+    display: flex;
+    flex-direction: column;
+    width: 269px;
+    align-items: flex-start;
+    gap: 25px;
+    position: relative;
+}
+
+.element .text-wrapper-52 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .list-2 {
+    gap: 15px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .text-wrapper-53 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #848b8c;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-54 {
+    position: relative;
+    width: fit-content;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #848b8c;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-55 {
+    position: relative;
+    align-self: stretch;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #848b8c;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .div-29 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 55px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.element .text-wrapper-56 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #848b8c;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .frame-14 {
+    display: flex;
+    flex-direction: column;
+    width: 236px;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+}
+
+.element .content-wrapper-2 {
+    display: flex;
+    flex-direction: column;
+    height: 106px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #fbfbfb;
+    border-radius: 15px;
+}
+
+.element .content-9 {
+    display: inline-flex;
+    align-items: center;
+    gap: 90px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .links {
+    display: inline-flex;
+    height: 17px;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .text-wrapper-57 {
+    position: relative;
+    width: fit-content;
+    margin-top: -2.00px;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--black);
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .cards-6 {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .div-30 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .text-wrapper-58 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-59 {
+    position: relative;
+    width: fit-content;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #a0a0a0;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .line {
+    position: relative;
+    width: 1px;
+    height: 34px;
+    object-fit: cover;
+}
+
+.element .div-31 {
+    display: flex;
+    width: 1348px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element .right {
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.socials {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.socials-item a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D2735;
+    border-radius: 100%;
+}
+
+/* --- Стили для выпадающего списка в футере --- */
+
+/* 1. Обертка - ключевой элемент для позиционирования */
+.footer-dropdown-wrapper {
+    position: relative;
+    /* Обязательно для позиционирования дочернего меню */
+    display: inline-block;
+    /* Чтобы обертка занимала ширину контента */
+    /* Задайте ширину, как у вашего элемента, или оставьте auto */
+}
+
+/* 2. Стили для триггера (вашего блока .div-24) */
+/* Эти стили могут у вас уже быть, добавьте cursor: pointer */
+footer .div-24 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* Примерный отступ */
+    border: 1px solid #e0e0e0;
+    /* Примерная рамка */
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+footer .div-24 .vector-5 {
+    transition: transform 0.3s ease;
+}
+
+/* Поворот стрелки при активном меню */
+.footer-dropdown-wrapper:hover .vector-5 {
+    transform: rotate(180deg);
+}
+
+/* 3. Стили для самого выпадающего меню */
+.footer-dropdown-menu {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    /* Позиция НАД родительским элементом с отступом 8px */
+    left: 0;
+    width: 251px;
+    /* Занимает всю ширину родителя (.footer-dropdown-wrapper) */
+
+    background-color: #FAFAFA;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    z-index: 100;
+
+    /* Плавное появление */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    /* Начальное положение для анимации "всплытия" */
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+}
+
+/* 4. Класс для отображения меню */
+.footer-dropdown-menu.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* 5. Стили для ссылок внутри меню */
+.footer-dropdown-menu li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #848B8C;
+    /* Серый цвет текста */
+    font-size: 15px;
+    border-radius: 10px;
+    /* Небольшое скругление для элемента при наведении */
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-family: "CoFo Sans-Regular", Helvetica;
+}
+
+/* Стиль для текущего/выделенного элемента, как на скриншоте */
+.footer-dropdown-menu li a:hover {
+    background-color: #FFFFFF;
+    color: #0E131A;
+}
+
+.element .text-wrapper-60 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--black);
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .vector-5 {
+    position: relative;
+    width: 8px;
+    height: 5px;
+    margin-right: -1.00px;
+}
+
+.element .frame-15 {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #fbfbfb;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.element .frame-16 {
+    display: flex;
+    width: 54px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.element .text-wrapper-61 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .frame-17 {
+    display: flex;
+    width: 54px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.element .text-wrapper-62 {
+    position: relative;
+    width: fit-content;
+    transform: rotate(0.02deg);
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #a0a0a0;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .text-wrapper-63 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "CoFo Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #a0a0a0;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.element .group-4 {
+    position: relative;
+    width: 63px;
+    height: 12.85px;
+}

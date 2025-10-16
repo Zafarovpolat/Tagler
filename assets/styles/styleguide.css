@@ -1,0 +1,11 @@
+:root {
+    --black: rgba(14, 19, 26, 1);
+    --shadow:
+        0px 8px 17px 0px rgba(232, 232, 232, 0.74), 0px 32px 32px 0px rgba(232,
+            232,
+            232,
+            0.64), 0px 71px 43px 0px rgba(232, 232, 232, 0.38), 0px 126px 50px 0px rgba(232,
+            232,
+            232,
+            0.11), 0px 197px 55px 0px rgba(232, 232, 232, 0.01);
+}
