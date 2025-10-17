@@ -26,6 +26,14 @@
     font-style: normal;
 }
 
+a {
+    color: inherit;
+}
+
+img {
+    object-fit: cover;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -45,13 +53,7 @@ body {
 
 }
 
-.element {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.element .header {
+.header {
     z-index: 12;
     margin-top: 19px;
     width: 100%;
@@ -64,7 +66,7 @@ body {
     gap: 16px;
 }
 
-.element .top {
+.top {
     display: flex;
     width: 100%;
     align-items: center;
@@ -75,7 +77,7 @@ body {
 
 }
 
-.element .navbar {
+.navbar {
     display: flex;
     width: 572px;
     height: 17px;
@@ -133,11 +135,11 @@ body {
     background: #00B4A0;
 }
 
-.element .div-2 {
+.div-2 {
     gap: 16px;
 }
 
-.element .text-wrapper {
+.text-wrapper {
     position: relative;
     width: fit-content;
     margin-top: -1.50px;
@@ -148,7 +150,7 @@ body {
     line-height: normal;
 }
 
-.element .contacts {
+.contacts {
     display: inline-flex;
     align-items: center;
     gap: 20px;
@@ -156,7 +158,7 @@ body {
     flex: 0 0 auto;
 }
 
-.element .div {
+.div {
     position: relative;
     width: fit-content;
     margin-top: -1.00px;
@@ -168,7 +170,7 @@ body {
     line-height: normal;
 }
 
-.element .text-wrapper-2 {
+.text-wrapper-2 {
     position: relative;
     width: fit-content;
     margin-top: -1.00px;
@@ -180,7 +182,7 @@ body {
     line-height: normal;
 }
 
-.element .content-wrapper {
+.content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -194,7 +196,7 @@ body {
     border-radius: 20px;
 }
 
-.element .div-2 {
+.div-2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -203,7 +205,7 @@ body {
     flex: 0 0 auto;
 }
 
-.element .frame {
+.frame {
     display: inline-flex;
     height: 73px;
     align-items: center;
@@ -216,13 +218,13 @@ body {
     border-radius: 15px;
 }
 
-.element .vuesax-bulk-category {
+.vuesax-bulk-category {
     position: relative;
     width: 24px;
     height: 24px;
 }
 
-.element .text-wrapper-3 {
+.text-wrapper-3 {
     position: relative;
     width: fit-content;
     font-family: "CoFo Sans-Bold", Helvetica;
@@ -233,7 +235,7 @@ body {
     line-height: normal;
 }
 
-.element .div-3 {
+.div-3 {
     display: inline-flex;
     align-items: center;
     gap: 15px;
@@ -241,13 +243,13 @@ body {
     flex: 0 0 auto;
 }
 
-.element .tagler-logotype-CMYK {
+.tagler-logotype-CMYK {
     position: relative;
     width: 145px;
     height: 47px;
 }
 
-.element .p {
+.p {
     position: relative;
     width: 198px;
     font-family: "CoFo Sans-Regular", Helvetica;
@@ -258,11 +260,11 @@ body {
     line-height: normal;
 }
 
-.element .span {
+.span {
     color: #848b8c;
 }
 
-.element .frame-2 {
+.frame-2 {
     position: relative;
     background-color: #fafafa;
     border-radius: 15px;
@@ -272,7 +274,7 @@ body {
     box-sizing: border-box;
 }
 
-.element .vector {
+.vector {
     position: absolute;
     width: 18px;
     top: calc(50.00% - 9px);
@@ -545,7 +547,7 @@ body {
     clip: rect(0 0 0 0);
 }
 
-.element .div-4 {
+.div-4 {
     position: absolute;
     top: calc(50.00% - 9px);
     left: 21px;
@@ -557,11 +559,11 @@ body {
     line-height: normal;
 }
 
-.element .text-wrapper-4 {
+.text-wrapper-4 {
     color: #9f9f9f;
 }
 
-.element .icon {
+.icon {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -573,13 +575,13 @@ body {
     border-radius: 10px;
 }
 
-.element .vuesax-bulk-bag {
+.vuesax-bulk-bag {
     position: relative;
     width: 28px;
     height: 28px;
 }
 
-.element .frame-3 {
+.frame-3 {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -589,7 +591,7 @@ body {
     flex: 0 0 auto;
 }
 
-.element .text-wrapper-5 {
+.text-wrapper-5 {
     font-size: 17px;
     position: relative;
     width: fit-content;
@@ -601,7 +603,7 @@ body {
     line-height: normal;
 }
 
-.element .text-wrapper-6 {
+.text-wrapper-6 {
     position: relative;
     width: fit-content;
     font-family: "CoFo Sans-Medium", Helvetica;
@@ -613,7 +615,7 @@ body {
     text-decoration: underline;
 }
 
-.element .div-wrapper a {
+.div-wrapper a {
     display: flex;
     flex-direction: column;
     height: 73px;
@@ -626,7 +628,7 @@ body {
     border-radius: 15px;
 }
 
-.element .text-wrapper-7 {
+.text-wrapper-7 {
     position: relative;
     width: fit-content;
     font-family: "CoFo Sans-Black", Helvetica;
@@ -637,7 +639,11 @@ body {
     line-height: normal;
 }
 
-/* Ваши оригинальные стили (удален префикс .element для простоты) */
+.burger {
+    display: none;
+}
+
+/* Ваши оригинальные стили (удален префикс  для простоты) */
 .hero {
     z-index: 1;
     position: relative;
@@ -854,20 +860,20 @@ main {
     width: 100%;
 }
 
-.element .products {
+.products {
     z-index: 2;
     margin-top: 70px;
     width: 100%;
 }
 
-.element .titlle {
+.titlle {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: space-between;
 }
 
-.element .text-wrapper-11 {
+.text-wrapper-11 {
     position: relative;
     width: fit-content;
     margin-top: -1.00px;
@@ -879,7 +885,7 @@ main {
     line-height: normal;
 }
 
-.element .img {
+.img {
     position: relative;
     flex: 0 0 auto;
 }
@@ -907,14 +913,14 @@ main {
     transform: rotate(180deg);
 }
 
-.element .cards {
+.cards {
     position: relative;
     margin-top: 30px;
     overflow: visible !important;
 }
 
-.element .frame-4 {
-    display: inline-flex;
+.frame-4 {
+    display: block;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -932,7 +938,7 @@ main {
     flex-direction: column;
 }
 
-.element .photo {
+.photo {
     padding: 5px 4px;
     display: flex;
     align-items: center;
@@ -942,33 +948,32 @@ main {
     overflow: hidden;
 }
 
-.element .image {
+.image {
     height: 235px;
     margin-left: 1px;
     width: 184px;
 }
 
-.element .content-2 {
+.content-2 {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 389px;
     align-items: flex-start;
     gap: 23px;
     top: 261px;
     left: 5px;
 }
 
-.element .content-3 {
+.content-3 {
     display: flex;
     flex-direction: column;
-    width: 371px;
     align-items: flex-start;
     gap: 18px;
     position: relative;
     flex: 0 0 auto;
 }
 
-.element .text {
+.text {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -977,7 +982,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .div-9 {
+.div-9 {
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -985,13 +990,13 @@ main {
     flex: 0 0 auto;
 }
 
-.element .vuesax-bulk-verify {
+.vuesax-bulk-verify {
     position: relative;
     width: 22px;
     height: 22px;
 }
 
-.element .text-wrapper-12 {
+.text-wrapper-12 {
     position: relative;
     width: fit-content;
     font-family: "CoFo Sans-Medium", Helvetica;
@@ -1002,7 +1007,7 @@ main {
     line-height: normal;
 }
 
-.element .text-wrapper-13 {
+.text-wrapper-13 {
     position: relative;
     width: fit-content;
     font-family: "CoFo Sans-Bold", Helvetica;
@@ -1013,7 +1018,7 @@ main {
     line-height: normal;
 }
 
-.element .text-wrapper-14 {
+.text-wrapper-14 {
     position: relative;
     width: 262.8px;
     transform: rotate(0.02deg);
@@ -1025,7 +1030,7 @@ main {
     line-height: normal;
 }
 
-.element .price {
+.price {
     display: inline-flex;
     align-items: center;
     gap: 14px;
@@ -1033,7 +1038,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .price-wrapper {
+.price-wrapper {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1042,7 +1047,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .price-2 {
+.price-2 {
     display: flex;
     align-self: stretch;
     width: 100%;
@@ -1052,7 +1057,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .text-wrapper-15 {
+.text-wrapper-15 {
     position: relative;
     width: fit-content;
     margin-top: -1.00px;
@@ -1064,7 +1069,7 @@ main {
     line-height: normal;
 }
 
-.element .text-wrapper-16 {
+.text-wrapper-16 {
     position: relative;
     width: fit-content;
     margin-top: -1.00px;
@@ -1076,7 +1081,7 @@ main {
     line-height: normal;
 }
 
-.element .group-2 {
+.group-2 {
     position: relative;
     width: 15px;
     height: 15px;
@@ -1094,7 +1099,7 @@ main {
     gap: 11px;
 }
 
-.element .btns-2 button {
+.btns-2 button {
     width: 100%;
     padding: 22px 0;
     background-color: #00b4a0;
@@ -1103,7 +1108,7 @@ main {
     cursor: pointer;
 }
 
-.element .text-wrapper-17 {
+.text-wrapper-17 {
     font-family: "CoFo Sans-Medium", Helvetica;
     font-weight: 500;
     color: #ffffff;
@@ -1112,7 +1117,7 @@ main {
     line-height: normal;
 }
 
-.element .btns-3 button {
+.btns-3 button {
     background-color: #f8f8f8;
     width: 100%;
     padding: 22px 0;
@@ -1121,7 +1126,7 @@ main {
     cursor: pointer;
 }
 
-.element .text-wrapper-18 {
+.text-wrapper-18 {
     top: calc(50.00% - 9px);
     left: calc(50.00% - 39px);
     transform: rotate(0.02deg);
@@ -1133,13 +1138,13 @@ main {
     line-height: normal;
 }
 
-.element .image-2 {
+.image-2 {
     height: 235px;
     margin-left: -46px;
     width: 137px;
 }
 
-.element .frame-5 {
+.frame-5 {
     display: flex;
     align-self: center;
     position: relative;
@@ -1155,7 +1160,7 @@ main {
     cursor: pointer;
 }
 
-.element .text-wrapper-19 {
+.text-wrapper-19 {
     position: relative;
     width: fit-content;
     font-family: "CoFo Sans-Medium", Helvetica;
@@ -1166,7 +1171,7 @@ main {
     line-height: normal;
 }
 
-.element .div-10 {
+.div-10 {
     z-index: 10;
     position: relative;
     margin-top: 100px;
@@ -1179,7 +1184,7 @@ main {
     gap: 30px;
 }
 
-.element .div-11 {
+.div-11 {
     position: relative;
     align-self: stretch;
     margin-top: -1.00px;
@@ -1191,7 +1196,7 @@ main {
     line-height: normal;
 }
 
-.element .div-12 {
+.div-12 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -1201,7 +1206,7 @@ main {
     width: 100%;
 }
 
-.element .div-13 {
+.div-13 {
     padding: 33px 19px 15px 19px;
     position: relative;
     width: 100%;
@@ -1214,7 +1219,7 @@ main {
     height: 100%;
 }
 
-.element .text-wrapper-20 {
+.text-wrapper-20 {
     padding-left: 11px;
     max-width: 256px;
     font-family: "CoFo Sans-Bold", Helvetica;
@@ -1225,7 +1230,7 @@ main {
     line-height: normal;
 }
 
-.element .image-wrapper {
+.image-wrapper {
     width: 100%;
     grid-column: 1 / 3;
     display: flex;
@@ -1234,7 +1239,7 @@ main {
     border-radius: 20px;
 }
 
-.element .image-3 {
+.image-3 {
     margin-top: -12px;
 }
 
@@ -1250,7 +1255,7 @@ main {
     height: 51px;
 }
 
-.element .text-wrapper-21 {
+.text-wrapper-21 {
     padding-left: 11px;
     font-family: "CoFo Sans-Bold", Helvetica;
     font-weight: 700;
@@ -1260,17 +1265,17 @@ main {
     line-height: normal;
 }
 
-.element .image-4 {
+.image-4 {
     margin-top: -9px;
     object-fit: cover;
 }
 
-.element .image-5 {
+.image-5 {
     margin-top: -12px;
     object-fit: cover;
 }
 
-.element .text-wrapper-22 {
+.text-wrapper-22 {
     padding-left: 11px;
     font-family: "Stapel-Bold", Helvetica;
     font-weight: 700;
@@ -1280,7 +1285,7 @@ main {
     line-height: normal;
 }
 
-.element .img-wrapper {
+.img-wrapper {
     width: 100%;
     grid-column: 1 / 3;
     align-items: center;
@@ -1290,12 +1295,12 @@ main {
     justify-content: center;
 }
 
-.element .image-6 {
+.image-6 {
     margin-top: 24px;
     margin-left: 41px;
 }
 
-.element .div-14 {
+.div-14 {
     height: 100%;
     position: relative;
     background-color: #00b4a0;
@@ -1304,7 +1309,7 @@ main {
     padding: 33px 30px;
 }
 
-.element .text-wrapper-23 {
+.text-wrapper-23 {
     font-family: "CoFo Sans-Bold", Helvetica;
     color: #ffffff;
     font-size: 35px;
@@ -1313,13 +1318,13 @@ main {
     line-height: normal;
 }
 
-.element .photo-2 {
+.photo-2 {
     position: absolute;
     bottom: -5px;
     right: 0;
 }
 
-.element .about {
+.about {
     padding: 50px 0;
     z-index: 3;
     width: 100%;
@@ -1327,7 +1332,7 @@ main {
     background-color: #ffffff;
 }
 
-.element .TAGLER {
+.TAGLER {
     max-width: 910px;
     font-family: "Stapel-Bold", Helvetica;
     font-weight: 900;
@@ -1337,15 +1342,15 @@ main {
     line-height: normal;
 }
 
-.element .text-wrapper-25 {
+.text-wrapper-25 {
     color: #00b4a0;
 }
 
-.element .text-wrapper-26 {
+.text-wrapper-26 {
     color: #0d1219;
 }
 
-.element .txt {
+.txt {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1353,7 +1358,7 @@ main {
     margin-top: 20px;
 }
 
-.element .text-wrapper-27 {
+.text-wrapper-27 {
     position: relative;
     max-width: 570px;
     margin-top: -1.00px;
@@ -1365,7 +1370,7 @@ main {
     line-height: 24px;
 }
 
-.element .TAGLER-2 {
+.TAGLER-2 {
     position: relative;
     max-width: 718px;
     font-family: "CoFo Sans-Regular", Helvetica;
@@ -1381,7 +1386,7 @@ main {
     gap: 50px;
 }
 
-.element .cards-2 {
+.cards-2 {
     max-width: 910px;
     margin-top: 30px;
     align-items: center;
@@ -1390,7 +1395,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.element .div-18 {
+.div-18 {
     height: 109px;
     background-color: #fafafa;
     border-radius: 25px;
@@ -1403,7 +1408,7 @@ main {
 }
 
 
-.element .text-wrapper-28 {
+.text-wrapper-28 {
     font-family: "Stapel-Bold", Helvetica;
     font-weight: 700;
     color: var(--black);
@@ -1418,7 +1423,7 @@ main {
     width: 105%;
 }
 
-.element .text-wrapper-29 {
+.text-wrapper-29 {
     font-family: "CoFo Sans-Regular", Helvetica;
     font-weight: 400;
     color: #818181;
@@ -1427,7 +1432,7 @@ main {
     line-height: 24px;
 }
 
-.element .vector-2 {
+.vector-2 {
     position: absolute;
     top: 12px;
     left: 12px;
@@ -1435,22 +1440,21 @@ main {
     height: 21px;
 }
 
-.element .vector-3 {
+.vector-3 {
     position: absolute;
     bottom: 13px;
     right: 13px;
 }
 
-.element .rectangle {
+.rectangle {
     width: 100%;
     max-width: 499px;
-    height: 100%;
     max-height: 318px;
     border-radius: 20px;
     object-fit: cover;
 }
 
-.element .usage {
+.usage {
     z-index: 4;
     position: relative;
     margin-top: 100px;
@@ -1463,7 +1467,7 @@ main {
     gap: 25px;
 }
 
-.element .cards-3 {
+.cards-3 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1477,7 +1481,7 @@ main {
     grid-template-rows: repeat(2, 422px);
 }
 
-.element .div-21 {
+.div-21 {
     width: 100%;
     height: 100%;
     background-color: #ffffff;
@@ -1494,7 +1498,7 @@ main {
     z-index: 1;
 }
 
-.element .element-wrapper {
+-wrapper {
     background-size: cover;
     background-position: 50% 50%;
     display: flex;
@@ -1502,7 +1506,7 @@ main {
     height: 100%;
 }
 
-.element .div-22 {
+.div-22 {
     display: flex;
     width: 100%;
     position: absolute;
@@ -1513,7 +1517,7 @@ main {
             rgba(29, 39, 53, 1) 95%);
 }
 
-.element .text-2 {
+.text-2 {
     display: flex;
     flex-direction: column;
     width: 496px;
@@ -1525,7 +1529,7 @@ main {
     left: 30px;
 }
 
-.element .frame-7 {
+.frame-7 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1537,7 +1541,7 @@ main {
     border-radius: 15px;
 }
 
-.element .text-wrapper-32 {
+.text-wrapper-32 {
     position: relative;
     width: fit-content;
     margin-top: -1.00px;
@@ -1549,7 +1553,7 @@ main {
     letter-spacing: 0;
 }
 
-.element .text-wrapper-33 {
+.text-wrapper-33 {
     position: relative;
     align-self: stretch;
     font-size: 16px;
@@ -1560,7 +1564,7 @@ main {
     letter-spacing: 0;
 }
 
-.element .text-wrapper-34 {
+.text-wrapper-34 {
     position: absolute;
     z-index: 3;
     top: 30px;
@@ -1573,7 +1577,7 @@ main {
     line-height: normal;
 }
 
-.element .docs {
+.docs {
     z-index: 8;
     position: relative;
     margin-top: 100px;
@@ -1586,7 +1590,7 @@ main {
     gap: 30px;
 }
 
-.element .titlle-2 {
+.titlle-2 {
     display: flex;
     width: 100%;
     align-items: center;
@@ -1594,7 +1598,7 @@ main {
     position: relative;
 }
 
-.element .text-wrapper-35 {
+.text-wrapper-35 {
     position: relative;
     width: fit-content;
     font-family: "CoFo Sans-Regular", Helvetica;
@@ -1605,7 +1609,7 @@ main {
     line-height: normal;
 }
 
-.element .group-3 {
+.group-3 {
     position: relative;
     width: 100%;
     height: 366px;
@@ -1638,14 +1642,14 @@ main {
     right: calc(-92px);
 }
 
-.element .row {
+.row {
     display: inline-flex;
     align-items: center;
     gap: 20px;
     width: 100%;
 }
 
-.element .card {
+.card {
     position: relative;
     width: 100%;
     height: 100%;
@@ -1659,20 +1663,20 @@ main {
     display: flex;
 }
 
-.element .content-4 {
+.content-4 {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.element .titlle-3 {
+.titlle-3 {
     display: flex;
     flex-direction: column;
     gap: 18px;
     margin-bottom: 21px;
 }
 
-.element .frame-8 {
+.frame-8 {
     display: inline-flex;
     width: fit-content;
     position: relative;
@@ -1685,7 +1689,7 @@ main {
     overflow: hidden;
 }
 
-.element .text-wrapper-36 {
+.text-wrapper-36 {
     position: relative;
     width: fit-content;
     margin-top: -0.99px;
@@ -1698,7 +1702,7 @@ main {
     line-height: normal;
 }
 
-.element .text-wrapper-37 {
+.text-wrapper-37 {
     max-width: 275px;
     font-family: "CoFo Sans-Medium", Helvetica;
     font-weight: 500;
@@ -1708,7 +1712,7 @@ main {
     line-height: normal;
 }
 
-.element .row-2 {
+.row-2 {
     display: flex;
     width: 100%;
     height: 48px;
@@ -1717,7 +1721,7 @@ main {
     justify-content: space-between;
 }
 
-.element .div-24 {
+.div-24 {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -1728,7 +1732,7 @@ main {
     cursor: pointer;
 }
 
-.element .text-wrapper-38 {
+.text-wrapper-38 {
     position: relative;
     width: fit-content;
     margin-top: -0.99px;
@@ -1741,7 +1745,7 @@ main {
     line-height: normal;
 }
 
-.element .ellipse {
+.ellipse {
     position: relative;
     width: 5px;
     height: 5px;
@@ -1749,7 +1753,7 @@ main {
     border-radius: 2.5px;
 }
 
-.element .vuesax-bulk-document-wrapper {
+.vuesax-bulk-document-wrapper {
     position: relative;
     width: 48px;
     height: 48px;
@@ -1757,7 +1761,7 @@ main {
     border-radius: 500px;
 }
 
-.element .vuesax-bulk-document {
+.vuesax-bulk-document {
     position: absolute;
     top: calc(50.00% - 12px);
     left: calc(50.00% - 12px);
@@ -1765,13 +1769,13 @@ main {
     height: 24px;
 }
 
-.element .image-8 {
+.image-8 {
     width: 108px;
     object-fit: cover;
     margin-bottom: 8px;
 }
 
-.element .frame-9 {
+.frame-9 {
     width: 133.01px;
     display: inline-flex;
     height: 44.03px;
@@ -1785,7 +1789,7 @@ main {
     overflow: hidden;
 }
 
-.element .frame-10 {
+.frame-10 {
     width: 151.01px;
     display: inline-flex;
     height: 44.03px;
@@ -1799,7 +1803,7 @@ main {
     overflow: hidden;
 }
 
-.element .text-wrapper-39 {
+.text-wrapper-39 {
     position: relative;
     width: fit-content;
     margin-top: -0.98px;
@@ -1812,7 +1816,7 @@ main {
     line-height: normal;
 }
 
-.element .div-25 {
+.div-25 {
     z-index: 9;
     position: relative;
     margin-top: 100px;
@@ -1825,13 +1829,13 @@ main {
     gap: 30px;
 }
 
-.element .text-wrapper-40 {
+.text-wrapper-40 {
     color: #0d1219;
     font-size: 35px;
     letter-spacing: 0;
 }
 
-.element .cards-4 {
+.cards-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
@@ -1842,13 +1846,13 @@ main {
     flex: 0 0 auto;
 }
 
-.element .frame-wrapper {
+.frame-wrapper {
     background-color: #ffffff;
     border-radius: 25px;
     overflow: hidden;
 }
 
-.element .frame-11 {
+.frame-11 {
     padding: 62px 52px;
     display: flex;
     transition: all 300ms;
@@ -1864,7 +1868,7 @@ main {
     display: flex;
 }
 
-.element .sk-block-ru-2 {
+.sk-block-ru-2 {
     width: 100%;
     object-fit: cover;
     filter: grayscale(100%);
@@ -1872,11 +1876,11 @@ main {
     transition: all 300ms;
 }
 
-.element a:hover .sk-block-ru-2 {
+a:hover .sk-block-ru-2 {
     filter: grayscale(0%);
 }
 
-.element .div-26 {
+.div-26 {
     z-index: 5;
     position: relative;
     margin-top: 100px;
@@ -1888,25 +1892,25 @@ main {
     gap: 30px;
 }
 
-.element .titlle-4 {
+.titlle-4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.element .content-5 {
+.content-5 {
     width: 100%;
     position: relative;
 }
 
-.element .cards-5 {
+.cards-5 {
     max-width: 1360px;
     display: inline-flex;
     align-items: center;
     gap: 20px;
 }
 
-.element .card-2 {
+.card-2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1918,7 +1922,7 @@ main {
     overflow: hidden;
 }
 
-.element .content-6 {
+.content-6 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1929,7 +1933,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .text-wrapper-41 {
+.text-wrapper-41 {
     align-self: stretch;
     margin-top: -0.93px;
     transform: rotate(0.02deg);
@@ -1942,7 +1946,7 @@ main {
     letter-spacing: 0;
 }
 
-.element .block {
+.block {
     display: flex;
     flex-direction: column;
     height: 90px;
@@ -1957,7 +1961,7 @@ main {
     border-radius: 10px;
 }
 
-.element .titlle-5 {
+.titlle-5 {
     display: flex;
     flex-direction: column;
     width: 154px;
@@ -1966,7 +1970,7 @@ main {
     position: relative;
 }
 
-.element .text-wrapper-42 {
+.text-wrapper-42 {
     align-self: stretch;
     margin-top: -1.00px;
     font-family: "CoFo Sans-Medium", Helvetica;
@@ -1978,7 +1982,7 @@ main {
     letter-spacing: 0;
 }
 
-.element .text-wrapper-43 {
+.text-wrapper-43 {
     position: relative;
     align-self: stretch;
     transform: rotate(0.02deg);
@@ -1990,7 +1994,7 @@ main {
     line-height: normal;
 }
 
-.element .frame-12 {
+.frame-12 {
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -1998,7 +2002,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .text-wrapper-44 {
+.text-wrapper-44 {
     width: fit-content;
     margin-top: -1.00px;
     transform: rotate(0.02deg);
@@ -2011,13 +2015,13 @@ main {
     letter-spacing: 0;
 }
 
-.element .star-wrapper {
+.star-wrapper {
     position: relative;
     width: 21.43px;
     height: 21.43px;
 }
 
-.element .star {
+.star {
     position: absolute;
     top: 0;
     left: 1px;
@@ -2025,7 +2029,7 @@ main {
     height: 19px;
 }
 
-.element .arrows-2 {
+.arrows-2 {
     position: absolute;
     width: 100%;
     height: 17.85%;
@@ -2053,7 +2057,7 @@ main {
     gap: 20px;
 }
 
-.element .frame-13 {
+.frame-13 {
     height: 100%;
     padding: 25px 20px;
     position: relative;
@@ -2062,7 +2066,7 @@ main {
     overflow: hidden;
 }
 
-.element .content-7 {
+.content-7 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -2070,7 +2074,7 @@ main {
     height: 100%;
 }
 
-.element .titlle-6 {
+.titlle-6 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -2084,7 +2088,7 @@ main {
     border-radius: 10px;
 }
 
-.element .text-wrapper-45 {
+.text-wrapper-45 {
     position: relative;
     max-width: 223px;
     margin-top: -1.00px;
@@ -2096,7 +2100,7 @@ main {
     line-height: normal;
 }
 
-.element .view {
+.view {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -2106,13 +2110,13 @@ main {
     flex: 0 0 auto;
 }
 
-.element .view-2 {
+.view-2 time {
     display: flex;
     gap: 12px;
     align-items: end;
 }
 
-.element .text-wrapper-46 {
+.text-wrapper-46 {
     top: 0;
     left: 0;
     font-family: "CoFo Sans-Medium", Helvetica;
@@ -2123,7 +2127,7 @@ main {
     line-height: normal;
 }
 
-.element .text-wrapper-47 {
+.text-wrapper-47 {
     font-family: "CoFo Sans-Regular", Helvetica;
     font-weight: 400;
     color: #a7a7a7;
@@ -2133,7 +2137,7 @@ main {
     white-space: nowrap;
 }
 
-.element .text-wrapper-48 {
+.text-wrapper-48 {
     position: relative;
     width: fit-content;
     font-family: "CoFo Sans-Regular", Helvetica;
@@ -2145,7 +2149,7 @@ main {
     white-space: nowrap;
 }
 
-.element .footer {
+.footer {
     display: flex;
     z-index: 7;
     margin-top: 100px;
@@ -2159,7 +2163,7 @@ main {
     overflow: hidden;
 }
 
-.element .content-8 {
+.content-8 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -2170,7 +2174,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .main {
+.main {
     display: flex;
     align-items: flex-start;
     gap: 126px;
@@ -2180,7 +2184,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .logo {
+.logo {
     display: flex;
     flex-direction: column;
     width: 272.54px;
@@ -2189,13 +2193,13 @@ main {
     position: relative;
 }
 
-.element .tagler-logotype-CMYK-2 {
+.tagler-logotype-CMYK-2 {
     position: relative;
     width: 100%;
     height: 80px;
 }
 
-.element .text-wrapper-49 {
+.text-wrapper-49 {
     position: relative;
     align-self: stretch;
     transform: rotate(0.02deg);
@@ -2207,7 +2211,7 @@ main {
     line-height: 20px;
 }
 
-.element .list {
+.list {
     gap: 10px;
     display: inline-flex;
     flex-direction: column;
@@ -2216,7 +2220,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .text-wrapper-50 {
+.text-wrapper-50 {
     position: relative;
     width: fit-content;
     margin-top: -0.97px;
@@ -2230,7 +2234,7 @@ main {
     white-space: nowrap;
 }
 
-.element .text-wrapper-51 {
+.text-wrapper-51 {
     position: relative;
     width: fit-content;
     transform: rotate(0.02deg);
@@ -2243,7 +2247,7 @@ main {
     white-space: nowrap;
 }
 
-.element .div-28 {
+.div-28 {
     display: flex;
     flex-direction: column;
     width: 269px;
@@ -2252,7 +2256,7 @@ main {
     position: relative;
 }
 
-.element .text-wrapper-52 {
+.text-wrapper-52 {
     position: relative;
     align-self: stretch;
     margin-top: -1.00px;
@@ -2264,7 +2268,7 @@ main {
     line-height: normal;
 }
 
-.element .list-2 {
+.list-2 {
     gap: 15px;
     display: inline-flex;
     flex-direction: column;
@@ -2273,7 +2277,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .text-wrapper-53 {
+.text-wrapper-53 {
     position: relative;
     align-self: stretch;
     margin-top: -1.00px;
@@ -2285,7 +2289,7 @@ main {
     line-height: normal;
 }
 
-.element .text-wrapper-54 {
+.text-wrapper-54 {
     position: relative;
     width: fit-content;
     font-family: "CoFo Sans-Regular", Helvetica;
@@ -2296,7 +2300,7 @@ main {
     line-height: normal;
 }
 
-.element .text-wrapper-55 {
+.text-wrapper-55 {
     position: relative;
     align-self: stretch;
     font-family: "CoFo Sans-Regular", Helvetica;
@@ -2307,7 +2311,7 @@ main {
     line-height: normal;
 }
 
-.element .div-29 {
+.div-29 {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -2316,7 +2320,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .columns {
+.columns {
     display: flex;
     align-items: flex-start;
     gap: 55px;
@@ -2326,7 +2330,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .text-wrapper-56 {
+.text-wrapper-56 {
     position: relative;
     width: fit-content;
     margin-top: -1.00px;
@@ -2338,7 +2342,7 @@ main {
     line-height: normal;
 }
 
-.element .frame-14 {
+.frame-14 {
     display: flex;
     flex-direction: column;
     width: 236px;
@@ -2347,7 +2351,7 @@ main {
     position: relative;
 }
 
-.element .content-wrapper-2 {
+.content-wrapper-2 {
     display: flex;
     flex-direction: column;
     height: 106px;
@@ -2362,15 +2366,16 @@ main {
     border-radius: 15px;
 }
 
-.element .content-9 {
+.content-9 {
     display: inline-flex;
     align-items: center;
     gap: 90px;
     position: relative;
     flex: 0 0 auto;
+    flex-wrap: wrap;
 }
 
-.element .links {
+.links {
     display: inline-flex;
     height: 17px;
     align-items: center;
@@ -2379,7 +2384,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .text-wrapper-57 {
+.text-wrapper-57 {
     position: relative;
     width: fit-content;
     margin-top: -2.00px;
@@ -2391,7 +2396,7 @@ main {
     line-height: normal;
 }
 
-.element .cards-6 {
+.cards-6 {
     display: inline-flex;
     align-items: center;
     gap: 25px;
@@ -2399,7 +2404,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .div-30 {
+.div-30 {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-end;
@@ -2409,7 +2414,7 @@ main {
     flex: 0 0 auto;
 }
 
-.element .text-wrapper-58 {
+.text-wrapper-58 {
     position: relative;
     width: fit-content;
     margin-top: -1.00px;
@@ -2421,7 +2426,7 @@ main {
     line-height: normal;
 }
 
-.element .text-wrapper-59 {
+.text-wrapper-59 {
     position: relative;
     width: fit-content;
     font-family: "CoFo Sans-Regular", Helvetica;
@@ -2432,23 +2437,23 @@ main {
     line-height: normal;
 }
 
-.element .line {
+.line {
     position: relative;
     width: 1px;
     height: 34px;
     object-fit: cover;
 }
 
-.element .div-31 {
+.div-31 {
+    width: 100%;
     display: flex;
-    width: 1348px;
     align-items: center;
     justify-content: space-between;
     position: relative;
     flex: 0 0 auto;
 }
 
-.element .right {
+.right {
     display: inline-flex;
     align-items: center;
     gap: 50px;
@@ -2559,7 +2564,7 @@ footer .div-24 .vector-5 {
     color: #0E131A;
 }
 
-.element .text-wrapper-60 {
+.text-wrapper-60 {
     position: relative;
     width: fit-content;
     margin-top: -1.00px;
@@ -2571,14 +2576,14 @@ footer .div-24 .vector-5 {
     line-height: normal;
 }
 
-.element .vector-5 {
+.vector-5 {
     position: relative;
     width: 8px;
     height: 5px;
     margin-right: -1.00px;
 }
 
-.element .frame-15 {
+.frame-15 {
     display: inline-flex;
     align-items: center;
     padding: 7px;
@@ -2589,7 +2594,7 @@ footer .div-24 .vector-5 {
     overflow: hidden;
 }
 
-.element .frame-16 {
+.frame-16 {
     display: flex;
     width: 54px;
     align-items: center;
@@ -2601,7 +2606,7 @@ footer .div-24 .vector-5 {
     border-radius: 10px;
 }
 
-.element .text-wrapper-61 {
+.text-wrapper-61 {
     position: relative;
     width: fit-content;
     margin-top: -1.00px;
@@ -2613,7 +2618,7 @@ footer .div-24 .vector-5 {
     line-height: normal;
 }
 
-.element .frame-17 {
+.frame-17 {
     display: flex;
     width: 54px;
     align-items: center;
@@ -2624,7 +2629,7 @@ footer .div-24 .vector-5 {
     border-radius: 10px;
 }
 
-.element .text-wrapper-62 {
+.text-wrapper-62 {
     position: relative;
     width: fit-content;
     transform: rotate(0.02deg);
@@ -2636,7 +2641,7 @@ footer .div-24 .vector-5 {
     line-height: normal;
 }
 
-.element .text-wrapper-63 {
+.text-wrapper-63 {
     position: relative;
     width: fit-content;
     margin-top: -1.00px;
@@ -2648,8 +2653,457 @@ footer .div-24 .vector-5 {
     line-height: normal;
 }
 
-.element .group-4 {
+.group-4 {
     position: relative;
     width: 63px;
     height: 12.85px;
+}
+
+/* ==========================================================================
+   АДАПТИВНАЯ ВЕРСТКА (Responsive Styles)
+   ========================================================================== */
+
+/* --- 1. Большие десктопы и ноутбуки (до 1440px) --- */
+/* Начинаем делать контейнер "резиновым", как вы и просили */
+@media (max-width: 1440px) {
+
+    .container,
+    .hero .container {
+        width: 90%;
+        max-width: 1360px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .cards-5 {
+        display: flex;
+    }
+
+    .div-3 .p {
+        display: none;
+    }
+
+    .content-9 {
+        gap: 20px;
+    }
+
+    .div-30 {
+        align-items: start;
+    }
+
+    .main {
+        gap: 30px;
+    }
+
+    .columns {
+        gap: 30px;
+    }
+
+    .frame-11 {
+        padding: 52px 42px;
+    }
+}
+
+/* --- 2. Ноутбуки и большие планшеты (до 1200px) --- */
+@media (max-width: 1200px) {
+
+    .image-wrapper img,
+    .img-wrapper img {
+        width: 100%;
+    }
+
+    .text-wrapper-20,
+    .text-wrapper-21,
+    .text-wrapper-22 {
+        font-size: 18px;
+    }
+
+    .text-wrapper-23 {
+        font-size: 28px;
+    }
+
+    .photo-2 {
+        right: -30px;
+    }
+
+    section h2,
+    .text-wrapper-8,
+    .hero .text-wrapper-9 {
+        font-size: 32px;
+    }
+
+    .cards-3 {
+        grid-template-rows: repeat(2, 362px);
+    }
+
+    .news .cards-4 {
+        grid-template-rows: repeat(1, 309px);
+    }
+
+    .hero .text-wrapper-10 {
+        width: 330px;
+        font-size: 14px;
+        right: 20px;
+    }
+
+    .hero .group {
+        left: 20px;
+    }
+
+    .text-wrapper-46 {
+        font-size: 42px;
+    }
+
+    .text-wrapper-41 {
+        font-size: 16px;
+    }
+
+    /* --- Header --- */
+    .navbar {
+        width: auto;
+        gap: 20px;
+    }
+
+    .p {
+        display: none;
+        /* Скрываем второстепенный текст у логотипа */
+    }
+
+    .div-2 {
+        /* Уменьшаем отступы для более компактного вида */
+        gap: 10px;
+    }
+
+    /* --- Слайдеры --- */
+    /* Прячем внешние кнопки навигации, так как им не будет хватать места */
+    .docs .btn,
+    .commits .btn {
+        display: none;
+        /* Рекомендуется заменить на мобильную навигацию (точки) или свайп */
+    }
+
+    /* --- О компании --- */
+    .about-up {
+        gap: 30px;
+        /* Уменьшаем отступ между текстом и картинкой */
+    }
+
+    .div-18:nth-child(2) {
+        width: 100%;
+        /* Убираем странную ширину в 105% */
+    }
+
+    .cards-2 {
+        max-width: 100%;
+    }
+
+    /* --- Footer --- */
+    .main {
+        gap: 60px;
+        /* Уменьшаем отступы в футере */
+    }
+
+    .search-wrapper {
+        max-width: 280px;
+    }
+
+    footer .logo img {
+        width: auto;
+    }
+}
+
+/* --- 3. Планшеты (до 992px) --- */
+@media (max-width: 992px) {
+
+    body {
+        background-color: #fbfbfb;
+    }
+
+    /* --- Header --- */
+    .top {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        display: none;
+    }
+
+    .header .container {
+        gap: 20px;
+    }
+
+    .header .frame,
+    .search-wrapper,
+    .header .icon,
+    .frame-3,
+    .div-wrapper {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        padding: 24px 18px;
+        background-color: #F5F5F5;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .content-wrapper {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .tagler-logotype-CMYK {
+        width: 161px;
+        height: 53px;
+    }
+
+    .hero .group {
+        width: 90%;
+        left: 20px;
+    }
+
+    .hero .div-7,
+    .hero .text-wrapper-9 {
+        font-size: 28px;
+        /* Уменьшаем шрифт заголовка */
+        line-height: 38px;
+    }
+
+    .hero .text-wrapper-10 {
+        display: none;
+        /* Скрываем длинное описание на планшетах */
+    }
+
+    /* --- СЕТКИ: перестраиваем с 3-4 колонок на 2 --- */
+    .div-12 {
+        /* Оборудование */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-4 {
+        /* Партнеры и Новости */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news .cards-4 {
+        grid-template-rows: auto;
+        /* Сбрасываем фиксированную высоту строк */
+    }
+
+    .docs .card {
+        /* Документы */
+        /* На планшете лучше показывать 2 документа, а не 3. Это настраивается в JS слайдера (slidesPerView: 2) */
+    }
+
+    /* --- О компании --- */
+    .about-up {
+        flex-direction: column;
+        /* Ставим картинку над текстом */
+        align-items: center;
+    }
+
+    .rectangle {
+        max-width: 100%;
+    }
+
+    /* --- Сферы применения --- */
+    .cards-3 {
+        grid-template-columns: 1fr;
+        /* Уже можно сделать одну колонку */
+        grid-template-rows: auto;
+    }
+
+    /* --- Footer --- */
+    .main {
+        flex-direction: column;
+        /* Складываем футер в колонку */
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo,
+    .div-28,
+    .div-29 {
+        align-items: center;
+        /* Центрируем контент колонок */
+    }
+
+    .columns {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .div-31 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .right {
+        flex-direction: column;
+    }
+}
+
+/* --- 4. Мобильные устройства (до 768px) --- */
+@media (max-width: 768px) {
+
+    /* --- Общие шрифты --- */
+    h1,
+    .text-wrapper-11,
+    .div-11,
+    .text-wrapper-40 {
+        font-size: 28px;
+        /* Уменьшаем заголовки секций */
+    }
+
+    .hero .div-7,
+    .hero .text-wrapper-9 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    /* --- Header --- */
+    .contacts {
+        flex-direction: column;
+        /* Контакты в столбик */
+        gap: 10px;
+    }
+
+    .frame {
+        height: auto;
+        /* Авто-высота для кнопки каталога */
+        padding: 15px;
+    }
+
+    /* --- Карточка товара в слайдере --- */
+    .frame-4 {
+        flex-direction: column;
+        /* Фото над контентом */
+    }
+
+    .content-2 {
+        width: 100%;
+        /* Контент на всю ширину карточки */
+    }
+
+    /* Для слайдера товаров нужно будет в JS установить slidesPerView: 1 */
+
+    /* --- СЕТКИ: перестраиваем с 2 колонок на 1 --- */
+    .div-12 {
+        /* Оборудование */
+        grid-template-columns: 1fr;
+    }
+
+    .cards-4 {
+        /* Партнеры */
+        grid-template-columns: repeat(2, 1fr);
+        /* Партнеров можно оставить по 2 */
+    }
+
+    .news .cards-4 {
+        /* Новости */
+        grid-template-columns: 1fr;
+    }
+
+    .cards-2 {
+        /* Карточки 'О компании' */
+        grid-template-columns: 1fr;
+    }
+
+    /* --- О компании --- */
+    .TAGLER {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .txt {
+        align-items: center;
+    }
+
+    .text-wrapper-27,
+    .TAGLER-2 {
+        text-align: center;
+    }
+
+    /* --- Документы (слайдер) --- */
+    .docs .card {
+        /* JS: slidesPerView: 1 */
+    }
+
+    /* --- Footer --- */
+    .content-9 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+    }
+}
+
+/* --- 5. Маленькие мобильные устройства (до 576px) --- */
+@media (max-width: 576px) {
+    .container {
+        /* На совсем маленьких экранах делаем отступы меньше */
+        padding: 0 15px;
+    }
+
+    .header .top {
+        padding: 0;
+    }
+
+    /* --- Hero --- */
+    .hero .group {
+        bottom: 20px;
+        left: 15px;
+    }
+
+    .hero .div-wrapper-2,
+    .hero .div-wrapper-3 {
+        padding: 10px;
+    }
+
+    .hero .div-7,
+    .hero .text-wrapper-9 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    /* --- Карточки --- */
+    .div-13,
+    .frame-13,
+    .card-2 {
+        padding: 20px;
+        /* Уменьшаем внутренние отступы у карточек */
+    }
+
+    .text-wrapper-20,
+    .text-wrapper-21,
+    .text-wrapper-22 {
+        font-size: 20px;
+        /* Уменьшаем заголовки в карточках оборудования */
+    }
+
+    .content .btns {
+        grid-template-columns: 1fr;
+        /* Кнопки в карточке товара друг под другом */
+    }
+
+    /* --- СЕТКИ: все в одну колонку --- */
+    .cards-4 {
+        /* Партнеры */
+        grid-template-columns: 1fr;
+    }
+
+    /* --- Footer --- */
+    footer .div-24 {
+        /* Выбор языка */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-dropdown-menu {
+        width: 100%;
+    }
 }
