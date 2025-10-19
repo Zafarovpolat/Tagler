@@ -113,96 +113,118 @@
                         </div>
                     </div>
                 </div>
+                <div class="bar">
+                    <ul class="bar-list">
+                        <li class="bar-item">
+                            <a href=""><img src="./assets/img/Group 444898.svg" alt=""><span>Главная</span></a>
+                        </li>
+                        <li class="bar-item">
+                            <a href=""><img src="./assets/img/category-2-2.svg" alt=""><span>Каталог</span></a>
+                        </li>
+                        <li class="bar-item">
+                            <a href=""><img src="./assets/img/bag-2.svg" alt=""><span>Корзина</span></a>
+                        </li>
+                        <li class="bar-item">
+                            <a href=""><img src="./assets/img/profile.svg" alt=""><span>Профиль</span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
 
-        <section class="hero div-5">
-            <div class="container">
-                <!-- 1. Основной контейнер слайдера. Добавляем класс 'swiper' -->
-                <div class="banner swiper">
-                    <!-- 2. Обязательная обертка для слайдов -->
-                    <div class="swiper-wrapper">
-                        <!-- 3. Первый слайд. Добавляем класс 'swiper-slide' -->
-                        <div class="swiper-slide">
-                            <div class="bg" style="background-image: url(./assets/img/Bg.png);">
-                                <div class="div-6"></div>
-                            </div>
-                            <div class="group">
-                                <div class="div-wrapper-2">
-                                    <h1 class="div-7"><span class="text-wrapper-8">Инновационное</span></h1>
-                                </div>
-                                <div class="div-wrapper-3">
-                                    <div class="text-wrapper-9">лабораторное оборудование</div>
-                                </div>
-                            </div>
-                            <p class="text-wrapper-10">
-                                Надежные решения для медицины, фармацевтики и научных исследований, созданные по
-                                современным
-                                стандартам качества и точности.
-                            </p>
-                        </div>
-
-                        <!-- Второй слайд (копия с измененным текстом) -->
-                        <div class="swiper-slide">
-                            <div class="bg" style="background-image: url('./assets/img/Таглер (15).png');">
-                                <!-- Предположим, другое изображение -->
-                                <div class="div-6"></div>
-                            </div>
-                            <div class="group">
-                                <div class="div-wrapper-2">
-                                    <h1 class="div-7"><span class="text-wrapper-8">Современные</span></h1>
-                                </div>
-                                <div class="div-wrapper-3">
-                                    <div class="text-wrapper-9">медицинские приборы</div>
-                                </div>
-                            </div>
-                            <p class="text-wrapper-10">
-                                Высокотехнологичное оборудование для точной диагностики и эффективного лечения.
-                            </p>
-                        </div>
-
-                        <!-- Третий слайд (копия с измененным текстом) -->
-                        <div class="swiper-slide">
-                            <div class="bg" style="background-image: url('./assets/img/Таглер (15) (1).png');">
-                                <!-- И еще одно -->
-                                <div class="div-6"></div>
-                            </div>
-                            <div class="group">
-                                <div class="div-wrapper-2">
-                                    <h1 class="div-7"><span class="text-wrapper-8">Надежные</span></h1>
-                                </div>
-                                <div class="div-wrapper-3">
-                                    <div class="text-wrapper-9">системы аналитики</div>
-                                </div>
-                            </div>
-                            <p class="text-wrapper-10">
-                                Гарантия качества и точности для самых требовательных научных лабораторий.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. Элементы управления -->
-                <div class="trigger">
-                    <!-- Стрелка влево с классом swiper-button-prev -->
-                    <div class="arrow arrow-left swiper-button-prev">
-                        <img src="./assets/img/arr.svg" alt="Стрелка влево" />
-                    </div>
-
-                    <!-- Контейнер для пагинации с классом swiper-pagination -->
-                    <div class="pagination swiper-pagination" role="navigation" aria-label="Пагинация баннера">
-                        <!-- Swiper сам сгенерирует сюда точки (bullets) -->
-                    </div>
-
-                    <!-- Стрелка вправо с классом swiper-button-next -->
-                    <div class="arrow arrow-right swiper-button-next">
-                        <img src="./assets/img/arr.svg" alt="Стрелка вправо" />
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <main>
+            <section class="hero div-5">
+                <div class="container">
+                    <!-- 1. Основной контейнер слайдера. Добавляем класс 'swiper' -->
+                    <div class="banner swiper">
+                        <!-- 2. Обязательная обертка для слайдов -->
+                        <div class="swiper-wrapper">
+                            <!-- 3. Первый слайд. Добавляем класс 'swiper-slide' -->
+                            <div class="swiper-slide hero-card">
+                                <div class="bg" style="background-image: url(./assets/img/Bg.png);">
+                                    <div class="div-6"></div>
+                                </div>
+                                <div class="hero-text">
+                                    <div class="group">
+                                        <div class="div-wrapper-2">
+                                            <h1 class="div-7"><span class="text-wrapper-8">Инновационное</span></h1>
+                                        </div>
+                                        <div class="div-wrapper-3">
+                                            <div class="text-wrapper-9">лабораторное оборудование</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-wrapper-10">
+                                        Надежные решения для медицины, фармацевтики и научных исследований, созданные по
+                                        современным
+                                        стандартам качества и точности.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Второй слайд (копия с измененным текстом) -->
+                            <div class="swiper-slide hero-card">
+                                <div class="bg" style="background-image: url('./assets/img/Таглер (15).png');">
+                                    <!-- Предположим, другое изображение -->
+                                    <div class="div-6"></div>
+                                </div>
+                                <div class="hero-text">
+                                    <div class="group">
+                                        <div class="div-wrapper-2">
+                                            <h1 class="div-7"><span class="text-wrapper-8">Современные</span></h1>
+                                        </div>
+                                        <div class="div-wrapper-3">
+                                            <div class="text-wrapper-9">медицинские приборы</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-wrapper-10">
+                                        Высокотехнологичное оборудование для точной диагностики и эффективного лечения.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Третий слайд (копия с измененным текстом) -->
+                            <div class="swiper-slide hero-card">
+                                <div class="bg" style="background-image: url('./assets/img/Таглер (15) (1).png');">
+                                    <!-- И еще одно -->
+                                    <div class="div-6"></div>
+                                </div>
+                                <div class="hero-text">
+                                    <div class="group">
+                                        <div class="div-wrapper-2">
+                                            <h1 class="div-7"><span class="text-wrapper-8">Надежные</span></h1>
+                                        </div>
+                                        <div class="div-wrapper-3">
+                                            <div class="text-wrapper-9">системы аналитики</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-wrapper-10">
+                                        Гарантия качества и точности для самых требовательных научных лабораторий.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Элементы управления -->
+                    <div class="trigger">
+                        <!-- Стрелка влево с классом swiper-button-prev -->
+                        <div class="arrow arrow-left swiper-button-prev">
+                            <img src="./assets/img/arr.svg" alt="Стрелка влево" />
+                        </div>
+
+                        <!-- Контейнер для пагинации с классом swiper-pagination -->
+                        <div class="pagination swiper-pagination" role="navigation" aria-label="Пагинация баннера">
+                            <!-- Swiper сам сгенерирует сюда точки (bullets) -->
+                        </div>
+
+                        <!-- Стрелка вправо с классом swiper-button-next -->
+                        <div class="arrow arrow-right swiper-button-next">
+                            <img src="./assets/img/arr.svg" alt="Стрелка вправо" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="products div-8">
                 <div class="container">
                     <div class="titlle">
@@ -340,7 +362,7 @@
                             </div>
                             <div class="frame-4 swiper-slide">
                                 <article class="content">
-                                    <div class="photo"><img class="image-2" src="./assets/img/image 1819.png"
+                                    <div class="photo"><img class="image" src="./assets/img/image 1819.png"
                                             alt="Штатив для дозаторов ТАГЛЕР" loading="lazy" /></div>
                                     <div class="content-2">
                                         <div class="content-3">
@@ -381,7 +403,7 @@
                             </div>
                             <div class="frame-4 swiper-slide">
                                 <article class="content">
-                                    <div class="photo"><img class="image-2" src="./assets/img/image 1819.png"
+                                    <div class="photo"><img class="image" src="./assets/img/image 1819.png"
                                             alt="Штатив для дозаторов ТАГЛЕР" loading="lazy" /></div>
                                     <div class="content-2">
                                         <div class="content-3">
@@ -816,28 +838,39 @@
                     <h2 class="div-11">
                         <span class="text-wrapper-40">Наши Клиенты</span>
                     </h2>
-                    <div class="cards-4" role="list">
-                        <div class="frame-wrapper" role="listitem">
-                            <a href="" class="frame-11"> <img class="sk-block-ru-2" src="./assets/img/Frame 359.svg"
-                                    alt="Логотип клиента 1" loading="lazy" /></a>
+                    <div class="cards-4 swiper" role="list">
+                        <div class="swiper-wrapper">
+                            <div class="frame-wrapper swiper-slide" role="listitem">
+                                <a href="" class="frame-11"> <img class="sk-block-ru-2" src="./assets/img/Frame 359.svg"
+                                        alt="Логотип клиента 1" loading="lazy" /></a>
+                            </div>
+                            <div class="frame-wrapper swiper-slide" role="listitem">
+                                <a href="" class="frame-11"> <img class="sk-block-ru-2" src="./assets/img/Frame 359.svg"
+                                        alt="Логотип клиента 2" loading="lazy" /></a>
+                            </div>
+                            <div class="frame-wrapper swiper-slide" role="listitem">
+                                <a href="" class="frame-11"> <img class="sk-block-ru-2" src="./assets/img/Frame 359.svg"
+                                        alt="Логотип клиента 3" loading="lazy" /></a>
+                            </div>
+                            <div class="frame-wrapper swiper-slide" role="listitem">
+                                <a href="" class="frame-11"><img class="sk-block-ru-2" src="./assets/img/Frame 359.svg"
+                                        alt="Логотип клиента 4" loading="lazy" /></a>
+                            </div>
                         </div>
-                        <div class="frame-wrapper" role="listitem">
-                            <a href="" class="frame-11"> <img class="sk-block-ru-2" src="./assets/img/Frame 359.svg"
-                                    alt="Логотип клиента 2" loading="lazy" /></a>
-                        </div>
-                        <div class="frame-wrapper" role="listitem">
-                            <a href="" class="frame-11"> <img class="sk-block-ru-2" src="./assets/img/Frame 359.svg"
-                                    alt="Логотип клиента 3" loading="lazy" /></a>
-                        </div>
-                        <div class="frame-wrapper" role="listitem">
-                            <a href="" class="frame-11"><img class="sk-block-ru-2" src="./assets/img/Frame 359.svg"
-                                    alt="Логотип клиента 4" loading="lazy" /></a>
-                        </div>
+                    </div>
+
+                    <div class="btns">
+                        <button class="btn prev swiper-button-disabled" aria-label="Previous slide" disabled=""
+                            tabindex="-1" aria-controls="swiper-wrapper-eaaf366410042b849" aria-disabled="true"><img
+                                src="./assets/img/arr.svg" alt="Стрелка влево"></button>
+                        <button class="btn next" aria-label="Next slide" tabindex="0"
+                            aria-controls="swiper-wrapper-eaaf366410042b849" aria-disabled="false"><img
+                                src="./assets/img/arr.svg" alt="Стрелка вправо"></button>
                     </div>
                 </div>
             </section>
 
-            <div class="commits div-26">
+            <section class="commits div-26">
                 <div class="container">
                     <div class="titlle-4">
                         <h2 class="text-wrapper-11">Наши клиенты о нас</h2>
@@ -1003,63 +1036,81 @@
                         <button class="btn btn-right" aria-label="Следующий отзыв"><img src="./assets/img/arr.svg"
                                 alt="Стрелка вправо" loading="lazy" /></button>
                     </div>
+                    <div class="btns">
+                        <button class="btn prev swiper-button-disabled" aria-label="Previous slide" disabled=""
+                            tabindex="-1" aria-controls="swiper-wrapper-eaaf366410042b849" aria-disabled="true"><img
+                                src="./assets/img/arr.svg" alt="Стрелка влево"></button>
+                        <button class="btn next" aria-label="Next slide" tabindex="0"
+                            aria-controls="swiper-wrapper-eaaf366410042b849" aria-disabled="false"><img
+                                src="./assets/img/arr.svg" alt="Стрелка вправо"></button>
+                    </div>
                 </div>
-            </div>
+            </section>
 
             <section class="news div-27">
                 <div class="container">
                     <h2 class="div-11">Новости</h2>
-                    <div class="cards-4">
-                        <article class="frame-13">
-                            <div class="content-7">
-                                <div class="titlle-6">
-                                    <h3 class="text-wrapper-45">Новая линейка оборудования Tagler</h3>
-                                </div>
-                                <div class="view">
-                                    <div class="view-2">
-                                        <time datetime="2025-08-30">
-                                            <div class="text-wrapper-46">30</div>
-                                            <div class="text-wrapper-47">.08</div>
-                                        </time>
+                    <div class="cards-4 swiper">
+                        <div class="swiper-wrapper">
+                            <article class="frame-13 swiper-slide">
+                                <div class="content-7">
+                                    <div class="titlle-6">
+                                        <h3 class="text-wrapper-45">Новая линейка оборудования Tagler</h3>
                                     </div>
-                                    <div class="text-wrapper-48">2025</div>
+                                    <div class="view">
+                                        <div class="view-2">
+                                            <time datetime="2025-08-30">
+                                                <div class="text-wrapper-46">30</div>
+                                                <div class="text-wrapper-47">.08</div>
+                                            </time>
+                                        </div>
+                                        <div class="text-wrapper-48">2025</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
+                            </article>
 
-                        <article class="frame-13">
-                            <div class="content-7">
-                                <div class="titlle-6">
-                                    <h3 class="text-wrapper-45">Новая линейка оборудования Tagler</h3>
-                                </div>
-                                <div class="view">
-                                    <div class="view-2">
-                                        <time datetime="2025-08-30">
-                                            <div class="text-wrapper-46">30</div>
-                                            <div class="text-wrapper-47">.08</div>
-                                        </time>
+                            <article class="frame-13 swiper-slide">
+                                <div class="content-7">
+                                    <div class="titlle-6">
+                                        <h3 class="text-wrapper-45">Новая линейка оборудования Tagler</h3>
                                     </div>
-                                    <div class="text-wrapper-48">2025</div>
+                                    <div class="view">
+                                        <div class="view-2">
+                                            <time datetime="2025-08-30">
+                                                <div class="text-wrapper-46">30</div>
+                                                <div class="text-wrapper-47">.08</div>
+                                            </time>
+                                        </div>
+                                        <div class="text-wrapper-48">2025</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
+                            </article>
 
-                        <article class="frame-13">
-                            <div class="content-7">
-                                <div class="titlle-6">
-                                    <h3 class="text-wrapper-45">Новая линейка оборудования Tagler</h3>
-                                </div>
-                                <div class="view">
-                                    <div class="view-2">
-                                        <time datetime="2025-08-30">
-                                            <div class="text-wrapper-46">30</div>
-                                            <div class="text-wrapper-47">.08</div>
-                                        </time>
+                            <article class="frame-13 swiper-slide">
+                                <div class="content-7">
+                                    <div class="titlle-6">
+                                        <h3 class="text-wrapper-45">Новая линейка оборудования Tagler</h3>
                                     </div>
-                                    <div class="text-wrapper-48">2025</div>
+                                    <div class="view">
+                                        <div class="view-2">
+                                            <time datetime="2025-08-30">
+                                                <div class="text-wrapper-46">30</div>
+                                                <div class="text-wrapper-47">.08</div>
+                                            </time>
+                                        </div>
+                                        <div class="text-wrapper-48">2025</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="btn prev swiper-button-disabled" aria-label="Previous slide" disabled=""
+                            tabindex="-1" aria-controls="swiper-wrapper-eaaf366410042b849" aria-disabled="true"><img
+                                src="./assets/img/arr.svg" alt="Стрелка влево"></button>
+                        <button class="btn next" aria-label="Next slide" tabindex="0"
+                            aria-controls="swiper-wrapper-eaaf366410042b849" aria-disabled="false"><img
+                                src="./assets/img/arr.svg" alt="Стрелка вправо"></button>
                     </div>
                 </div>
             </section>
@@ -1265,7 +1316,7 @@
                 breakpoints: {
                     // когда ширина экрана <= 320px
                     320: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                         spaceBetween: 10
                     },
                     // когда ширина экрана <= 768px
@@ -1306,7 +1357,7 @@
                 breakpoints: {
                     // когда ширина экрана <= 320px
                     320: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                         spaceBetween: 10
                     },
                     // когда ширина экрана <= 768px
@@ -1350,6 +1401,57 @@
                     // когда ширина экрана <= 320px
                     320: {
                         slidesPerView: 1,
+                        spaceBetween: 10,
+                        navigation: {
+                            nextEl: '.commits .btn.next',
+                            prevEl: '.commits .btn.prev',
+                        },
+                    },
+                    // когда ширина экрана <= 768px
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                        navigation: {
+                            nextEl: '.commits .btn.next',
+                            prevEl: '.commits .btn.prev',
+                        },
+                    },
+                    // когда ширина экрана <= 1024px
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    // когда ширина экрана <= 1200px
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.partners .swiper', {
+                // Указываем, сколько слайдов будет видно одновременно
+                slidesPerView: 2,
+                // Расстояние между слайдами
+                spaceBetween: 20,
+
+                loop: true,
+
+                // Подключаем ваши кастомные кнопки навигации
+                navigation: {
+                    nextEl: '.partners .btn.next',
+                    prevEl: '.partners .btn.prev',
+                },
+
+                // Настройки для разных размеров экрана (адаптивность)
+                breakpoints: {
+                    // когда ширина экрана <= 320px
+                    320: {
+                        slidesPerView: 2,
                         spaceBetween: 10
                     },
                     // когда ширина экрана <= 768px
@@ -1369,6 +1471,49 @@
                     }
                 }
             });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.innerWidth < 768) {
+                const swiper = new Swiper('.news .swiper', {
+                    // Указываем, сколько слайдов будет видно одновременно
+                    slidesPerView: 2,
+                    // Расстояние между слайдами
+                    spaceBetween: 20,
+
+                    // Подключаем ваши кастомные кнопки навигации
+                    navigation: {
+                        nextEl: '.news .btn.next',
+                        prevEl: '.news .btn.prev',
+                    },
+
+                    // Настройки для разных размеров экрана (адаптивность)
+                    breakpoints: {
+                        // когда ширина экрана <= 320px
+                        320: {
+                            slidesPerView: 2,
+                            spaceBetween: 10
+                        },
+                        // когда ширина экрана <= 768px
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 20
+                        },
+                        // когда ширина экрана <= 1024px
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 20
+                        },
+                        // когда ширина экрана <= 1200px
+                        1200: {
+                            slidesPerView: 3,
+                            spaceBetween: 20
+                        }
+                    }
+                });
+            }
         });
     </script>
 

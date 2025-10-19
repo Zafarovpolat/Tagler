@@ -643,6 +643,10 @@ body {
     display: none;
 }
 
+.bar {
+    display: none;
+}
+
 /* Ваши оригинальные стили (удален префикс  для простоты) */
 .hero {
     z-index: 1;
@@ -697,11 +701,7 @@ body {
 }
 
 .hero .group {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    width: 536px;
-    height: 148px;
+    max-width: 536px;
 }
 
 .hero .div-wrapper-2 {
@@ -711,11 +711,11 @@ body {
     justify-content: center;
     gap: 10px;
     padding: 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: #00b4a0;
     border-radius: 15px;
+    transform: translateY(15px);
+    position: relative;
+    z-index: 1;
 }
 
 .hero .div-7 {
@@ -745,13 +745,12 @@ body {
     justify-content: center;
     gap: 10px;
     padding: 15px;
-    position: absolute;
-    top: 73px;
-    left: 0;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow:
         0px -3px 6px #0000001a, 0px -11px 11px #00000017, 0px -24px 14px #0000000d, 0px -42px 17px #00000003, 0px -66px 18px transparent;
+    position: relative;
+    z-index: 2;
 }
 
 .hero .text-wrapper-9 {
@@ -768,16 +767,28 @@ body {
 }
 
 .hero .text-wrapper-10 {
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-    width: 399px;
+    max-width: 339px;
     font-size: 16px;
     line-height: normal;
-    font-family: "CoFo Sans-Medium", Helvetica;
+    font-family: "CoFo Sans-Regular", Helvetica;
     font-weight: 500;
     color: #ffffff;
     letter-spacing: 0;
+    position: relative;
+}
+
+.hero-text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+}
+
+.hero-card {
+    display: flex;
+    align-items: end;
+    padding: 0 40px 40px;
 }
 
 /* Расположение блока управления */
@@ -1558,7 +1569,7 @@ main {
     align-self: stretch;
     font-size: 16px;
     line-height: 21px;
-    font-family: "CoFo Sans-Medium", Helvetica;
+    font-family: "CoFo Sans-Regular", Helvetica;
     font-weight: 500;
     color: #ffffff;
     letter-spacing: 0;
@@ -1776,9 +1787,8 @@ main {
 }
 
 .frame-9 {
-    width: 133.01px;
+    width: fit-content;
     display: inline-flex;
-    height: 44.03px;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -1844,6 +1854,10 @@ main {
     align-self: stretch;
     width: 100%;
     flex: 0 0 auto;
+}
+
+.partners .btns {
+    display: none;
 }
 
 .frame-wrapper {
@@ -2048,6 +2062,10 @@ a:hover .sk-block-ru-2 {
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
+}
+
+.news .btns {
+    display: none;
 }
 
 .news .cards-4 {
@@ -2741,13 +2759,12 @@ footer .div-24 .vector-5 {
     }
 
     .hero .text-wrapper-10 {
-        width: 330px;
+        width: 300px;
         font-size: 14px;
-        right: 20px;
     }
 
-    .hero .group {
-        left: 20px;
+    .hero-card {
+        padding: 0 20px 40px;
     }
 
     .text-wrapper-46 {
@@ -2857,9 +2874,26 @@ footer .div-24 .vector-5 {
         height: 53px;
     }
 
+    .tagler-logotype-CMYK img {
+        width: 100%;
+        height: 100%;
+    }
+
     .hero .group {
         width: 90%;
         left: 20px;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .cards-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .text-wrapper-34 {
+        display: none;
     }
 
     .hero .div-7,
@@ -2870,8 +2904,30 @@ footer .div-24 .vector-5 {
     }
 
     .hero .text-wrapper-10 {
-        display: none;
-        /* Скрываем длинное описание на планшетах */
+        max-width: 260px;
+    }
+
+    .partners .btns {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .commits .container>.btns {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .commits .container>.btns>.btn {
+        display: flex;
+        position: static;
+    }
+
+    .frame-11 {
+        padding: 32px 22px;
+    }
+
+    .cards-4 {
+        overflow: visible !important;
     }
 
     /* --- СЕТКИ: перестраиваем с 3-4 колонок на 2 --- */
@@ -2880,19 +2936,9 @@ footer .div-24 .vector-5 {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .cards-4 {
-        /* Партнеры и Новости */
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .news .cards-4 {
-        grid-template-rows: auto;
+        grid-template-rows: repeat(1, 237px);
         /* Сбрасываем фиксированную высоту строк */
-    }
-
-    .docs .card {
-        /* Документы */
-        /* На планшете лучше показывать 2 документа, а не 3. Это настраивается в JS слайдера (slidesPerView: 2) */
     }
 
     /* --- О компании --- */
@@ -2928,6 +2974,10 @@ footer .div-24 .vector-5 {
         /* Центрируем контент колонок */
     }
 
+    .list-2 {
+        align-items: center;
+    }
+
     .columns {
         flex-direction: column;
         gap: 30px;
@@ -2940,25 +2990,634 @@ footer .div-24 .vector-5 {
 
     .right {
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .content-9 {
+        justify-content: center;
+    }
+
+    .bar {
+        z-index: 10000;
+        display: flex;
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        padding: 16px;
+        background-color: white;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        width: 90%;
+    }
+
+    .bar-list {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .bar-item a {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "CoFo Sans-Regular", Helvetica;
+        color: #909195;
+    }
+
+    .footer {
+        padding-bottom: 111px;
+    }
+
+    .hero .div-wrapper-2 {
+        height: 78px;
+    }
+
+    .hero .banner {
+        height: 600px;
+    }
+
+    .hero-text {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .hero .text-wrapper-10 {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hero .div-wrapper-2,
+    .hero .div-wrapper-3 {
+        padding: 10px;
     }
 }
 
 /* --- 4. Мобильные устройства (до 768px) --- */
 @media (max-width: 768px) {
 
+    .header {
+        margin-top: 6px;
+    }
+
+    .hero .group {
+        flex-direction: column;
+        display: flex;
+        align-items: start;
+    }
+
+    .hero .div-wrapper-2 {
+        height: 58px;
+        transform: translateY(10px);
+        border-radius: 20px 20px 0 0;
+    }
+
     /* --- Общие шрифты --- */
     h1,
     .text-wrapper-11,
     .div-11,
-    .text-wrapper-40 {
-        font-size: 28px;
+    .text-wrapper-40,
+    h2 {
+        font-size: 24px;
         /* Уменьшаем заголовки секций */
     }
 
+    .hero .container {
+        height: 459px;
+    }
+
     .hero .div-7,
-    .hero .text-wrapper-9 {
+    .hero .text-wrapper-9,
+    .hero .text-wrapper-8 {
         font-size: 24px;
         line-height: 32px;
+    }
+
+    .hero-card {
+        padding: 0 11px 26px;
+    }
+
+    .hero .trigger {
+        margin-bottom: 11px;
+    }
+
+    .products {
+        margin-top: 50px;
+    }
+
+    .products .titlle .btns {
+        display: none;
+    }
+
+    .cards {
+        margin-top: 20px;
+    }
+
+    .frame-4 {
+        padding: 5px 10px 10px;
+    }
+
+    .image {
+        width: 144px;
+        height: 160px;
+        padding: 8px 22px;
+    }
+
+    .frame-4 .content {
+        gap: 10px;
+    }
+
+    .text-wrapper-12 {
+        font-size: 12px;
+    }
+
+    .vuesax-bulk-verify {
+        width: 16px;
+        height: 16px;
+    }
+
+    .div-9 {
+        gap: 3px;
+    }
+
+    .text {
+        gap: 4px;
+    }
+
+    .text-wrapper-13 {
+        font-size: 18px;
+    }
+
+    .text-wrapper-14 {
+        font-size: 14px;
+    }
+
+    .content-3 {
+        gap: 11px;
+    }
+
+    .text-wrapper-15 {
+        font-size: 20px;
+    }
+
+    .price {
+        gap: 7px;
+    }
+
+    .text-wrapper-16 {
+        font-size: 15px;
+    }
+
+    .content .btns {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .btns-2 button {
+        padding: 16px 0;
+    }
+
+    .text-wrapper-17,
+    .text-wrapper-18 {
+        font-size: 14px;
+    }
+
+    .frame-5 {
+        margin-top: 17px;
+    }
+
+    .equipments {
+        margin-top: 50px;
+    }
+
+    .equipments .container {
+        gap: 23px;
+    }
+
+    .div-12 {
+        gap: 5px;
+    }
+
+    .div-13 {
+        padding: 12px 9px 25px;
+        border-radius: 18px;
+        gap: 9px 4px;
+    }
+
+    .text-wrapper-20,
+    .text-wrapper-21,
+    .text-wrapper-22 {
+        font-size: 16px;
+        padding-left: 0;
+    }
+
+    .text-wrapper-23 {
+        font-size: 18px;
+    }
+
+    .div-13 .btn {
+        width: 34px;
+        height: 34px;
+    }
+
+    .btn img {
+        width: 6px;
+    }
+
+    .image-wrapper {
+        border-radius: 14px;
+        padding: 20px;
+    }
+
+    .image-wrapper img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .photo-2 {
+        right: -100px;
+        bottom: -30px;
+    }
+
+    .image-6 {
+        margin-top: 12px;
+        width: 80%;
+    }
+
+    .about {
+        padding: 24px 0;
+        margin-top: 50px;
+    }
+
+    .TAGLER {
+        font-size: 24px;
+    }
+
+    .text-wrapper-27,
+    .TAGLER-2 {
+        font-size: 14px;
+    }
+
+    .cards-2 {
+        margin-top: 21px;
+        gap: 6px;
+    }
+
+    .text-wrapper-28 {
+        font-size: 24px;
+    }
+
+    .text-wrapper-29 {
+        font-size: 14px;
+    }
+
+    .usage {
+        margin-top: 50px;
+    }
+
+    .usage .container {
+        gap: 20px;
+    }
+
+    .cards-3 {
+        grid-template-rows: repeat(4, 228px);
+        gap: 10px;
+    }
+
+    .text-2 {
+        bottom: 16px;
+        left: 13px;
+        gap: 8px;
+    }
+
+    .frame-7 {
+        border-radius: 14px;
+    }
+
+    .text-wrapper-32 {
+        font-size: 18px;
+    }
+
+    .text-wrapper-33 {
+        font-size: 14px;
+    }
+
+    .docs {
+        margin-top: 50px;
+    }
+
+    .text-wrapper-35 {
+        font-size: 14px;
+    }
+
+    .docs .container {
+        gap: 20px;
+    }
+
+    .docs .card {
+        padding: 10px;
+        border-radius: 16px;
+    }
+
+    .text-wrapper-36 {
+        font-size: 12px;
+    }
+
+    .frame-8,
+    .frame-9 {
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .titlle-3 {
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .text-wrapper-37 {
+        font-size: 14px;
+    }
+
+    .image-8 {
+        width: 82px;
+    }
+
+    .vuesax-bulk-document-wrapper {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vuesax-bulk-document {
+        width: 18px;
+        height: 18px;
+        position: static;
+    }
+
+    .text-wrapper-38 {
+        font-size: 12px;
+    }
+
+    .group-3 {
+        height: auto;
+    }
+
+    .partners {
+        margin-top: 50px;
+    }
+
+    .partners .container {
+        gap: 16px;
+    }
+
+    .div-11 {
+        margin-bottom: 4px;
+    }
+
+    .partners .btns {
+        gap: 5px;
+    }
+
+    .btn {
+        width: 48px;
+        height: 48px;
+    }
+
+    .commits {
+        margin-top: 50px;
+    }
+
+    .commits .container {
+        gap: 14px;
+    }
+
+    .commits .titlle-4 {
+        margin-bottom: 6px;
+    }
+
+    .cards-5 {
+        overflow: visible;
+    }
+
+    .card-2 {
+        padding: 15px 12px;
+        border-radius: 16px;
+    }
+
+    .text-wrapper-41 {
+        font-size: 14px;
+    }
+
+    .content-6 {
+        gap: 20px;
+    }
+
+    .block {
+        padding: 15px 20px;
+        height: 76px;
+    }
+
+    .text-wrapper-42,
+    .text-wrapper-44 {
+        font-size: 14px;
+    }
+
+    .text-wrapper-43 {
+        font-size: 12px;
+    }
+
+    .star {
+        width: 15px;
+    }
+
+    .commits .btns {
+        gap: 4px;
+    }
+
+    .docs .btn,
+    .commits .btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+    }
+
+    .news {
+        margin-top: 50px;
+    }
+
+    .news .container {
+        gap: 14px;
+    }
+
+    .frame-13 {
+        border-radius: 16px;
+        padding: 10px;
+    }
+
+    .titlle-6 {
+        padding: 11px 15px;
+    }
+
+    .view-2 time {
+        gap: 6px;
+    }
+
+    .text-wrapper-47,
+    .text-wrapper-48 {
+        font-size: 14px;
+    }
+
+    .text-wrapper-46 {
+        font-size: 30px;
+    }
+
+    .news .btns {
+        display: flex;
+        margin: auto;
+        gap: 6px;
+    }
+
+    .footer {
+        margin-top: 50px;
+        padding-top: 25px;
+    }
+
+    footer .logo img {
+        width: 145px;
+        height: auto;
+    }
+
+    .main {
+        align-items: start;
+        gap: 25px;
+    }
+
+    .logo {
+        align-items: start;
+        gap: 10px;
+    }
+
+    .text-wrapper-49 {
+        text-align: left;
+    }
+
+    .text-wrapper-49,
+    .text-wrapper-50,
+    .text-wrapper-51 {
+        font-size: 14px;
+    }
+
+    .text-wrapper-52 {
+        align-self: start;
+        font-size: 15px;
+    }
+
+    .text-wrapper-53,
+    .text-wrapper-54,
+    .text-wrapper-55 {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .list,
+    .list-2 {
+        text-align: left;
+        align-items: start;
+    }
+
+    .div-28,
+    .div-29 {
+        gap: 20px;
+        align-items: start;
+    }
+
+    .columns {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-6 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 10px;
+    }
+
+    .cards-6>img {
+        display: none;
+    }
+
+    .content-wrapper-2 {
+        height: auto;
+        align-items: start;
+        padding: 13px 10px;
+        border-radius: 8px;
+    }
+
+    .links {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .text-wrapper-57,
+    .text-wrapper-60,
+    .text-wrapper-61 {
+        font-size: 14px;
+    }
+
+    .content-8 {
+        gap: 25px;
+    }
+
+    .content-9 {
+        gap: 10px;
+    }
+
+    .text-wrapper-58,
+    .text-wrapper-5 {
+        font-size: 15px;
+    }
+
+    .text-wrapper-59 {
+        font-size: 13px;
+    }
+
+    .div-31 {
+        align-items: start;
+        gap: 10px;
+    }
+
+    .right {
+        gap: 10px;
+    }
+
+    .socials-item a {
+        width: 34px;
+        height: 34px;
+    }
+
+    .footer .div-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .logos {
+        grid-column: 1 / 3;
+    }
+
+    .text-wrapper-62 {
+        grid-column: 1 / 3;
     }
 
     /* --- Header --- */
@@ -2987,12 +3646,6 @@ footer .div-24 .vector-5 {
 
     /* Для слайдера товаров нужно будет в JS установить slidesPerView: 1 */
 
-    /* --- СЕТКИ: перестраиваем с 2 колонок на 1 --- */
-    .div-12 {
-        /* Оборудование */
-        grid-template-columns: 1fr;
-    }
-
     .cards-4 {
         /* Партнеры */
         grid-template-columns: repeat(2, 1fr);
@@ -3009,19 +3662,9 @@ footer .div-24 .vector-5 {
         grid-template-columns: 1fr;
     }
 
-    /* --- О компании --- */
-    .TAGLER {
-        font-size: 26px;
-        text-align: center;
-    }
 
     .txt {
         align-items: center;
-    }
-
-    .text-wrapper-27,
-    .TAGLER-2 {
-        text-align: center;
     }
 
     /* --- Документы (слайдер) --- */
@@ -3032,78 +3675,169 @@ footer .div-24 .vector-5 {
     /* --- Footer --- */
     .content-9 {
         flex-direction: column;
-        gap: 20px;
+        display: flex;
+        justify-content: start;
     }
 
     .links {
         flex-direction: column;
-        gap: 15px;
         height: auto;
     }
 }
 
 /* --- 5. Маленькие мобильные устройства (до 576px) --- */
 @media (max-width: 576px) {
-    .container {
-        /* На совсем маленьких экранах делаем отступы меньше */
-        padding: 0 15px;
+
+    .text-wrapper-8 {
+        font-size: 22px;
     }
 
-    .header .top {
-        padding: 0;
+    .text-wrapper-10 {
+        font-size: 13px;
     }
 
-    /* --- Hero --- */
-    .hero .group {
-        bottom: 20px;
-        left: 15px;
+    .hero-text {
+        gap: 10px;
     }
 
-    .hero .div-wrapper-2,
-    .hero .div-wrapper-3 {
-        padding: 10px;
+    .text-wrapper-11,
+    .div-11 {
+        font-size: 22px;
     }
 
-    .hero .div-7,
-    .hero .text-wrapper-9 {
-        font-size: 20px;
-        line-height: 28px;
+    .text-wrapper-13 {
+        font-size: 15px;
     }
 
-    /* --- Карточки --- */
-    .div-13,
-    .frame-13,
-    .card-2 {
-        padding: 20px;
-        /* Уменьшаем внутренние отступы у карточек */
+    .text-wrapper-14 {
+        width: fit-content;
+        font-size: 12px;
+    }
+
+    .text-wrapper-15 {
+        font-size: 18px;
+    }
+
+    .price {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .text-wrapper-16 {
+        font-size: 12px;
+    }
+
+    .text-wrapper-17,
+    .text-wrapper-18,
+    .text-wrapper-19 {
+        font-size: 12px;
     }
 
     .text-wrapper-20,
     .text-wrapper-21,
     .text-wrapper-22 {
+        font-size: 14px;
+    }
+
+    .text-wrapper-23 {
+        font-size: 16px;
+    }
+
+    .photo-2 {
+        bottom: -60px;
+        right: -120px;
+    }
+
+    .TAGLER {
         font-size: 20px;
-        /* Уменьшаем заголовки в карточках оборудования */
     }
 
-    .content .btns {
-        grid-template-columns: 1fr;
-        /* Кнопки в карточке товара друг под другом */
+    .text-wrapper-28 {
+        font-size: 23px;
     }
 
-    /* --- СЕТКИ: все в одну колонку --- */
-    .cards-4 {
-        /* Партнеры */
-        grid-template-columns: 1fr;
+    .text-wrapper-29 {
+        font-size: 13px;
     }
 
-    /* --- Footer --- */
-    footer .div-24 {
-        /* Выбор языка */
-        width: 100%;
-        box-sizing: border-box;
+    .text-wrapper-32 {
+        font-size: 16px;
     }
 
-    .footer-dropdown-menu {
-        width: 100%;
+    .text-wrapper-33 {
+        font-size: 13px;
+    }
+
+    .text-2 {
+        width: fit-content;
+    }
+
+    .text-wrapper-35 {
+        font-size: 13px;
+    }
+
+    .frame-10 {
+        width: fit-content;
+        height: auto;
+        padding: 10px;
+        display: flex;
+    }
+
+    .text-wrapper-36,
+    .text-wrapper-38,
+    .text-wrapper-39 {
+        font-size: 11px;
+    }
+
+    .text-wrapper-37 {
+        font-size: 13px;
+    }
+
+    .text-wrapper-45 {
+        font-size: 13px;
+    }
+
+    .text-wrapper-47,
+    .text-wrapper-48 {
+        font-size: 12px;
+    }
+
+    .text-wrapper-49,
+    .text-wrapper-50,
+    .text-wrapper-51 {
+        font-size: 12px;
+    }
+
+    .text-wrapper-53,
+    .text-wrapper-54,
+    .text-wrapper-55,
+    .text-wrapper-56 {
+        font-size: 13px;
+    }
+
+    .text-wrapper-57 {
+        font-size: 13px;
+    }
+
+    .text-wrapper-58 {
+        font-size: 14px;
+    }
+
+    .text-wrapper-59 {
+        font-size: 12px;
+    }
+
+    .text-wrapper-60,
+    .footer-dropdown-menu li a {
+        font-size: 13px;
+    }
+
+    .text-wrapper-61 {
+        font-size: 12px;
+    }
+
+    .text-wrapper-62,
+    .text-wrapper-63 {
+        font-size: 12px;
     }
 }
