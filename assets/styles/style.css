@@ -2138,7 +2138,7 @@ a:hover .sk-block-ru-2 {
 
 .view-2 time {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     align-items: end;
 }
 
@@ -3094,7 +3094,7 @@ footer .div-24 .vector-5 {
 
     /* Блокировка прокрутки основной страницы, когда меню открыто */
     body.no-scroll {
-        overflow: hidden;
+        overflow-y: hidden;
     }
 
     .mobile-menu__header {
