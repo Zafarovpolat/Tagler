@@ -129,6 +129,57 @@
                         </li>
                     </ul>
                 </div>
+                <div class="mobile-menu" id="mobile-menu">
+                    <div class="mobile-menu__header">
+                        <a class="tagler-logotype-CMYK" href="./index.html"><img
+                                src="./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg" alt="Логотип Таглер" /></a>
+                        <button class="mobile-menu__close" aria-label="Закрыть меню">&times;</button>
+                    </div>
+
+                    <div class="mobile-menu__content">
+                        <!-- Поиск из .div-2 -->
+                        <div class="search-wrapper">
+                            <div class="frame-2">
+                                <label for="mobile-search-input" class="visually-hidden">Поиск нужного товара</label>
+                                <img class="vector" src="./assets/img/Vector.svg" alt="" />
+                                <input type="search" id="mobile-search-input" class="search-input"
+                                    placeholder="Поиск нужного товара...">
+                            </div>
+                        </div>
+
+                        <!-- Каталог из .div-2 -->
+                        <a href="" class="mobile-menu__catalog">
+                            <img class="vuesax-bulk-category" src="./assets/img/category-2.svg" alt="Иконка каталога" />
+                            <div class="text-wrapper-3">Каталог</div>
+                        </a>
+
+                        <!-- Навигация из .top -->
+                        <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+                            <a href="./index.html" class="mobile-menu__link" aria-current="page">Главная</a>
+                            <a href="" class="mobile-menu__link">О Таглер</a>
+                            <a href="" class="mobile-menu__link">Продукция Таглер</a>
+                            <a href="" class="mobile-menu__link">Где Купить?</a>
+                            <a href="" class="mobile-menu__link">Дилерам</a>
+                            <a href="" class="mobile-menu__link">Контакты</a>
+                        </nav>
+
+                        <!-- Авторизация из .top -->
+                        <div class="mobile-menu__auth">
+                            <a href="" class="div">Войти</a>
+                            <a href="" class="text-wrapper-2">Зарегстрироваться</a>
+                        </div>
+
+                        <!-- Контакты из .div-2 -->
+                        <div class="mobile-menu__contacts">
+                            <div class="div-wrapper">
+                                <a href="tel:+74994445174" class="text-wrapper-7">+7 (499) 444-51-74</a>
+                            </div>
+                            <div class="frame-3">
+                                <a href="mailto:info@tagler.ru" class="text-wrapper-6">Написать нам</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -1476,46 +1527,86 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            if (window.innerWidth < 768) {
-                const swiper = new Swiper('.news .swiper', {
-                    // Указываем, сколько слайдов будет видно одновременно
-                    slidesPerView: 2,
-                    // Расстояние между слайдами
-                    spaceBetween: 20,
+            const swiper = new Swiper('.news .swiper', {
+                // Указываем, сколько слайдов будет видно одновременно
+                slidesPerView: 2,
+                // Расстояние между слайдами
+                spaceBetween: 20,
 
-                    // Подключаем ваши кастомные кнопки навигации
-                    navigation: {
-                        nextEl: '.news .btn.next',
-                        prevEl: '.news .btn.prev',
+                // Подключаем ваши кастомные кнопки навигации
+                navigation: {
+                    nextEl: '.news .btn.next',
+                    prevEl: '.news .btn.prev',
+                },
+
+                // Настройки для разных размеров экрана (адаптивность)
+                breakpoints: {
+                    // когда ширина экрана <= 320px
+                    320: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
                     },
-
-                    // Настройки для разных размеров экрана (адаптивность)
-                    breakpoints: {
-                        // когда ширина экрана <= 320px
-                        320: {
-                            slidesPerView: 2,
-                            spaceBetween: 10
-                        },
-                        // когда ширина экрана <= 768px
-                        768: {
-                            slidesPerView: 2,
-                            spaceBetween: 20
-                        },
-                        // когда ширина экрана <= 1024px
-                        1024: {
-                            slidesPerView: 3,
-                            spaceBetween: 20
-                        },
-                        // когда ширина экрана <= 1200px
-                        1200: {
-                            slidesPerView: 3,
-                            spaceBetween: 20
-                        }
+                    // когда ширина экрана <= 768px
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    // когда ширина экрана <= 1024px
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    // когда ширина экрана <= 1200px
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
                     }
-                });
-            }
+                }
+            });
         });
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerBtn = document.querySelector('.burger');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeBtn = document.querySelector('.mobile-menu__close');
+            const body = document.body;
+
+            // Функция открытия меню
+            const openMenu = () => {
+                mobileMenu.classList.add('is-open');
+                body.classList.add('no-scroll'); // Блокируем прокрутку страницы
+            };
+
+            // Функция закрытия меню
+            const closeMenu = () => {
+                mobileMenu.classList.remove('is-open');
+                body.classList.remove('no-scroll'); // Снимаем блокировку прокрутки
+            };
+
+            // Открываем меню по клику на бургер
+            if (burgerBtn && mobileMenu) {
+                burgerBtn.addEventListener('click', openMenu);
+            }
+
+            // Закрываем меню по клику на крестик
+            if (closeBtn && mobileMenu) {
+                closeBtn.addEventListener('click', closeMenu);
+            }
+
+            // Закрываем меню по клику вне его (на оверлей, если он есть)
+            // или по нажатию на Escape. Это улучшает UX.
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+                    closeMenu();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
 
 </body>
 

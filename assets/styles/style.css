@@ -643,6 +643,10 @@ body {
     display: none;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .bar {
     display: none;
 }
@@ -2075,6 +2079,10 @@ a:hover .sk-block-ru-2 {
     gap: 20px;
 }
 
+.news .cards-4 .swiper-wrapper {
+    width: 100%;
+}
+
 .frame-13 {
     height: 100%;
     padding: 25px 20px;
@@ -3054,6 +3062,167 @@ footer .div-24 .vector-5 {
     .hero .div-wrapper-2,
     .hero .div-wrapper-3 {
         padding: 10px;
+    }
+
+    /* --- Стили для мобильного меню --- */
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-width: 320px;
+        /* Ограничиваем ширину на планшетах */
+        height: 100vh;
+        /* 100% высоты экрана */
+        background-color: #fff;
+        z-index: 10002;
+        /* Выше чем нижняя панель .bar */
+        transform: translateX(100%);
+        /* Изначально скрыто за правым краем */
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        /* Позволяет прокручивать, если контента много */
+    }
+
+    .mobile-menu.is-open {
+        transform: translateX(0);
+        /* Показываем меню, сдвигая его в видимую область */
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Блокировка прокрутки основной страницы, когда меню открыто */
+    body.no-scroll {
+        overflow: hidden;
+    }
+
+    .mobile-menu__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        border-bottom: 1px solid #f0f0f0;
+        flex-shrink: 0;
+        /* Заголовок не должен сжиматься */
+    }
+
+    .mobile-menu__close {
+        font-family: Arial, sans-serif;
+        font-size: 32px;
+        font-weight: normal;
+        line-height: 1;
+        color: #333;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0 5px;
+    }
+
+    .mobile-menu__content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        /* Пространство между блоками */
+    }
+
+    /* Стили для элементов, скопированных в меню */
+    .mobile-menu .search-wrapper {
+        display: block;
+        /* Показываем поиск в меню */
+    }
+
+    .mobile-menu__catalog {
+        display: inline-flex;
+        height: 73px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        position: relative;
+        flex: 0 0 auto;
+        background-color: var(--black);
+        border-radius: 15px;
+    }
+
+    .mobile-menu__catalog img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .mobile-menu__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu__link {
+        text-decoration: none;
+        color: #848b8c;
+        font-size: 16px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f0f0f0;
+        font-family: "CoFo Sans-Medium", Helvetica;
+    }
+
+    .mobile-menu__link:last-child {
+        border-bottom: none;
+    }
+
+    .mobile-menu__auth {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding-top: 10px;
+        border-top: 1px solid #f0f0f0;
+    }
+
+    .mobile-menu__auth .div {
+        /* Войти */
+        padding: 10px 20px;
+        border: 1px solid #00b4a0;
+        border-radius: 10px;
+        color: #00b4a0;
+        text-decoration: none;
+    }
+
+    .mobile-menu__auth .text-wrapper-2 {
+        /* Зарегистрироваться */
+        color: #8C8C8C;
+        text-decoration: none;
+    }
+
+
+    .mobile-menu__contacts {
+        margin-top: auto;
+        /* Прижимает блок контактов к низу */
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .mobile-menu__contacts .div-wrapper,
+    .mobile-menu__contacts .frame-3 {
+        display: flex;
+        /* Показываем контакты */
+        flex-direction: column;
+    }
+
+    .mobile-menu__contacts .text-wrapper-7 {
+        /* Телефон */
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-menu__contacts .text-wrapper-6 {
+        /* Написать нам */
+        font-size: 14px;
+        color: #8C8C8C;
+        text-decoration: none;
     }
 }
 
