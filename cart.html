@@ -49,11 +49,13 @@
     <link rel="stylesheet" href="./assets/styles/globals.css" />
     <link rel="stylesheet" href="./assets/styles/styleguide.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <link rel="stylesheet" href="./assets/styles/catalog.css" />
+    <link rel="stylesheet" href="./assets/styles/contacts.css" />
+    <link rel="stylesheet" href="./assets/styles/product.css" />
+    <link rel="stylesheet" href="./assets/styles/cart.css" />
 </head>
 
 <body>
-    <div class="element catalog">
+    <div class="element cart-page">
         <header class="header">
             <div class="container">
                 <div class="top">
@@ -215,307 +217,211 @@
             </div>
         </div>
 
+        <!-- Модальное окно для промокода -->
+        <div id="promo-modal" class="modal-overlay">
+            <div class="modal-content">
+                <!-- Кнопка закрытия -->
+                <span class="close-btn"><img src="./assets/img/x.svg" alt=""></span>
+
+                <!-- Заголовок и подзаголовок -->
+                <h2>Добавить промокод</h2>
+                <p>Введите промокод для получения скидки</p>
+
+                <!-- Форма -->
+                <form id="promo-form">
+                    <div class="form-group">
+                        <label for="promocode">Промокод</label>
+                        <input type="text" id="promocode" name="promocode" placeholder="Введите промокод" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Применить</button>
+                </form>
+            </div>
+        </div>
 
         <main>
 
-            <section class="equipments div-10">
+            <section class="cart">
                 <div class="container">
-                    <div class="equipments-up">
-                        <div class="equipments-left">
-                            <div class="links">
-                                <a href="">Главная</a>
-                                <span><img src="./assets/img/arr-grey.svg" alt=""></span>
-                                <a href="">Каталог</a>
-                            </div>
-
-                            <h2 class="equipments-title">Каталог продукции НПП Таглер</h2>
-
-                            <div class="equipments-categories">
-                                <a href="" class="equipments-category active">Медицинское оборудование Таглер</a>
-                                <a href="./laboratory.html" class="equipments-category">Лабораторное оборудование
-                                    Таглер</a>
-                            </div>
+                    <div class="cart-up equipments-left">
+                        <div class="links">
+                            <a href="">Главная</a>
+                            <span><img src="./assets/img/arr-grey.svg" alt=""></span>
+                            <a href="">Корзина</a>
                         </div>
-                        <div class="equipments-right">
-                            <p>Оборудование для клиник и лабораторий, обеспечивающее стабильную работу и точные
-                                результаты исследований.</p>
+
+                        <h2 class="contact-title cart-title">Оформите ваш заказ на оборудование Таглер</h2>
+
+                        <div class="cart-main-btns">
+                            <button class="cart-main-btn">
+                                <input type="checkbox" name="" id="all">
+                                <label for="all">
+                                    <h3>Выбрать все</h3>
+                                </label>
+                            </button>
+                            <button class="cart-main-btn">
+                                <img src="./assets/img/trash.svg" alt="">
+                                <h3>Удалить выбранное</h3>
+                            </button>
                         </div>
                     </div>
-                    <div class="div-12">
-                        <article class="div-13">
-                            <h3 class="text-wrapper-20">Медицинские центрифуги</h3>
-                            <a href="./categories.html" class="btn"
-                                aria-label="Подробнее о медицинских центрифугах"><img src="./assets/img/arr.svg"
-                                    alt="Стрелка"></a>
-                            <div class="image-wrapper">
-                                <picture>
-                                    <source media="(min-width: 1441px)"
-                                        srcset="./assets/img/image 6.webp 1x, ./assets/img/image 6-2x.webp 2x">
-                                    <img class="image-3" src="./assets/img/image 6.webp"
-                                        srcset="./assets/img/image 6-2x.webp 2x" alt="Медицинские центрифуги"
-                                        loading="lazy">
-                                </picture>
-                            </div>
-                        </article>
-                        <article class="div-13">
-                            <h3 class="text-wrapper-21">УФ облучатели рециркуляторы</h3>
-                            <a href="./categories.html" class="btn" aria-label="Подробнее о УФ облучателях"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy"></a>
-                            <div class="image-wrapper">
-                                <picture>
-                                    <source media="(min-width: 1441px)"
-                                        srcset="./assets/img/image 6 (1).webp 1x, ./assets/img/image 6 (1)-2x.webp 2x">
-                                    <img class="image-4" src="./assets/img/image 6 (1).webp"
-                                        srcset="./assets/img/image 6 (1)-2x.webp 2x" alt="УФ облучатели рециркуляторы"
-                                        loading="lazy">
-                                </picture>
-                            </div>
-                        </article>
-                        <article class="div-13">
-                            <h3 class="text-wrapper-20">Негатоскопы</h3>
-                            <a href="./categories.html" class="btn" aria-label="Подробнее о негатоскопах"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy"></a>
-                            <div class="image-wrapper">
-                                <picture>
-                                    <source media="(min-width: 1441px)"
-                                        srcset="./assets/img/image 6 (2).webp 1x, ./assets/img/image 6 (2)-2x.webp 2x">
-                                    <img class="image-5" src="./assets/img/image 6 (2).webp"
-                                        srcset="./assets/img/image 6 (2)-2x.webp 2x" alt="Негатоскопы" loading="lazy">
-                                </picture>
-                            </div>
-                        </article>
-                        <article class="div-13">
-                            <h3 class="text-wrapper-20">Аппараты Ротта</h3>
-                            <a href="./categories.html" class="btn" aria-label="Подробнее об аппаратах Ротта"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy"></a>
-                            <div class="image-wrapper">
-                                <picture>
-                                    <source media="(min-width: 1441px)"
-                                        srcset="./assets/img/image 6 (3).webp 1x, ./assets/img/image 6 (3)-2x.webp 2x">
-                                    <img class="image-4" src="./assets/img/image 6 (3).webp"
-                                        srcset="./assets/img/image 6 (3)-2x.webp 2x" alt="Аппараты Ротта"
-                                        loading="lazy">
-                                </picture>
-                            </div>
-                        </article>
-                        <article class="div-13">
-                            <h3 class="text-wrapper-22">Столы с электроподъемом</h3>
-                            <a href="./categories.html" class="btn"
-                                aria-label="Подробнее о столах с электроподъемом"><img src="./assets/img/arr.svg"
-                                    alt="Стрелка" loading="lazy"></a>
-                            <div class="img-wrapper">
-                                <picture>
-                                    <source media="(min-width: 1441px)"
-                                        srcset="./assets/img/image 6 (4).webp 1x, ./assets/img/image 6 (4)-2x.webp 2x">
-                                    <img class="image-6" src="./assets/img/image 6 (4).webp"
-                                        srcset="./assets/img/image 6 (4)-2x.webp 2x" alt="Столы с электроподъемом"
-                                        loading="lazy">
-                                </picture>
-                            </div>
-                        </article>
-                        <article class="div-13">
-                            <h3 class="text-wrapper-22">Боксы для ПЦР-диагностики</h3>
-                            <a href="./categories.html" class="btn"
-                                aria-label="Подробнее о боксах для ПЦР-диагностики"><img src="./assets/img/arr.svg"
-                                    alt="Стрелка" loading="lazy"></a>
-                            <div class="img-wrapper">
-                                <picture>
-                                    <source media="(min-width: 1441px)"
-                                        srcset="./assets/img/catalog (6).webp 1x, ./assets/img/catalog (6)-2x.webp 2x">
-                                    <img class="image-6" src="./assets/img/catalog (6).webp"
-                                        srcset="./assets/img/catalog (6)-2x.webp 2x" alt="Боксы для ПЦР-диагностики"
-                                        loading="lazy">
-                                </picture>
-                            </div>
-                        </article>
-                        <article class="div-13">
-                            <h3 class="text-wrapper-22">Аспираторы</h3>
-                            <a href="./categories.html" class="btn" aria-label="Подробнее об аспираторах"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy"></a>
-                            <div class="img-wrapper">
-                                <picture>
-                                    <source media="(min-width: 1441px)"
-                                        srcset="./assets/img/catalog (5).webp 1x, ./assets/img/catalog (5)-2x.webp 2x">
-                                    <img class="image-6" src="./assets/img/catalog (5).webp"
-                                        srcset="./assets/img/catalog (5)-2x.webp 2x" alt="Аспираторы" loading="lazy">
-                                </picture>
-                            </div>
-                        </article>
-                        <article class="div-13">
-                            <h3 class="text-wrapper-22">Столы с электроподъёмом</h3>
-                            <a href="./categories.html" class="btn"
-                                aria-label="Подробнее о столах с электроподъемом"><img src="./assets/img/arr.svg"
-                                    alt="Стрелка" loading="lazy"></a>
-                            <div class="img-wrapper">
-                                <picture>
-                                    <source media="(min-width: 1441px)"
-                                        srcset="./assets/img/catalog (4).webp 1x, ./assets/img/catalog (4)-2x.webp 2x">
-                                    <img class="image-6" src="./assets/img/catalog (4).webp"
-                                        srcset="./assets/img/catalog (4)-2x.webp 2x" alt="Столы с электроподъёмом"
-                                        loading="lazy">
-                                </picture>
-                            </div>
-                        </article>
-                        <article class="div-13">
-                            <h3 class="text-wrapper-22">Инактиваторы сыворотки</h3>
-                            <a href="./categories.html" class="btn"
-                                aria-label="Подробнее о инактиваторах сыворотки"><img src="./assets/img/arr.svg"
-                                    alt="Стрелка" loading="lazy"></a>
-                            <div class="img-wrapper">
-                                <picture>
-                                    <source media="(min-width: 1441px)"
-                                        srcset="./assets/img/catalog (3).webp 1x, ./assets/img/catalog (3)-2x.webp 2x">
-                                    <img class="image-6" src="./assets/img/catalog (3).webp"
-                                        srcset="./assets/img/catalog (3)-2x.webp 2x" alt="Инактиваторы сыворотки"
-                                        loading="lazy">
-                                </picture>
-                            </div>
-                        </article>
-                        <article class="div-13">
-                            <h3 class="text-wrapper-22">Шкафы для эндоскопов</h3>
-                            <a href="./categories.html" class="btn" aria-label="Подробнее о шкафах для эндоскопов"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy"></a>
-                            <div class="img-wrapper">
-                                <picture>
-                                    <source media="(min-width: 1441px)"
-                                        srcset="./assets/img/catalog (2).webp 1x, ./assets/img/catalog (2)-2x.webp 2x">
-                                    <img class="image-6" src="./assets/img/catalog (2).webp"
-                                        srcset="./assets/img/catalog (2)-2x.webp 2x" alt="Шкафы для эндоскопов"
-                                        loading="lazy">
-                                </picture>
-                            </div>
-                        </article>
-                        <article class="div-13">
-                            <h3 class="text-wrapper-22">Парафинонагреватели</h3>
-                            <a href="./categories.html" class="btn" aria-label="Подробнее о парафинонагревателях"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy"></a>
-                            <div class="img-wrapper">
-                                <picture>
-                                    <source media="(min-width: 1441px)"
-                                        srcset="./assets/img/catalog (1).webp 1x, ./assets/img/catalog (1)-2x.webp 2x">
-                                    <img class="image-6" src="./assets/img/catalog (1).webp"
-                                        srcset="./assets/img/catalog (1)-2x.webp 2x" alt="Парафинонагреватели"
-                                        loading="lazy">
-                                </picture>
-                            </div>
-                        </article>
-                        <article class="div-13">
-                            <h3 class="text-wrapper-22">Доп. больничное оборудование</h3>
-                            <a href="./categories.html" class="btn"
-                                aria-label="Подробнее о дополнительном больничном оборудовании">
-                                <img src="./assets/img/arr.svg" alt="Стрелка" loading="lazy">
-                            </a>
-                            <!-- Здесь не было изображения, поэтому я ничего не добавлял -->
-                        </article>
 
-                    </div>
-                </div>
-            </section>
+                    <div class="cart-main">
+                        <ul class="cart-list">
 
-            <section class="news div-27">
-                <div class="container">
-                    <h2 class="div-11">Наши акции и спец-предложения</h2>
-                    <div class="cards-4 swiper">
-                        <div class="swiper-wrapper">
-                            <article class="frame-13 swiper-slide">
-                                <div class="content-7">
-                                    <div class="titlle-6">
-                                        <button class="news-btn">Акция месяца</button>
-                                        <p class="news-text">Скидка 15% на медицинские центрифуги при заказе до конца
-                                            месяца.</p>
-                                        <a href="" class="news-arr"><img src="./assets/img/arr.svg" alt=""></a>
-                                    </div>
-                                    <div class="view">
-                                        <div class="view-2">
-                                            <time datetime="2025-08-30">
-                                                <div class="text-wrapper-46">30</div>
-                                                <div class="text-wrapper-47">.08</div>
-                                            </time>
+                            <li class="cart-item">
+                                <input type="checkbox" class="cart-item-check" id="item-1">
+                                <label for="item-1"></label>
+                                <div class="cart-item-img">
+                                    <img src="./assets/img/image 18282bg.webp" alt="">
+                                </div>
+                                <div class="cart-item-text">
+                                    <h4 class="cart-item-title">Штатив для дозаторов ТАГЛЕР</h4>
+                                    <h5 class="cart-item-info">Вертикальная стойка-штатив для дозаторов на 5 мест.</h5>
+                                </div>
+                                <div class="cart-item-price">
+                                    <div class="price">
+                                        <div class="price-wrapper">
+                                            <div class="price-2">
+                                                <div class="text-wrapper-15">5 904 руб.</div>
+                                            </div>
                                         </div>
-                                        <div class="text-wrapper-48">2025</div>
+                                        <div class="div-9">
+                                            <div class="text-wrapper-16">6 541 руб.</div>
+                                            <img class="group-2" src="./assets/img/Group 3.svg" alt="Скидка">
+                                        </div>
                                     </div>
                                 </div>
-                            </article>
+                                <div class="cart-item-btns">
+                                    <button class="cart-item-btn">-</button>
+                                    <button class="cart-item-btn">1</button>
+                                    <button class="cart-item-btn">+</button>
+                                </div>
+                            </li>
 
-                            <article class="frame-13 swiper-slide">
-                                <div class="content-7">
-                                    <div class="titlle-6">
-                                        <button class="news-btn">Бесплатная доставка</button>
-                                        <p class="news-text">Бесплатная доставка по Москве и регионам при заказе от 50
-                                            000 ₽.</p>
-                                        <a href="" class="news-arr"><img src="./assets/img/arr.svg" alt=""></a>
-                                    </div>
-                                    <div class="view">
-                                        <div class="view-2">
-                                            <time datetime="2025-08-30">
-                                                <div class="text-wrapper-46">30</div>
-                                                <div class="text-wrapper-47">.08</div>
-                                            </time>
+                            <li class="cart-item">
+                                <input type="checkbox" class="cart-item-check" id="item-2">
+                                <label for="item-2"></label>
+                                <div class="cart-item-img">
+                                    <img src="./assets/img/image 18282bg.webp" alt="">
+                                </div>
+                                <div class="cart-item-text">
+                                    <h4 class="cart-item-title">Штатив для дозаторов ТАГЛЕР</h4>
+                                    <h5 class="cart-item-info">Вертикальная стойка-штатив для дозаторов на 5 мест.</h5>
+                                </div>
+                                <div class="cart-item-price">
+                                    <div class="price">
+                                        <div class="price-wrapper">
+                                            <div class="price-2">
+                                                <div class="text-wrapper-15">5 904 руб.</div>
+                                            </div>
                                         </div>
-                                        <div class="text-wrapper-48">2025</div>
+                                        <div class="div-9">
+                                            <div class="text-wrapper-16">6 541 руб.</div>
+                                            <img class="group-2" src="./assets/img/Group 3.svg" alt="Скидка">
+                                        </div>
                                     </div>
                                 </div>
-                            </article>
-
-                            <article class="frame-13 swiper-slide">
-                                <div class="content-7">
-                                    <div class="titlle-6">
-                                        <button class="news-btn">Горячее предложение</button>
-                                        <p class="news-text">Дополнительная гарантия 2 года при оформлении заказа
-                                            онлайн.</p>
-                                        <a href="" class="news-arr"><img src="./assets/img/arr.svg" alt=""></a>
-                                    </div>
-                                    <div class="view">
-                                        <div class="view-2">
-                                            <time datetime="2025-08-30">
-                                                <div class="text-wrapper-46">30</div>
-                                                <div class="text-wrapper-47">.08</div>
-                                            </time>
-                                        </div>
-                                        <div class="text-wrapper-48">2025</div>
-                                    </div>
+                                <div class="cart-item-btns">
+                                    <button class="cart-item-btn">-</button>
+                                    <button class="cart-item-btn">1</button>
+                                    <button class="cart-item-btn">+</button>
                                 </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="btns">
-                        <button class="btn prev swiper-button-disabled" aria-label="Previous slide" disabled=""
-                            tabindex="-1" aria-controls="swiper-wrapper-eaaf366410042b849" aria-disabled="true"><img
-                                src="./assets/img/arr.svg" alt="Стрелка влево"></button>
-                        <button class="btn next" aria-label="Next slide" tabindex="0"
-                            aria-controls="swiper-wrapper-eaaf366410042b849" aria-disabled="false"><img
-                                src="./assets/img/arr.svg" alt="Стрелка вправо"></button>
-                    </div>
-                </div>
-            </section>
+                            </li>
 
-            <section class="questions">
-                <div class="container">
-                    <form action="" class="questions-form">
-                        <h2 class="questions-title">Остались вопросы?</h2>
-                        <p class="questions-info">Заполните форму, и наш специалист свяжется с вами в ближайшее время.
-                        </p>
-                        <div class="questions-inputs">
-                            <div class="question-input">
-                                <label for="name">Ваше имя</label>
-                                <input id="name" type="text">
+                        </ul>
+
+                        <div class="cart-checkout">
+                            <div>
+                                <h3 class="cart-checkout-title">Ваш заказ</h3>
+                                <a href="#" class="promo">Добавить промокод</a>
                             </div>
-                            <div class="question-input">
-                                <label for="mail">Ваш Email</label>
-                                <input type="email" id="mail">
-                            </div>
-                            <div class="question-submit">
-                                <input type="submit">
-                            </div>
+                            <ul class="cart-checlout-list product-info-list">
+                                <li class="product-info-item">
+                                    <h4>Всего товаров</h4>
+                                    <p>2</p>
+                                </li>
+                                <li class="product-info-item">
+                                    <h4>Подытог</h4>
+                                    <p class="price">11 880 руб.</p>
+                                </li>
+                                <li class="product-info-item">
+                                    <h4>Обшая сумма</h4>
+                                    <p class="price">11 880 руб.</p>
+                                </li>
+                            </ul>
+                            <button class="cart-checkout-btn">Оформить заказ</button>
                         </div>
-                        <div class="questions-check">
-                            <input id="check" type="checkbox">
-                            <label for="check">Я даю свое согласие на обработку персональных данных в соответствии с ФЗ
-                                №152-ФЗ “О персональных данных” на условиях и для целей, определенных Политикой
-                                Конфиденциальности.</label>
-                        </div>
-                    </form>
-                    <div class="questions-bg"><img src="./assets/img/Group 444896.svg" alt=""></div>
+
+                        <form action="" class="questions-form">
+                            <h2 class="questions-title">Покупатель</h2>
+                            <p class="questions-info">Заполните информацию о себе, чтобы мы могли связаться и
+                                подтвердить заказ.</p>
+                            <div class="questions-inputs">
+                                <div class="question-input">
+                                    <label for="inn">ИНН</label>
+                                    <input id="inn" type="text">
+                                </div>
+                                <div class="question-input">
+                                    <label for="tel">Номер телефона</label>
+                                    <input id="tel" type="tel">
+                                </div>
+                                <div class="question-input">
+                                    <label for="mail">Ваш Email</label>
+                                    <input type="email" id="mail">
+                                </div>
+                                <div class="question-input">
+                                    <label for="name">Имя</label>
+                                    <input type="text" id="name">
+                                </div>
+                                <div class="question-input">
+                                    <label for="message">Сообщение</label>
+                                    <textarea id="message"></textarea>
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="" class="questions-form">
+                            <h2 class="questions-title">Доставка</h2>
+
+                            <div class="questions-checkboxes">
+                                <!-- Опция 1 -->
+                                <label class="questions-checkbox">
+                                    <span class="questions-checkbox-title">Доставка курьером по Москве и области</span>
+                                    <!-- Атрибут 'checked' делает эту опцию выбранной по умолчанию -->
+                                    <input type="radio" name="delivery_option" class="questions-checkbox-radio" checked>
+                                </label>
+
+                                <!-- Опция 2 -->
+                                <label class="questions-checkbox">
+                                    <span class="questions-checkbox-title">Транспортной компанией по РФ</span>
+                                    <input type="radio" name="delivery_option" class="questions-checkbox-radio">
+                                </label>
+
+                                <!-- Опция 3 -->
+                                <label class="questions-checkbox">
+                                    <span class="questions-checkbox-title">Самовывоз</span>
+                                    <input type="radio" name="delivery_option" class="questions-checkbox-radio">
+                                </label>
+                            </div>
+
+                            <div class="questions-inputs">
+                                <div class="question-input">
+                                    <label for="address">Адрес</label>
+                                    <input id="address" type="text">
+                                </div>
+                                <div class="question-input">
+                                    <label for="index">Индекс</label>
+                                    <input id="index" type="text">
+                                </div>
+                                <div class="question-input">
+                                    <label for="advancedaddress">Улица, дом, корпус, квартира/офис</label>
+                                    <textarea id="advancedaddress"></textarea>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
                 </div>
             </section>
 
@@ -740,48 +646,6 @@
                 closeModal();
             });
         });
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const swiper = new Swiper('.news .swiper', {
-                // Указываем, сколько слайдов будет видно одновременно
-                slidesPerView: 2,
-                // Расстояние между слайдами
-                spaceBetween: 20,
-
-                // Подключаем ваши кастомные кнопки навигации
-                navigation: {
-                    nextEl: '.news .btn.next',
-                    prevEl: '.news .btn.prev',
-                },
-
-                // Настройки для разных размеров экрана (адаптивность)
-                breakpoints: {
-                    // когда ширина экрана <= 320px
-                    320: {
-                        slidesPerView: 2,
-                        spaceBetween: 10
-                    },
-                    // когда ширина экрана <= 768px
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 20
-                    },
-                    // когда ширина экрана <= 1024px
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 20
-                    },
-                    // когда ширина экрана <= 1200px
-                    1200: {
-                        slidesPerView: 3,
-                        spaceBetween: 20
-                    },
-                }
-            });
-        });
-
     </script>
 
     <script>

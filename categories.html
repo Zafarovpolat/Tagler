@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Таглер - Российский производитель лабораторного оборудования</title>
+    <meta name="description"
+        content="Надежные решения для медицины, фармацевтики и научных исследований, созданные по современным стандартам качества и точности." />
+    <meta name="keywords"
+        content="лабораторное оборудование, медицинское оборудование, центрифуги, УФ облучатели, негатоскопы, Таглер" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Таглер - Российский производитель лабораторного оборудования" />
+    <meta property="og:description" content="Надежные решения для медицины, фармацевтики и научных исследований." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tagler.ru/" />
+    <meta property="og:image" content="./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "НПП Таглер",
+      "url": "https://tagler.ru/",
+      "logo": "./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+7-499-444-51-74",
+        "contactType": "customer service",
+        "email": "info@tagler.ru"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Москва",
+        "addressCountry": "RU"
+      }
+    }
+    </script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./assets/styles/globals.css" />
+    <link rel="stylesheet" href="./assets/styles/styleguide.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/catalog.css" />
+</head>
+
+<body>
+    <div class="element catalog categories">
+        <header class="header">
+            <div class="container">
+                <div class="top">
+                    <nav class="navbar" role="navigation" aria-label="Основная навигация">
+                        <a href="./index.html" class="text-wrapper" aria-current="page">Главная</a>
+                        <a href="./about.html" class="text-wrapper">О Таглер</a>
+                        <a href="./catalog.html" class="text-wrapper">Продукция Таглер</a>
+                        <a href="./buy.html" class="text-wrapper">Где Купить?</a>
+                        <a href="./dealers.html" class="text-wrapper">Дилерам</a>
+                        <a href="./contacts.html" class="text-wrapper">Контакты</a>
+                    </nav>
+                    <div class="contacts">
+                        <a href="./login.html" class="div">Войти</a>
+                        <a href="./signup.html" class="text-wrapper-2">Зарегистрироваться</a>
+                    </div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="div-2">
+                        <a href="./catalog.html" class="frame">
+                            <img class="vuesax-bulk-category" src="./assets/img/category-2.svg" alt="Иконка каталога" />
+                            <div class="text-wrapper-3">Каталог</div>
+                        </a>
+                        <div class="div-3">
+                            <a class="tagler-logotype-CMYK" href="./index.html"><img class=""
+                                    src="./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg" alt="Логотип Таглер"
+                                    loading="lazy" /></a>
+                            <p class="p">
+                                <span class="span">Российский производитель лабораторного оборудования</span>
+                            </p>
+                        </div>
+                        <div class="search-wrapper">
+                            <!-- Ваш исходный блок для поля ввода -->
+                            <div class="frame-2">
+                                <label for="search-input" class="visually-hidden">Поиск нужного товара</label>
+                                <img class="vector" src="./assets/img/Vector.svg" alt="" />
+                                <!-- Используем иконку, т.к. ваша локальная -->
+                                <input type="search" id="search-input" class="search-input"
+                                    placeholder="Поиск нужного товара...">
+                            </div>
+
+                            <!-- Пустой контейнер для результатов поиска, который мы будем заполнять с помощью JS -->
+                            <div id="search-results" class="search-results">
+                                <!-- Результаты будут вставлены сюда -->
+                            </div>
+                        </div>
+                        <a href="./cart.html" class="icon" aria-label="Корзина">
+                            <img class="vuesax-bulk-bag" src="./assets/img/bag.svg" alt="Иконка корзины" />
+                        </a>
+                        <div class="frame-3">
+                            <a href="mailto:info@tagler.ru" class="text-wrapper-5">info@tagler.ru</a>
+                            <a href="#" id="open-form-btn" class="text-wrapper-6">Написать нам</a>
+                        </div>
+                        <div class="div-wrapper">
+                            <a href="tel:+74994445174" class="text-wrapper-7">+7 (499) 444-51-74</a>
+                        </div>
+                        <div class="burger">
+                            <img src="./assets/img/burger.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="bar">
+                    <ul class="bar-list">
+                        <li class="bar-item">
+                            <a href=""><img src="./assets/img/Group 444898.svg" alt=""><span>Главная</span></a>
+                        </li>
+                        <li class="bar-item">
+                            <a href=""><img src="./assets/img/category-2-2.svg" alt=""><span>Каталог</span></a>
+                        </li>
+                        <li class="bar-item">
+                            <a href=""><img src="./assets/img/bag-2.svg" alt=""><span>Корзина</span></a>
+                        </li>
+                        <li class="bar-item">
+                            <a href=""><img src="./assets/img/profile.svg" alt=""><span>Профиль</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu" id="mobile-menu">
+                    <div class="mobile-menu__header">
+                        <a class="tagler-logotype-CMYK" href="./index.html"><img
+                                src="./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg" alt="Логотип Таглер" /></a>
+                        <button class="mobile-menu__close" aria-label="Закрыть меню">&times;</button>
+                    </div>
+
+                    <div class="mobile-menu__content">
+                        <!-- Поиск из .div-2 -->
+                        <div class="search-wrapper">
+                            <div class="frame-2">
+                                <label for="mobile-search-input" class="visually-hidden">Поиск нужного товара</label>
+                                <img class="vector" src="./assets/img/Vector.svg" alt="" />
+                                <input type="search" id="mobile-search-input" class="search-input"
+                                    placeholder="Поиск нужного товара...">
+                            </div>
+                        </div>
+
+                        <!-- Каталог из .div-2 -->
+                        <a href="./catalog.html" class="mobile-menu__catalog">
+                            <img class="vuesax-bulk-category" src="./assets/img/category-2.svg" alt="Иконка каталога" />
+                            <div class="text-wrapper-3">Каталог</div>
+                        </a>
+
+                        <!-- Навигация из .top -->
+                        <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+                            <a href="./index.html" class="mobile-menu__link" aria-current="page">Главная</a>
+                            <a href="./about.html" class="mobile-menu__link">О Таглер</a>
+                            <a href="./catalog.html" class="mobile-menu__link">Продукция Таглер</a>
+                            <a href="./buy.html" class="mobile-menu__link">Где Купить?</a>
+                            <a href="./dealers.html" class="mobile-menu__link">Дилерам</a>
+                            <a href="./contacts.html" class="mobile-menu__link">Контакты</a>
+                        </nav>
+
+                        <!-- Авторизация из .top -->
+                        <div class="mobile-menu__auth">
+                            <a href="./login.html" class="div">Войти</a>
+                            <a href="./signup.html" class="text-wrapper-2">Зарегистрироваться</a>
+                        </div>
+
+                        <!-- Контакты из .div-2 -->
+                        <div class="mobile-menu__contacts">
+                            <div class="div-wrapper">
+                                <a href="tel:+74994445174" class="text-wrapper-7">+7 (499) 444-51-74</a>
+                            </div>
+                            <div class="frame-3">
+                                <a href="#" class="text-wrapper-6 " id="open-form-btn2">Написать нам</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="contact-modal" class="modal-overlay">
+            <div class="modal-content">
+                <!-- Кнопка закрытия -->
+                <span class="close-btn"><img src="./assets/img/x.svg" alt=""></span>
+
+                <!-- Заголовок и подзаголовок -->
+                <h2>Остались вопросы?</h2>
+                <p>Заполните форму, и наш специалист свяжется с вами в ближайшее время.</p>
+
+                <!-- Форма -->
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="formname">Ваше имя</label>
+                        <input type="text" id="formname" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formemail">Ваш Email</label>
+                        <input type="email" id="formemail" name="email" required>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">
+                            Я даю свое согласие на обработку персональных данных в соответствии с ФЗ №152-ФЗ "О
+                            персональных данных" на условиях и для целей, определенных Политикой Конфиденциальности.
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <main>
+
+            <section class="products div-8">
+                <div class="container">
+                    <div class="titlle">
+                        <div class="equipments-up">
+                            <div class="equipments-left">
+                                <div class="links">
+                                    <a href="./index.html">Главная</a>
+                                    <span><img src="./assets/img/arr-grey.svg" alt=""></span>
+                                    <a href="./catalog.html">Каталог</a>
+                                    <span><img src="./assets/img/arr-grey.svg" alt=""></span>
+                                    <a href="">Медицинские центрифуги</a>
+                                </div>
+
+                                <div class="equipments-text">
+                                    <h2 class="equipments-title">Медицинские центрифуги</h2>
+                                    <span>Всего товаров 247</span>
+                                </div>
+
+                                <p class="equipments-info">Это лабораторные приборы, предназначенные для разделения
+                                    жидких образцов на фракции
+                                    под действием центробежной силы. Они широко применяются в клинико-диагностических
+                                    лабораториях, медицинских учреждениях и научных центрах для подготовки сыворотки и
+                                    плазмы крови, осаждения клеточных элементов и других исследований.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="frame-4">
+                            <article class="content">
+                                <div class="photo">
+                                    <button><img src="./assets/img/favourite.svg" alt=""></button>
+                                    <picture>
+                                        <source media="(min-width: 1441px)" srcset="./assets/img/image 1819-2x.webp">
+                                        <!-- Все еще может не сработать, см. ниже -->
+                                        <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                        <img class="image" src="./assets/img/image 1819.webp"
+                                            alt="Штатив для дозаторов ТАГЛЕР">
+                                    </picture>
+                                </div>
+                                <div class="content-2">
+                                    <div class="content-3">
+                                        <div class="text">
+                                            <div class="div-9">
+                                                <img class="vuesax-bulk-verify" src="./assets/img/verify.svg"
+                                                    alt="Иконка в наличии" />
+                                                <div class="text-wrapper-12">В наличии</div>
+                                            </div>
+                                            <h3 class="text-wrapper-13">Штатив для дозаторов ТАГЛЕР</h3>
+                                            <p class="text-wrapper-14">Вертикальная стойка-штатив для дозаторов на 5
+                                                мест.
+                                            </p>
+                                        </div>
+                                        <div class="price">
+                                            <div class="price-wrapper">
+                                                <div class="price-2">
+                                                    <div class="text-wrapper-15">5 904 руб.</div>
+                                                </div>
+                                            </div>
+                                            <div class="div-9">
+                                                <div class="text-wrapper-16">6 541 руб.</div>
+                                                <img class="group-2" src="./assets/img/Group 3.svg" alt="Скидка" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <div class="btns-2">
+                                            <button class="text-wrapper-17">Добавить в заказ</button>
+                                        </div>
+                                        <div class="btns-3">
+                                            <a href="./product.html" class="text-wrapper-18">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="frame-4">
+                            <article class="content">
+                                <div class="photo">
+                                    <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                    <picture>
+                                        <source media="(min-width: 1441px)" srcset="./assets/img/image 1819-2x.webp">
+                                        <!-- Все еще может не сработать, см. ниже -->
+                                        <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                        <img class="image" src="./assets/img/image 1819.webp"
+                                            alt="Штатив для дозаторов ТАГЛЕР">
+                                    </picture>
+                                </div>
+                                <div class="content-2">
+                                    <div class="content-3">
+                                        <div class="text">
+                                            <div class="div-9">
+                                                <img class="vuesax-bulk-verify" src="./assets/img/verify.svg"
+                                                    alt="Иконка в наличии" loading="lazy" />
+                                                <div class="text-wrapper-12">В наличии</div>
+                                            </div>
+                                            <h3 class="text-wrapper-13">Штатив для дозаторов ТАГЛЕР</h3>
+                                            <p class="text-wrapper-14">Вертикальная стойка-штатив для дозаторов на 5
+                                                мест.
+                                            </p>
+                                        </div>
+                                        <div class="price">
+                                            <div class="price-wrapper">
+                                                <div class="price-2">
+                                                    <div class="text-wrapper-15">5 904 руб.</div>
+                                                </div>
+                                            </div>
+                                            <div class="div-9">
+                                                <div class="text-wrapper-16">6 541 руб.</div>
+                                                <img class="group-2" src="./assets/img/Group 3.svg" alt="Скидка"
+                                                    loading="lazy" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <div class="btns-2">
+                                            <button class="text-wrapper-17">Добавить в заказ</button>
+                                        </div>
+                                        <div class="btns-3">
+                                            <a href="./product.html" class="text-wrapper-18">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="frame-4">
+                            <article class="content">
+                                <div class="photo">
+                                    <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                    <picture>
+                                        <source media="(min-width: 1441px)" srcset="./assets/img/image 1819-2x.webp">
+                                        <!-- Все еще может не сработать, см. ниже -->
+                                        <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                        <img class="image" src="./assets/img/image 1819.webp"
+                                            alt="Штатив для дозаторов ТАГЛЕР">
+                                    </picture>
+                                </div>
+                                <div class="content-2">
+                                    <div class="content-3">
+                                        <div class="text">
+                                            <div class="div-9">
+                                                <img class="vuesax-bulk-verify" src="./assets/img/verify.svg"
+                                                    alt="Иконка в наличии" loading="lazy" />
+                                                <div class="text-wrapper-12">В наличии</div>
+                                            </div>
+                                            <h3 class="text-wrapper-13">Штатив для дозаторов ТАГЛЕР</h3>
+                                            <p class="text-wrapper-14">Вертикальная стойка-штатив для дозаторов на 5
+                                                мест.
+                                            </p>
+                                        </div>
+                                        <div class="price">
+                                            <div class="price-wrapper">
+                                                <div class="price-2">
+                                                    <div class="text-wrapper-15">5 904 руб.</div>
+                                                </div>
+                                            </div>
+                                            <div class="div-9">
+                                                <div class="text-wrapper-16">6 541 руб.</div>
+                                                <img class="group-2" src="./assets/img/Group 3.svg" alt="Скидка"
+                                                    loading="lazy" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <div class="btns-2">
+                                            <button class="text-wrapper-17">Добавить в заказ</button>
+                                        </div>
+                                        <div class="btns-3">
+                                            <a href="./product.html" class="text-wrapper-18">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="frame-4">
+                            <article class="content">
+                                <div class="photo">
+                                    <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                    <picture>
+                                        <source media="(min-width: 1441px)" srcset="./assets/img/image 1819-2x.webp">
+                                        <!-- Все еще может не сработать, см. ниже -->
+                                        <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                        <img class="image" src="./assets/img/image 1819.webp"
+                                            alt="Штатив для дозаторов ТАГЛЕР">
+                                    </picture>
+                                </div>
+                                <div class="content-2">
+                                    <div class="content-3">
+                                        <div class="text">
+                                            <div class="div-9">
+                                                <img class="vuesax-bulk-verify" src="./assets/img/verify.svg"
+                                                    alt="Иконка в наличии" loading="lazy" />
+                                                <div class="text-wrapper-12">В наличии</div>
+                                            </div>
+                                            <h3 class="text-wrapper-13">Штатив для дозаторов ТАГЛЕР</h3>
+                                            <p class="text-wrapper-14">Вертикальная стойка-штатив для дозаторов на 5
+                                                мест.
+                                            </p>
+                                        </div>
+                                        <div class="price">
+                                            <div class="price-wrapper">
+                                                <div class="price-2">
+                                                    <div class="text-wrapper-15">5 904 руб.</div>
+                                                </div>
+                                            </div>
+                                            <div class="div-9">
+                                                <div class="text-wrapper-16">6 541 руб.</div>
+                                                <img class="group-2" src="./assets/img/Group 3.svg" alt="Скидка"
+                                                    loading="lazy" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <div class="btns-2">
+                                            <button class="text-wrapper-17">Добавить в заказ</button>
+                                        </div>
+                                        <div class="btns-3">
+                                            <a href="./product.html" class="text-wrapper-18">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="frame-4">
+                            <article class="content">
+                                <div class="photo">
+                                    <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                    <picture>
+                                        <source media="(min-width: 1441px)" srcset="./assets/img/image 1819-2x.webp">
+                                        <!-- Все еще может не сработать, см. ниже -->
+                                        <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                        <img class="image" src="./assets/img/image 1819.webp"
+                                            alt="Штатив для дозаторов ТАГЛЕР">
+                                    </picture>
+                                </div>
+                                <div class="content-2">
+                                    <div class="content-3">
+                                        <div class="text">
+                                            <div class="div-9">
+                                                <img class="vuesax-bulk-verify" src="./assets/img/verify.svg"
+                                                    alt="Иконка в наличии" loading="lazy" />
+                                                <div class="text-wrapper-12">В наличии</div>
+                                            </div>
+                                            <h3 class="text-wrapper-13">Штатив для дозаторов ТАГЛЕР</h3>
+                                            <p class="text-wrapper-14">Вертикальная стойка-штатив для дозаторов на 5
+                                                мест.
+                                            </p>
+                                        </div>
+                                        <div class="price">
+                                            <div class="price-wrapper">
+                                                <div class="price-2">
+                                                    <div class="text-wrapper-15">5 904 руб.</div>
+                                                </div>
+                                            </div>
+                                            <div class="div-9">
+                                                <div class="text-wrapper-16">6 541 руб.</div>
+                                                <img class="group-2" src="./assets/img/Group 3.svg" alt="Скидка"
+                                                    loading="lazy" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <div class="btns-2">
+                                            <button class="text-wrapper-17">Добавить в заказ</button>
+                                        </div>
+                                        <div class="btns-3">
+                                            <a href="./product.html" class="text-wrapper-18">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="frame-4">
+                            <article class="content">
+                                <div class="photo">
+                                    <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                    <picture>
+                                        <source media="(min-width: 1441px)" srcset="./assets/img/image 1819-2x.webp">
+                                        <!-- Все еще может не сработать, см. ниже -->
+                                        <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                        <img class="image" src="./assets/img/image 1819.webp"
+                                            alt="Штатив для дозаторов ТАГЛЕР">
+                                    </picture>
+                                </div>
+                                <div class="content-2">
+                                    <div class="content-3">
+                                        <div class="text">
+                                            <div class="div-9">
+                                                <img class="vuesax-bulk-verify" src="./assets/img/verify.svg"
+                                                    alt="Иконка в наличии" loading="lazy" />
+                                                <div class="text-wrapper-12">В наличии</div>
+                                            </div>
+                                            <h3 class="text-wrapper-13">Штатив для дозаторов ТАГЛЕР</h3>
+                                            <p class="text-wrapper-14">Вертикальная стойка-штатив для дозаторов на 5
+                                                мест.
+                                            </p>
+                                        </div>
+                                        <div class="price">
+                                            <div class="price-wrapper">
+                                                <div class="price-2">
+                                                    <div class="text-wrapper-15">5 904 руб.</div>
+                                                </div>
+                                            </div>
+                                            <div class="div-9">
+                                                <div class="text-wrapper-16">6 541 руб.</div>
+                                                <img class="group-2" src="./assets/img/Group 3.svg" alt="Скидка"
+                                                    loading="lazy" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <div class="btns-2">
+                                            <button class="text-wrapper-17">Добавить в заказ</button>
+                                        </div>
+                                        <div class="btns-3">
+                                            <a href="./product.html" class="text-wrapper-18">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="frame-4">
+                            <article class="content">
+                                <div class="photo">
+                                    <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                    <picture>
+                                        <source media="(min-width: 1441px)" srcset="./assets/img/image 1819-2x.webp">
+                                        <!-- Все еще может не сработать, см. ниже -->
+                                        <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                        <img class="image" src="./assets/img/image 1819.webp"
+                                            alt="Штатив для дозаторов ТАГЛЕР">
+                                    </picture>
+                                </div>
+                                <div class="content-2">
+                                    <div class="content-3">
+                                        <div class="text">
+                                            <div class="div-9">
+                                                <img class="vuesax-bulk-verify" src="./assets/img/verify.svg"
+                                                    alt="Иконка в наличии" loading="lazy" />
+                                                <div class="text-wrapper-12">В наличии</div>
+                                            </div>
+                                            <h3 class="text-wrapper-13">Штатив для дозаторов ТАГЛЕР</h3>
+                                            <p class="text-wrapper-14">Вертикальная стойка-штатив для дозаторов на 5
+                                                мест.
+                                            </p>
+                                        </div>
+                                        <div class="price">
+                                            <div class="price-wrapper">
+                                                <div class="price-2">
+                                                    <div class="text-wrapper-15">5 904 руб.</div>
+                                                </div>
+                                            </div>
+                                            <div class="div-9">
+                                                <div class="text-wrapper-16">6 541 руб.</div>
+                                                <img class="group-2" src="./assets/img/Group 3.svg" alt="Скидка"
+                                                    loading="lazy" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <div class="btns-2">
+                                            <button class="text-wrapper-17">Добавить в заказ</button>
+                                        </div>
+                                        <div class="btns-3">
+                                            <a href="./product.html" class="text-wrapper-18">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="frame-4">
+                            <article class="content">
+                                <div class="photo">
+                                    <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                    <picture>
+                                        <source media="(min-width: 1441px)" srcset="./assets/img/image 1819-2x.webp">
+                                        <!-- Все еще может не сработать, см. ниже -->
+                                        <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                        <img class="image" src="./assets/img/image 1819.webp"
+                                            alt="Штатив для дозаторов ТАГЛЕР">
+                                    </picture>
+                                </div>
+                                <div class="content-2">
+                                    <div class="content-3">
+                                        <div class="text">
+                                            <div class="div-9">
+                                                <img class="vuesax-bulk-verify" src="./assets/img/verify.svg"
+                                                    alt="Иконка в наличии" loading="lazy" />
+                                                <div class="text-wrapper-12">В наличии</div>
+                                            </div>
+                                            <h3 class="text-wrapper-13">Штатив для дозаторов ТАГЛЕР</h3>
+                                            <p class="text-wrapper-14">Вертикальная стойка-штатив для дозаторов на 5
+                                                мест.
+                                            </p>
+                                        </div>
+                                        <div class="price">
+                                            <div class="price-wrapper">
+                                                <div class="price-2">
+                                                    <div class="text-wrapper-15">5 904 руб.</div>
+                                                </div>
+                                            </div>
+                                            <div class="div-9">
+                                                <div class="text-wrapper-16">6 541 руб.</div>
+                                                <img class="group-2" src="./assets/img/Group 3.svg" alt="Скидка"
+                                                    loading="lazy" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <div class="btns-2">
+                                            <button class="text-wrapper-17">Добавить в заказ</button>
+                                        </div>
+                                        <div class="btns-3">
+                                            <a href="./product.html" class="text-wrapper-18">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="frame-4">
+                            <article class="content">
+                                <div class="photo">
+                                    <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                    <picture>
+                                        <source media="(min-width: 1441px)" srcset="./assets/img/image 1819-2x.webp">
+                                        <!-- Все еще может не сработать, см. ниже -->
+                                        <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                        <img class="image" src="./assets/img/image 1819.webp"
+                                            alt="Штатив для дозаторов ТАГЛЕР">
+                                    </picture>
+                                </div>
+                                <div class="content-2">
+                                    <div class="content-3">
+                                        <div class="text">
+                                            <div class="div-9">
+                                                <img class="vuesax-bulk-verify" src="./assets/img/verify.svg"
+                                                    alt="Иконка в наличии" loading="lazy" />
+                                                <div class="text-wrapper-12">В наличии</div>
+                                            </div>
+                                            <h3 class="text-wrapper-13">Штатив для дозаторов ТАГЛЕР</h3>
+                                            <p class="text-wrapper-14">Вертикальная стойка-штатив для дозаторов на 5
+                                                мест.
+                                            </p>
+                                        </div>
+                                        <div class="price">
+                                            <div class="price-wrapper">
+                                                <div class="price-2">
+                                                    <div class="text-wrapper-15">5 904 руб.</div>
+                                                </div>
+                                            </div>
+                                            <div class="div-9">
+                                                <div class="text-wrapper-16">6 541 руб.</div>
+                                                <img class="group-2" src="./assets/img/Group 3.svg" alt="Скидка"
+                                                    loading="lazy" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns">
+                                        <div class="btns-2">
+                                            <button class="text-wrapper-17">Добавить в заказ</button>
+                                        </div>
+                                        <div class="btns-3">
+                                            <a href="./product.html" class="text-wrapper-18">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <ul class="product-pagination">
+                        <li class="product-pagination-item">
+                            <a href="" class="page-btn page-prev disabled">
+                                <img src="/assets/img/arr.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="product-pagination-item active"><a href="">1</a></li>
+                        <li class="product-pagination-item"><a href="">2</a></li>
+                        <li class="product-pagination-item"><a href="">3</a></li>
+                        <li class="product-pagination-item"><a href=""><img src="./assets/img/dotes.svg" alt=""></a>
+                        </li>
+                        <li class="product-pagination-item"><a href="">10</a></li>
+                        <li class="product-pagination-item">
+                            <a href="" class="page-btn page-next">
+                                <img src="/assets/img/arr.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="equipments div-10">
+                <div class="container">
+                    <h2 class="div-11">Медицинское оборудование Таглер</h2>
+                    <div class="div-12 swiper">
+                        <div class="swiper-wrapper">
+                            <article class="div-13 swiper-slide">
+                                <h3 class="text-wrapper-20">Медицинские центрифуги</h3>
+                                <a href="./product.html" class="btn"
+                                    aria-label="Подробнее о медицинских центрифугах"><img src="./assets/img/arr.svg"
+                                        alt="Стрелка" /></a>
+                                <div class="image-wrapper">
+                                    <picture>
+                                        <source media="(min-width: 1441px)"
+                                            srcset="./assets/img/image 6.webp 1x, ./assets/img/image 6-2x.webp 2x">
+                                        <img class="image-3" src="./assets/img/image 6.webp"
+                                            srcset="./assets/img/image 6-2x.webp 2x" alt="Медицинские центрифуги"
+                                            loading="lazy" />
+                                    </picture>
+                                </div>
+                            </article>
+                            <article class="div-13 swiper-slide">
+                                <h3 class="text-wrapper-21">УФ облучатели рециркуляторы</h3>
+                                <a href="./product.html" class="btn" aria-label="Подробнее о УФ облучателях"><img
+                                        src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" /></a>
+                                <div class="image-wrapper">
+                                    <picture>
+                                        <source media="(min-width: 1441px)"
+                                            srcset="./assets/img/image 6 (1).webp 1x, ./assets/img/image 6 (1)-2x.webp 2x">
+                                        <img class="image-4" src="./assets/img/image 6 (1).webp"
+                                            srcset="./assets/img/image 6 (1)-2x.webp 2x"
+                                            alt="УФ облучатели рециркуляторы" loading="lazy" />
+                                    </picture>
+                                </div>
+                            </article>
+                            <article class="div-13 swiper-slide">
+                                <h3 class="text-wrapper-20">Негатоскопы</h3>
+                                <a href="./product.html" class="btn" aria-label="Подробнее о негатоскопах"><img
+                                        src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" /></a>
+                                <div class="image-wrapper">
+                                    <picture>
+                                        <source media="(min-width: 1441px)"
+                                            srcset="./assets/img/image 6 (2).webp 1x, ./assets/img/image 6 (2)-2x.webp 2x">
+                                        <img class="image-5" src="./assets/img/image 6 (2).webp"
+                                            srcset="./assets/img/image 6 (2)-2x.webp 2x" alt="Негатоскопы"
+                                            loading="lazy" />
+                                    </picture>
+                                </div>
+                            </article>
+                            <article class="div-13 swiper-slide">
+                                <h3 class="text-wrapper-20">Аппараты Ротта</h3>
+                                <a href="./product.html" class="btn" aria-label="Подробнее об аппаратах Ротта"><img
+                                        src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" /></a>
+                                <div class="image-wrapper">
+                                    <picture>
+                                        <source media="(min-width: 1441px)"
+                                            srcset="./assets/img/image 6 (3).webp 1x, ./assets/img/image 6 (3)-2x.webp 2x">
+                                        <img class="image-4" src="./assets/img/image 6 (3).webp"
+                                            srcset="./assets/img/image 6 (3)-2x.webp 2x" alt="Аппараты Ротта"
+                                            loading="lazy" />
+                                    </picture>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="btn prev" aria-label="Previous slide" tabindex="0"
+                            aria-controls="swiper-wrapper-cfe96fd11848faab" aria-disabled="true"><img
+                                src="./assets/img/arr.svg" alt="Стрелка влево"></button>
+                        <button class="btn next" aria-label="Next slide" tabindex="0"
+                            aria-controls="swiper-wrapper-cfe96fd11848faab" aria-disabled="false"><img
+                                src="./assets/img/arr.svg" alt="Стрелка вправо"></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news div-27">
+                <div class="container">
+                    <h2 class="div-11">Наши акции и спец-предложения</h2>
+                    <div class="cards-4 swiper">
+                        <div class="swiper-wrapper">
+                            <article class="frame-13 swiper-slide">
+                                <div class="content-7">
+                                    <div class="titlle-6">
+                                        <button class="news-btn">Акция месяца</button>
+                                        <p class="news-text">Скидка 15% на медицинские центрифуги при заказе до конца
+                                            месяца.</p>
+                                        <a href="" class="news-arr"><img src="./assets/img/arr.svg" alt=""></a>
+                                    </div>
+                                    <div class="view">
+                                        <div class="view-2">
+                                            <time datetime="2025-08-30">
+                                                <div class="text-wrapper-46">30</div>
+                                                <div class="text-wrapper-47">.08</div>
+                                            </time>
+                                        </div>
+                                        <div class="text-wrapper-48">2025</div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="frame-13 swiper-slide">
+                                <div class="content-7">
+                                    <div class="titlle-6">
+                                        <button class="news-btn">Бесплатная доставка</button>
+                                        <p class="news-text">Бесплатная доставка по Москве и регионам при заказе от 50
+                                            000 ₽.</p>
+                                        <a href="" class="news-arr"><img src="./assets/img/arr.svg" alt=""></a>
+                                    </div>
+                                    <div class="view">
+                                        <div class="view-2">
+                                            <time datetime="2025-08-30">
+                                                <div class="text-wrapper-46">30</div>
+                                                <div class="text-wrapper-47">.08</div>
+                                            </time>
+                                        </div>
+                                        <div class="text-wrapper-48">2025</div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="frame-13 swiper-slide">
+                                <div class="content-7">
+                                    <div class="titlle-6">
+                                        <button class="news-btn">Горячее предложение</button>
+                                        <p class="news-text">Дополнительная гарантия 2 года при оформлении заказа
+                                            онлайн.</p>
+                                        <a href="" class="news-arr"><img src="./assets/img/arr.svg" alt=""></a>
+                                    </div>
+                                    <div class="view">
+                                        <div class="view-2">
+                                            <time datetime="2025-08-30">
+                                                <div class="text-wrapper-46">30</div>
+                                                <div class="text-wrapper-47">.08</div>
+                                            </time>
+                                        </div>
+                                        <div class="text-wrapper-48">2025</div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="btn prev swiper-button-disabled" aria-label="Previous slide" disabled=""
+                            tabindex="-1" aria-controls="swiper-wrapper-eaaf366410042b849" aria-disabled="true"><img
+                                src="./assets/img/arr.svg" alt="Стрелка влево"></button>
+                        <button class="btn next" aria-label="Next slide" tabindex="0"
+                            aria-controls="swiper-wrapper-eaaf366410042b849" aria-disabled="false"><img
+                                src="./assets/img/arr.svg" alt="Стрелка вправо"></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="questions">
+                <div class="container">
+                    <form action="" class="questions-form">
+                        <h2 class="questions-title">Остались вопросы?</h2>
+                        <p class="questions-info">Заполните форму, и наш специалист свяжется с вами в ближайшее время.
+                        </p>
+                        <div class="questions-inputs">
+                            <div class="question-input">
+                                <label for="name">Ваше имя</label>
+                                <input id="name" type="text">
+                            </div>
+                            <div class="question-input">
+                                <label for="mail">Ваш Email</label>
+                                <input type="email" id="mail">
+                            </div>
+                            <div class="question-submit">
+                                <input type="submit">
+                            </div>
+                        </div>
+                        <div class="questions-check">
+                            <input id="check" type="checkbox">
+                            <label for="check">Я даю свое согласие на обработку персональных данных в соответствии с ФЗ
+                                №152-ФЗ “О персональных данных” на условиях и для целей, определенных Политикой
+                                Конфиденциальности.</label>
+                        </div>
+                    </form>
+                    <div class="questions-bg"><img src="./assets/img/Group 444896.svg" alt=""></div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content-8">
+                    <div class="main">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img class="tagler-logotype-CMYK-2"
+                                    src="./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg" alt="Логотип Таглер"
+                                    loading="lazy" />
+                            </a>
+                            <p class="text-wrapper-49">Общество с ограниченной ответственностью «НПП Таглер»</p>
+                            <div class="list">
+                                <div class="text-wrapper-50">ОГРН: 1197746444565</div>
+                                <div class="text-wrapper-51">ИНН: 9702002446</div>
+                                <div class="text-wrapper-51">КПП: 772401001</div>
+                            </div>
+                        </div>
+                        <div class="div-28">
+                            <h3 class="text-wrapper-52">Медицинское оборудование</h3>
+                            <nav class="list-2" role="navigation" aria-label="Медицинское оборудование">
+                                <a href="./categories.html" class="text-wrapper-53">Медицинские центрифуги</a>
+                                <a href="./categories.html" class="text-wrapper-54">Боксы для ПЦР-диагностики</a>
+                                <a href="./categories.html" class="text-wrapper-55">Аспираторы</a>
+                                <a href="./categories.html" class="text-wrapper-54">УФ облучатели и рециркуляторы</a>
+                                <a href="./categories.html" class="text-wrapper-54">Негатоскопы</a>
+                                <a href="./categories.html" class="text-wrapper-54">Аппараты Ротта</a>
+                                <a href="./categories.html" class="text-wrapper-54">Столы с электроприводом</a>
+                                <a href="./categories.html" class="text-wrapper-54">Инактиваторы сыворотки</a>
+                                <a href="./categories.html" class="text-wrapper-54">Шкафы для эндоскопа</a>
+                            </nav>
+                        </div>
+                        <div class="div-29">
+                            <h3 class="text-wrapper-52">Лабораторное оборудование</h3>
+                            <div class="columns">
+                                <nav class="list-2" role="navigation" aria-label="Лабораторное оборудование часть 1">
+                                    <a href="./laboratory.html" class="text-wrapper-56">Люминисцентные анализаторы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">ПЦР-боксы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Лабораторные аспираторы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Лабораторные центрифуги</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Магнитные мешалки</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Шейкеры, встряхиватели</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Водяные бани</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Лабораторные плиты и песчаные
+                                        бани</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Твердотельные термостаты</a>
+                                </nav>
+                                <nav class="frame-14" role="navigation" aria-label="Лабораторное оборудование часть 2">
+                                    <a href="./laboratory.html" class="text-wrapper-53">Сушильные шкафы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Анализаторы влажности</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Спектрофотометры</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Рефрактометры</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Устройство для сушки посуды</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Рассевы и сита</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Лабораторные мельницы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Лабораторные принадлежности</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-wrapper-2">
+                        <div class="content-9">
+                            <nav class="links" role="navigation" aria-label="Дополнительные ссылки">
+                                <a href="./about.html" class="text-wrapper-57">О Таглер</a>
+                                <a href="./catalog.html" class="text-wrapper-57">Продукция Таглер</a>
+                                <a href="./buy.html" class="text-wrapper-57">Где Купить?</a>
+                                <a href="./dealers.html" class="text-wrapper-57">Дилерам</a>
+                                <a href="./contacts.html" class="text-wrapper-57">Контакты</a>
+                                <a href="./login.html" class="text-wrapper-57">Войти в кабинет</a>
+                            </nav>
+                            <address class="cards-6">
+                                <a href="" class="div-30">
+                                    <div class="text-wrapper-58"> г. Москва</div>
+                                    <div class="text-wrapper-59">Показать на карте</div>
+                                </a>
+                                <img class="line" src="./assets/img/Line 2.svg" alt="Линия разделитель"
+                                    loading="lazy" />
+                                <a href="mailto:info@tagler.ru" class="div-30">
+                                    <div class="text-wrapper-58">info@tagler.ru</div>
+                                    <div class="text-wrapper-59">Написать нам</div>
+                                </a>
+                                <img class="line" src="./assets/img/Line 2.svg" alt="Линия разделитель"
+                                    loading="lazy" />
+                                <a href="tel:+74994445174" class="div-30">
+                                    <div class="text-wrapper-5">+7 (499) 444-51-74</div>
+                                    <div class="text-wrapper-59">Заказать звонок</div>
+                                </a>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="div-31">
+                        <ul class="socials" role="list" aria-label="Социальные сети">
+                            <li class="socials-item"><a href="" aria-label="Telegram"><img
+                                        src="./assets/img/telegram.svg" alt="Telegram" loading="lazy" /></a></li>
+                            <li class="socials-item"><a href="" aria-label="VK"><img src="./assets/img/vk.svg" alt="VK"
+                                        loading="lazy" /></a></li>
+                            <li class="socials-item"><a href="" aria-label="YouTube"><img src="./assets/img/youtube.svg"
+                                        alt="YouTube" loading="lazy" /></a></li>
+                        </ul>
+                        <div class="right">
+                            <!-- 1. Обертка для позиционирования и отслеживания наведения -->
+                            <div class="footer-dropdown-wrapper">
+
+                                <!-- 2. Ваш исходный элемент, который будет триггером -->
+                                <div class="div-24" id="footer-dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="text-wrapper-60">Сайты партнеры</span>
+                                    <img class="vector-5" src="./assets/img/arr-down.svg" alt="Стрелка вниз"
+                                        loading="lazy" />
+                                </div>
+
+                                <!-- 3. Сам выпадающий список (по умолчанию скрыт) -->
+                                <ul id="footer-dropdown-menu" class="footer-dropdown-menu">
+                                    <li><a href="https://www.nv-lab.ru" target="_blank"
+                                            class="is-current">www.nv-lab.ru</a></li>
+                                    <li><a href="https://www.nv-lab.ru" target="_blank">www.nv-lab.ru</a></li>
+                                    <li><a href="https://www.nv-lab.kz" target="_blank">www.nv-lab.kz</a></li>
+                                    <li><a href="https://www.nv-med.ru" target="_blank">www.nv-med.ru</a></li>
+                                    <li><a href="https://www.biolab5.ru" target="_blank">www.biolab5.ru</a></li>
+                                    <li><a href="https://stegler.ru" target="_blank">stegler.ru</a></li>
+                                    <li><a href="https://soeks.ru" target="_blank">soeks.ru</a></li>
+                                </ul>
+
+                            </div>
+                            <div class="frame-15" role="navigation" aria-label="Языки">
+                                <a href="" class="frame-16" aria-current="true">
+                                    <span class="text-wrapper-61">RU</span>
+                                </a>
+                                <a href="" class="frame-17">
+                                    <span class="text-wrapper-61">EN</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-2">
+                        <ul class="logos" role="list" aria-label="Логотипы партнеров">
+                            <li class="logos-item"><a href=""><img src="./assets/img/Sk__Участник-block-ru_ 2.svg"
+                                        alt="Логотип партнера 1" loading="lazy" /></a></li>
+                            <li class="logos-item"><a href=""><img src="./assets/img/black_small_dark 1.svg"
+                                        alt="Логотип партнера 2" loading="lazy" /></a>
+                            </li>
+                        </ul>
+                        <a href="" class="text-wrapper-62">Политика обработки персональных данных</a>
+                        <a href="" class="text-wrapper-62">Оферта</a>
+                        <a href="./assets/styles/" class="div-3">
+                            <div class="text-wrapper-63">Сделано в</div>
+                            <img class="group-4" src="./assets/img/Group.svg" alt="Логотип разработчика"
+                                loading="lazy" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Находим все нужные элементы на странице
+            const modal = document.getElementById('contact-modal');
+            const openBtn = document.getElementById('open-form-btn');
+            const openBtn2 = document.getElementById('open-form-btn2');
+            const closeBtn = modal.querySelector('.close-btn');
+            const contactForm = document.getElementById('contact-form');
+
+            // Функция для открытия модального окна
+            const openModal = (event) => {
+                event.preventDefault(); // Отменяем стандартное действие ссылки
+                modal.classList.add('active'); // Показываем модальное окно
+            };
+
+            // Функция для закрытия модального окна
+            const closeModal = () => {
+                modal.classList.remove('active'); // Скрываем модальное окно
+            };
+
+            // 1. Открытие по клику на ссылку "Написать нам"
+            openBtn.addEventListener('click', openModal);
+            openBtn2.addEventListener('click', openModal);
+
+            // 2. Закрытие по клику на крестик
+            closeBtn.addEventListener('click', closeModal);
+            closeBtn2.addEventListener('click', closeModal);
+
+            // 3. Закрытие по клику на оверлей (темный фон)
+            modal.addEventListener('click', (event) => {
+                // Если клик был сделан именно по оверлею, а не по его содержимому
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // 4. Закрытие по нажатию на клавишу Escape
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+
+            // 5. Обработка отправки формы
+            contactForm.addEventListener('submit', (event) => {
+                event.preventDefault(); // Отменяем стандартную отправку формы
+
+                // Здесь вы можете добавить логику отправки данных на сервер (например, через fetch)
+                const formData = new FormData(contactForm);
+                const name = formData.get('name');
+                const email = formData.get('email');
+
+                console.log('Форма отправлена!');
+                console.log('Имя:', name);
+                console.log('Email:', email);
+
+                alert('Спасибо за ваше обращение! Мы скоро свяжемся с вами.');
+
+                // Очищаем форму и закрываем окно
+                contactForm.reset();
+                closeModal();
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.equipments .swiper', {
+                // Указываем, сколько слайдов будет видно одновременно
+                slidesPerView: 2,
+                // Расстояние между слайдами
+                spaceBetween: 20,
+
+                // Подключаем ваши кастомные кнопки навигации
+                navigation: {
+                    nextEl: '.equipments .btn.next',
+                    prevEl: '.equipments .btn.prev',
+                },
+
+                // Настройки для разных размеров экрана (адаптивность)
+                breakpoints: {
+                    // когда ширина экрана <= 320px
+                    320: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    },
+                    // когда ширина экрана <= 768px
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    // когда ширина экрана <= 1024px
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    // когда ширина экрана <= 1200px
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.news .swiper', {
+                // Указываем, сколько слайдов будет видно одновременно
+                slidesPerView: 2,
+                // Расстояние между слайдами
+                spaceBetween: 20,
+
+                // Подключаем ваши кастомные кнопки навигации
+                navigation: {
+                    nextEl: '.news .btn.next',
+                    prevEl: '.news .btn.prev',
+                },
+
+                // Настройки для разных размеров экрана (адаптивность)
+                breakpoints: {
+                    // когда ширина экрана <= 320px
+                    320: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    },
+                    // когда ширина экрана <= 768px
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    // когда ширина экрана <= 1024px
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    // когда ширина экрана <= 1200px
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerBtn = document.querySelector('.burger');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeBtn = document.querySelector('.mobile-menu__close');
+            const body = document.body;
+
+            // Функция открытия меню
+            const openMenu = () => {
+                mobileMenu.classList.add('is-open');
+            };
+
+            // Функция закрытия меню
+            const closeMenu = () => {
+                mobileMenu.classList.remove('is-open');
+            };
+
+            // Открываем меню по клику на бургер
+            if (burgerBtn && mobileMenu) {
+                burgerBtn.addEventListener('click', openMenu);
+            }
+
+            // Закрываем меню по клику на крестик
+            if (closeBtn && mobileMenu) {
+                closeBtn.addEventListener('click', closeMenu);
+            }
+
+            // Закрываем меню по клику вне его (на оверлей, если он есть)
+            // или по нажатию на Escape. Это улучшает UX.
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+                    closeMenu();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

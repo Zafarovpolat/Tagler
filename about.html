@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Таглер - Российский производитель лабораторного оборудования</title>
+    <meta name="description"
+        content="Надежные решения для медицины, фармацевтики и научных исследований, созданные по современным стандартам качества и точности." />
+    <meta name="keywords"
+        content="лабораторное оборудование, медицинское оборудование, центрифуги, УФ облучатели, негатоскопы, Таглер" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Таглер - Российский производитель лабораторного оборудования" />
+    <meta property="og:description" content="Надежные решения для медицины, фармацевтики и научных исследований." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tagler.ru/" />
+    <meta property="og:image" content="./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg" />
+
+    <link rel="preload" as="image" href="./assets/img/Bg.webp" fetchpriority="high" type="image/webp" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "НПП Таглер",
+      "url": "https://tagler.ru/",
+      "logo": "./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+7-499-444-51-74",
+        "contactType": "customer service",
+        "email": "info@tagler.ru"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Москва",
+        "addressCountry": "RU"
+      }
+    }
+    </script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.weBg.png">
+    <link rel="icon" type="image/weBg.png" sizes="32x32" href="./assets/favicon/favicon-32x32.weBg.png">
+    <link rel="icon" type="image/weBg.png" sizes="16x16" href="./assets/favicon/favicon-16x16.weBg.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./assets/styles/globals.css" />
+    <link rel="stylesheet" href="./assets/styles/styleguide.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+</head>
+
+<body>
+    <div class="element about-page dealers">
+        <header class="header">
+            <div class="container">
+                <div class="top">
+                    <nav class="navbar" role="navigation" aria-label="Основная навигация">
+                        <a href="./index.html" class="text-wrapper" aria-current="page">Главная</a>
+                        <a href="./about.html" class="text-wrapper">О Таглер</a>
+                        <a href="./catalog.html" class="text-wrapper">Продукция Таглер</a>
+                        <a href="./buy.html" class="text-wrapper">Где Купить?</a>
+                        <a href="./dealers.html" class="text-wrapper">Дилерам</a>
+                        <a href="./contacts.html" class="text-wrapper">Контакты</a>
+                    </nav>
+                    <div class="contacts">
+                        <a href="./login.html" class="div">Войти</a>
+                        <a href="./signup.html" class="text-wrapper-2">Зарегистрироваться</a>
+                    </div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="div-2">
+                        <a href="./catalog.html" class="frame">
+                            <img class="vuesax-bulk-category" src="./assets/img/category-2.svg" alt="Иконка каталога" />
+                            <div class="text-wrapper-3">Каталог</div>
+                        </a>
+                        <div class="div-3">
+                            <a class="tagler-logotype-CMYK" href="./index.html"><img class=""
+                                    src="./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg" alt="Логотип Таглер"
+                                    loading="lazy" /></a>
+                            <p class="p">
+                                <span class="span">Российский производитель лабораторного оборудования</span>
+                            </p>
+                        </div>
+                        <div class="search-wrapper">
+                            <!-- Ваш исходный блок для поля ввода -->
+                            <div class="frame-2">
+                                <label for="search-input" class="visually-hidden">Поиск нужного товара</label>
+                                <img class="vector" src="./assets/img/Vector.svg" alt="" />
+                                <!-- Используем иконку, т.к. ваша локальная -->
+                                <input type="search" id="search-input" class="search-input"
+                                    placeholder="Поиск нужного товара...">
+                            </div>
+
+                            <!-- Пустой контейнер для результатов поиска, который мы будем заполнять с помощью JS -->
+                            <div id="search-results" class="search-results">
+                                <!-- Результаты будут вставлены сюда -->
+                            </div>
+                        </div>
+                        <a href="./cart.html" class="icon" aria-label="Корзина">
+                            <img class="vuesax-bulk-bag" src="./assets/img/bag.svg" alt="Иконка корзины" />
+                        </a>
+                        <div class="frame-3">
+                            <a href="mailto:info@tagler.ru" class="text-wrapper-5">info@tagler.ru</a>
+                            <a href="#" id="open-form-btn" class="text-wrapper-6">Написать нам</a>
+                        </div>
+                        <div class="div-wrapper">
+                            <a href="tel:+74994445174" class="text-wrapper-7">+7 (499) 444-51-74</a>
+                        </div>
+                        <div class="burger">
+                            <img src="./assets/img/burger.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="bar">
+                    <ul class="bar-list">
+                        <li class="bar-item">
+                            <a href=""><img src="./assets/img/Group 444898.svg" alt=""><span>Главная</span></a>
+                        </li>
+                        <li class="bar-item">
+                            <a href=""><img src="./assets/img/category-2-2.svg" alt=""><span>Каталог</span></a>
+                        </li>
+                        <li class="bar-item">
+                            <a href=""><img src="./assets/img/bag-2.svg" alt=""><span>Корзина</span></a>
+                        </li>
+                        <li class="bar-item">
+                            <a href=""><img src="./assets/img/profile.svg" alt=""><span>Профиль</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu" id="mobile-menu">
+                    <div class="mobile-menu__header">
+                        <a class="tagler-logotype-CMYK" href="./index.html"><img
+                                src="./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg" alt="Логотип Таглер" /></a>
+                        <button class="mobile-menu__close" aria-label="Закрыть меню">&times;</button>
+                    </div>
+
+                    <div class="mobile-menu__content">
+                        <!-- Поиск из .div-2 -->
+                        <div class="search-wrapper">
+                            <div class="frame-2">
+                                <label for="mobile-search-input" class="visually-hidden">Поиск нужного товара</label>
+                                <img class="vector" src="./assets/img/Vector.svg" alt="" />
+                                <input type="search" id="mobile-search-input" class="search-input"
+                                    placeholder="Поиск нужного товара...">
+                            </div>
+                        </div>
+
+                        <!-- Каталог из .div-2 -->
+                        <a href="./catalog.html" class="mobile-menu__catalog">
+                            <img class="vuesax-bulk-category" src="./assets/img/category-2.svg" alt="Иконка каталога" />
+                            <div class="text-wrapper-3">Каталог</div>
+                        </a>
+
+                        <!-- Навигация из .top -->
+                        <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+                            <a href="./index.html" class="mobile-menu__link" aria-current="page">Главная</a>
+                            <a href="./about.html" class="mobile-menu__link">О Таглер</a>
+                            <a href="./catalog.html" class="mobile-menu__link">Продукция Таглер</a>
+                            <a href="./buy.html" class="mobile-menu__link">Где Купить?</a>
+                            <a href="./dealers.html" class="mobile-menu__link">Дилерам</a>
+                            <a href="./contacts.html" class="mobile-menu__link">Контакты</a>
+                        </nav>
+
+                        <!-- Авторизация из .top -->
+                        <div class="mobile-menu__auth">
+                            <a href="./login.html" class="div">Войти</a>
+                            <a href="./signup.html" class="text-wrapper-2">Зарегистрироваться</a>
+                        </div>
+
+                        <!-- Контакты из .div-2 -->
+                        <div class="mobile-menu__contacts">
+                            <div class="div-wrapper">
+                                <a href="tel:+74994445174" class="text-wrapper-7">+7 (499) 444-51-74</a>
+                            </div>
+                            <div class="frame-3">
+                                <a href="#" class="text-wrapper-6 " id="open-form-btn2">Написать нам</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="contact-modal" class="modal-overlay">
+            <div class="modal-content">
+                <!-- Кнопка закрытия -->
+                <span class="close-btn"><img src="./assets/img/x.svg" alt=""></span>
+
+                <!-- Заголовок и подзаголовок -->
+                <h2>Остались вопросы?</h2>
+                <p>Заполните форму, и наш специалист свяжется с вами в ближайшее время.</p>
+
+                <!-- Форма -->
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="formname">Ваше имя</label>
+                        <input type="text" id="formname" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formemail">Ваш Email</label>
+                        <input type="email" id="formemail" name="email" required>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">
+                            Я даю свое согласие на обработку персональных данных в соответствии с ФЗ №152-ФЗ "О
+                            персональных данных" на условиях и для целей, определенных Политикой Конфиденциальности.
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+
+        <main>
+            <section class="hero div-5">
+                <div class="container">
+                    <div class="banner ">
+                        <div class=" hero-card">
+                            <img src="./assets/img/Bg.webp" alt="Инновационное лабораторное оборудование" class="bg bg1"
+                                fetchpriority="high" width="1920" height="486" loading="eager" />
+                            <!-- Градиент поверх изображения -->
+                            <div class="bg-gradient"></div>
+                            <div class="hero-text">
+
+                                <div class="links">
+                                    <a href="./index.html">Главная</a>
+                                    <span><img src="./assets/img/white-arr.svg" alt=""></span>
+                                    <a href="./dealers.html">О Таглер</a>
+                                </div>
+
+                                <div class="hero-bottom">
+                                    <div class="group">
+                                        <div class="div-wrapper-2">
+                                            <h1 class="div-7"><span class="text-wrapper-8">Tagler</span></h1>
+                                        </div>
+                                        <div class="div-wrapper-3">
+                                            <div class="text-wrapper-9">Производитель лабораторного оборудования</div>
+                                        </div>
+                                    </div>
+                                    <div class="hero-play">
+                                        <h4>Смотреть видео</h4>
+                                        <img src="./assets/img/play.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news div-27">
+                <div class="container">
+                    <div class="cards-4">
+                        <article class="frame-13">
+                            <svg width="39" height="39" viewBox="0 0 39 39" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M27.2181 5.785V3.25C27.2181 2.58375 26.6656 2.03125 25.9994 2.03125C25.3331 2.03125 24.7806 2.58375 24.7806 3.25V5.6875H14.2181V3.25C14.2181 2.58375 13.6656 2.03125 12.9994 2.03125C12.3331 2.03125 11.7806 2.58375 11.7806 3.25V5.785C7.39314 6.19125 5.2644 8.8075 4.9394 12.6912C4.9069 13.1625 5.2969 13.5525 5.7519 13.5525H33.2469C33.7181 13.5525 34.1081 13.1462 34.0594 12.6912C33.7344 8.8075 31.6056 6.19125 27.2181 5.785Z"
+                                    fill="#0E131A" />
+                                <path opacity="0.4"
+                                    d="M32.5 15.99C33.3937 15.99 34.125 16.7212 34.125 17.615V27.625C34.125 32.5 31.6875 35.75 26 35.75H13C7.3125 35.75 4.875 32.5 4.875 27.625V17.615C4.875 16.7212 5.60625 15.99 6.5 15.99H32.5Z"
+                                    fill="#0E131A" />
+                                <path
+                                    d="M13.8125 24.375C13.39 24.375 12.9675 24.1962 12.6588 23.9037C12.3663 23.595 12.1875 23.1725 12.1875 22.75C12.1875 22.3275 12.3663 21.905 12.6588 21.5962C13.1138 21.1412 13.8288 20.995 14.43 21.255C14.6413 21.3362 14.82 21.45 14.9662 21.5962C15.2587 21.905 15.4375 22.3275 15.4375 22.75C15.4375 23.1725 15.2587 23.595 14.9662 23.9037C14.6575 24.1962 14.235 24.375 13.8125 24.375Z"
+                                    fill="#0E131A" />
+                                <path
+                                    d="M19.5 24.375C19.0775 24.375 18.655 24.1962 18.3463 23.9037C18.0538 23.595 17.875 23.1725 17.875 22.75C17.875 22.3275 18.0538 21.905 18.3463 21.5962C18.4925 21.45 18.6712 21.3362 18.8825 21.255C19.4837 20.995 20.1987 21.1412 20.6537 21.5962C20.9462 21.905 21.125 22.3275 21.125 22.75C21.125 23.1725 20.9462 23.595 20.6537 23.9037C20.5725 23.9687 20.4913 24.0337 20.41 24.0987C20.3125 24.1637 20.215 24.2125 20.1175 24.245C20.02 24.2937 19.9225 24.3262 19.825 24.3425C19.7113 24.3587 19.6137 24.375 19.5 24.375Z"
+                                    fill="#0E131A" />
+                                <path
+                                    d="M25.1875 24.375C24.765 24.375 24.3425 24.1963 24.0338 23.9038C23.7413 23.595 23.5625 23.1725 23.5625 22.75C23.5625 22.3275 23.7413 21.905 24.0338 21.5963C24.1963 21.45 24.3587 21.3362 24.57 21.255C24.8625 21.125 25.1875 21.0925 25.5125 21.1575C25.61 21.1738 25.7075 21.2062 25.805 21.255C25.9025 21.2875 26 21.3363 26.0975 21.4013C26.1788 21.4663 26.26 21.5313 26.3412 21.5963C26.6337 21.905 26.8125 22.3275 26.8125 22.75C26.8125 23.1725 26.6337 23.595 26.3412 23.9038C26.26 23.9688 26.1788 24.0337 26.0975 24.0987C26 24.1637 25.9025 24.2125 25.805 24.245C25.7075 24.2938 25.61 24.3263 25.5125 24.3425C25.3988 24.3588 25.285 24.375 25.1875 24.375Z"
+                                    fill="#0E131A" />
+                                <path
+                                    d="M13.8125 30.0625C13.6013 30.0625 13.39 30.0138 13.195 29.9325C12.9837 29.8513 12.8213 29.7375 12.6588 29.5913C12.3663 29.2825 12.1875 28.86 12.1875 28.4375C12.1875 28.015 12.3663 27.5925 12.6588 27.2838C12.8213 27.1375 12.9837 27.0237 13.195 26.9425C13.4875 26.8125 13.8125 26.78 14.1375 26.845C14.235 26.8613 14.3325 26.8937 14.43 26.9425C14.5275 26.975 14.625 27.0238 14.7225 27.0888C14.8038 27.1538 14.885 27.2188 14.9662 27.2838C15.2587 27.5925 15.4375 28.015 15.4375 28.4375C15.4375 28.86 15.2587 29.2825 14.9662 29.5913C14.885 29.6563 14.8038 29.7375 14.7225 29.7862C14.625 29.8512 14.5275 29.9 14.43 29.9325C14.3325 29.9813 14.235 30.0138 14.1375 30.03C14.0238 30.0463 13.9262 30.0625 13.8125 30.0625Z"
+                                    fill="#0E131A" />
+                                <path
+                                    d="M19.5 30.0625C19.0775 30.0625 18.655 29.8837 18.3463 29.5912C18.0538 29.2825 17.875 28.86 17.875 28.4375C17.875 28.015 18.0538 27.5925 18.3463 27.2838C18.9475 26.6825 20.0525 26.6825 20.6537 27.2838C20.9462 27.5925 21.125 28.015 21.125 28.4375C21.125 28.86 20.9462 29.2825 20.6537 29.5912C20.345 29.8837 19.9225 30.0625 19.5 30.0625Z"
+                                    fill="#0E131A" />
+                                <path
+                                    d="M25.1875 30.0625C24.765 30.0625 24.3425 29.8837 24.0338 29.5912C23.7413 29.2825 23.5625 28.86 23.5625 28.4375C23.5625 28.015 23.7413 27.5925 24.0338 27.2838C24.635 26.6825 25.74 26.6825 26.3412 27.2838C26.6337 27.5925 26.8125 28.015 26.8125 28.4375C26.8125 28.86 26.6337 29.2825 26.3412 29.5912C26.0325 29.8837 25.61 30.0625 25.1875 30.0625Z"
+                                    fill="#0E131A" />
+                                <!-- Code injected by live-server -->
+                                <script>
+                                    // <![CDATA[  <-- For SVG support
+                                    if ('WebSocket' in window) {
+                                        (function () {
+                                            function refreshCSS() {
+                                                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                                                var head = document.getElementsByTagName("head")[0];
+                                                for (var i = 0; i < sheets.length; ++i) {
+                                                    var elem = sheets[i];
+                                                    var parent = elem.parentElement || head;
+                                                    parent.removeChild(elem);
+                                                    var rel = elem.rel;
+                                                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                                                    }
+                                                    parent.appendChild(elem);
+                                                }
+                                            }
+                                            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                                            var address = protocol + window.location.host + window.location.pathname + '/ws';
+                                            var socket = new WebSocket(address);
+                                            socket.onmessage = function (msg) {
+                                                if (msg.data == 'reload') window.location.reload();
+                                                else if (msg.data == 'refreshcss') refreshCSS();
+                                            };
+                                            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                                                console.log('Live reload enabled.');
+                                                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                                            }
+                                        })();
+                                    }
+                                    else {
+                                        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+                                    }
+                                    // ]]>
+                                </script>
+                            </svg>
+                            <div class="card-hidden-text">2014</div>
+
+                            <div class="card-bottom">
+                                <h3>С 2014 года</h3>
+                                <p>Производство лабораторного оборудования</p>
+                            </div>
+                        </article>
+
+                        <article class="frame-13">
+                            <svg width="39" height="39" viewBox="0 0 39 39" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4"
+                                    d="M9.32672 26C9.50547 25.2038 9.18047 24.0662 8.61172 23.4975L4.66297 19.5487C3.42797 18.3137 2.94047 16.9975 3.29797 15.86C3.67172 14.7225 4.82547 13.9425 6.54797 13.65L11.618 12.805C12.3492 12.675 13.243 12.025 13.5842 11.3587L16.3792 5.7525C17.1917 4.14375 18.2967 3.25 19.4992 3.25C20.7017 3.25 21.8067 4.14375 22.6192 5.7525L25.4142 11.3587C25.6255 11.7812 26.0642 12.1875 26.5355 12.4637L9.03422 29.965C8.80672 30.1925 8.41672 29.9813 8.48172 29.6562L9.32672 26Z"
+                                    fill="#0E131A" />
+                                <path
+                                    d="M30.3883 23.4975C29.8033 24.0825 29.4783 25.2038 29.6733 26L30.7945 30.8913C31.2658 32.9225 30.9733 34.45 29.9658 35.1813C29.5595 35.4738 29.072 35.62 28.5033 35.62C27.6745 35.62 26.6995 35.3113 25.627 34.6775L20.8658 31.85C20.1183 31.4113 18.8833 31.4113 18.1358 31.85L13.3745 34.6775C11.5708 35.7338 10.027 35.9125 9.03578 35.1813C8.66203 34.905 8.38578 34.5313 8.20703 34.0438L27.967 14.2838C28.7145 13.5363 29.7708 13.195 30.7945 13.3738L32.4358 13.65C34.1583 13.9425 35.312 14.7225 35.6858 15.86C36.0433 16.9975 35.5558 18.3138 34.3208 19.5488L30.3883 23.4975Z"
+                                    fill="#0E131A" />
+                                <!-- Code injected by live-server -->
+                                <script>
+                                    // <![CDATA[  <-- For SVG support
+                                    if ('WebSocket' in window) {
+                                        (function () {
+                                            function refreshCSS() {
+                                                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                                                var head = document.getElementsByTagName("head")[0];
+                                                for (var i = 0; i < sheets.length; ++i) {
+                                                    var elem = sheets[i];
+                                                    var parent = elem.parentElement || head;
+                                                    parent.removeChild(elem);
+                                                    var rel = elem.rel;
+                                                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                                                    }
+                                                    parent.appendChild(elem);
+                                                }
+                                            }
+                                            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                                            var address = protocol + window.location.host + window.location.pathname + '/ws';
+                                            var socket = new WebSocket(address);
+                                            socket.onmessage = function (msg) {
+                                                if (msg.data == 'reload') window.location.reload();
+                                                else if (msg.data == 'refreshcss') refreshCSS();
+                                            };
+                                            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                                                console.log('Live reload enabled.');
+                                                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                                            }
+                                        })();
+                                    }
+                                    else {
+                                        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+                                    }
+                                    // ]]>
+                                </script>
+                            </svg>
+
+                            <div class="card-hidden-text">10 000</div>
+
+                            <div class="card-bottom">
+                                <h3>>10 000 единиц в год</h3>
+                                <p>Средний объём выпуска продукции</p>
+                            </div>
+                        </article>
+
+                        <article class="frame-13">
+                            <svg width="39" height="39" viewBox="0 0 39 39" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M35.75 35.75H3.25C2.58375 35.75 2.03125 35.1975 2.03125 34.5312C2.03125 33.865 2.58375 33.3125 3.25 33.3125H35.75C36.4162 33.3125 36.9688 33.865 36.9688 34.5312C36.9688 35.1975 36.4162 35.75 35.75 35.75Z"
+                                    fill="#0E131A" />
+                                <path
+                                    d="M15.8438 6.5V35.75H23.1562V6.5C23.1562 4.7125 22.425 3.25 20.2312 3.25H18.7688C16.575 3.25 15.8438 4.7125 15.8438 6.5Z"
+                                    fill="#0E131A" />
+                                <path opacity="0.4"
+                                    d="M4.875 16.25V35.75H11.375V16.25C11.375 14.4625 10.725 13 8.775 13H7.475C5.525 13 4.875 14.4625 4.875 16.25Z"
+                                    fill="#0E131A" />
+                                <path opacity="0.4"
+                                    d="M27.625 24.375V35.75H34.125V24.375C34.125 22.5875 33.475 21.125 31.525 21.125H30.225C28.275 21.125 27.625 22.5875 27.625 24.375Z"
+                                    fill="#0E131A" />
+                                <!-- Code injected by live-server -->
+                                <script>
+                                    // <![CDATA[  <-- For SVG support
+                                    if ('WebSocket' in window) {
+                                        (function () {
+                                            function refreshCSS() {
+                                                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                                                var head = document.getElementsByTagName("head")[0];
+                                                for (var i = 0; i < sheets.length; ++i) {
+                                                    var elem = sheets[i];
+                                                    var parent = elem.parentElement || head;
+                                                    parent.removeChild(elem);
+                                                    var rel = elem.rel;
+                                                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                                                    }
+                                                    parent.appendChild(elem);
+                                                }
+                                            }
+                                            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                                            var address = protocol + window.location.host + window.location.pathname + '/ws';
+                                            var socket = new WebSocket(address);
+                                            socket.onmessage = function (msg) {
+                                                if (msg.data == 'reload') window.location.reload();
+                                                else if (msg.data == 'refreshcss') refreshCSS();
+                                            };
+                                            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                                                console.log('Live reload enabled.');
+                                                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                                            }
+                                        })();
+                                    }
+                                    else {
+                                        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+                                    }
+                                    // ]]>
+                                </script>
+                            </svg>
+
+                            <div class="card-hidden-text">138 млн</div>
+
+                            <div class="card-bottom">
+                                <h3>138 млн руб.</h3>
+                                <p>Выручка за 2024 год</p>
+                            </div>
+                        </article>
+
+                        <article class="frame-13">
+                            <svg width="39" height="39" viewBox="0 0 39 39" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4"
+                                    d="M32.6629 11.2775C32.6629 12.155 32.1917 12.9512 31.4442 13.3574L28.6166 14.8849L26.2117 16.1687L21.2229 18.8662C20.6866 19.1587 20.1017 19.305 19.5004 19.305C18.8992 19.305 18.3142 19.1587 17.7779 18.8662L7.55664 13.3574C6.80914 12.9512 6.33789 12.155 6.33789 11.2775C6.33789 10.4 6.80914 9.60367 7.55664 9.19742L10.7579 7.47493L13.3092 6.09372L17.7779 3.68875C18.8504 3.10375 20.1504 3.10375 21.2229 3.68875L31.4442 9.19742C32.1917 9.60367 32.6629 10.4 32.6629 11.2775Z"
+                                    fill="#0E131A" />
+                                <path opacity="0.4"
+                                    d="M16.0874 20.7837L6.58115 16.0225C5.8499 15.6488 5.00491 15.6975 4.30616 16.12C3.60741 16.5425 3.20117 17.29 3.20117 18.1025V27.0887C3.20117 28.6487 4.0624 30.0462 5.4599 30.745L14.9662 35.4901C15.2912 35.6526 15.6487 35.7338 16.0062 35.7338C16.4287 35.7338 16.8512 35.6201 17.2249 35.3763C17.9237 34.9538 18.3299 34.2063 18.3299 33.3938V24.4076C18.3462 22.8801 17.4849 21.4825 16.0874 20.7837Z"
+                                    fill="#0E131A" />
+                                <path opacity="0.4"
+                                    d="M35.7993 18.1188V27.105C35.7993 28.6488 34.9381 30.0463 33.5406 30.745L24.0343 35.5062C23.7093 35.6687 23.3518 35.75 22.9943 35.75C22.5718 35.75 22.1493 35.6363 21.7593 35.3926C21.0768 34.9701 20.6543 34.2225 20.6543 33.41V24.44C20.6543 22.88 21.5156 21.4825 22.9131 20.7837L26.4068 19.045L28.8443 17.8262L32.4193 16.0388C33.1506 15.665 33.9956 15.6975 34.6943 16.1363C35.3768 16.5588 35.7993 17.3063 35.7993 18.1188Z"
+                                    fill="#0E131A" />
+                                <path
+                                    d="M28.6165 14.885L26.2116 16.1688L10.7578 7.47496L13.3091 6.09375L28.2266 14.5112C28.3891 14.6087 28.519 14.7387 28.6165 14.885Z"
+                                    fill="#0E131A" />
+                                <path
+                                    d="M28.8438 17.8262V21.515C28.8438 22.1812 28.2912 22.7337 27.625 22.7337C26.9588 22.7337 26.4062 22.1812 26.4062 21.515V19.0449L28.8438 17.8262Z"
+                                    fill="#0E131A" />
+                                <!-- Code injected by live-server -->
+                                <script>
+                                    // <![CDATA[  <-- For SVG support
+                                    if ('WebSocket' in window) {
+                                        (function () {
+                                            function refreshCSS() {
+                                                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                                                var head = document.getElementsByTagName("head")[0];
+                                                for (var i = 0; i < sheets.length; ++i) {
+                                                    var elem = sheets[i];
+                                                    var parent = elem.parentElement || head;
+                                                    parent.removeChild(elem);
+                                                    var rel = elem.rel;
+                                                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                                                    }
+                                                    parent.appendChild(elem);
+                                                }
+                                            }
+                                            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                                            var address = protocol + window.location.host + window.location.pathname + '/ws';
+                                            var socket = new WebSocket(address);
+                                            socket.onmessage = function (msg) {
+                                                if (msg.data == 'reload') window.location.reload();
+                                                else if (msg.data == 'refreshcss') refreshCSS();
+                                            };
+                                            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                                                console.log('Live reload enabled.');
+                                                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                                            }
+                                        })();
+                                    }
+                                    else {
+                                        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+                                    }
+                                    // ]]>
+                                </script>
+                            </svg>
+
+                            <div class="card-hidden-text">70</div>
+
+                            <div class="card-bottom">
+                                <h3>Более 70 видов</h3>
+                                <p>Изделий выпустили за 2024 год</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about div-17">
+                <div class="container">
+                    <div class="about-up">
+                        <div class="about-text">
+                            <h2 class="TAGLER">
+                                <span class="text-wrapper-25">TAGLER</span>
+                                <span class="text-wrapper-26">
+                                    - российский производитель качественного, доступного и востребованного лабораторного
+                                    оборудования.</span>
+                            </h2>
+                            <div class="txt">
+                                <p class="text-wrapper-27">
+                                    Компания основана в 2014 году. Оборудование не уступает по качеству продукции многих
+                                    европейских
+                                    производителей, а цена сопоставима с ценой на китайские аналоги. Производство
+                                    находится в
+                                    Москве.
+                                </p>
+                                <p class="TAGLER-2">
+                                    Тщательный выбор поставщиков комплектующих, собственная служба контроля качества
+                                    конечного
+                                    продукта
+                                    гарантируют высокую надёжность. TAGLER уделяет большое внимание поиску и применению
+                                    новых
+                                    технологических
+                                    решений, как в управлении,
+                                    так и в безопасности эксплуатации оборудования в лабораториях.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-img">
+                            <picture>
+
+                                <source media="(min-width: 1441px)"
+                                    srcset="./assets/img/Rectangle 7.webp 1x, ./assets/img/Rectangle 7-2x.webp 2x">
+
+                                <img class="rectangle" src="./assets/img/Rectangle 7.webp"
+                                    alt="Изображение компании Таглер" loading="lazy"
+                                    srcset="./assets/img/Rectangle 7-2x.webp 2x">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="cards-2">
+                        <article class="div-18">
+                            <div class="text-wrapper-28">10 лет</div>
+                            <div class="text-wrapper-29">Опыт производства лабораторного оборудования</div>
+                            <img class="vector-2" src="./assets/img/Vector 1.svg" alt="Вектор 1" loading="lazy" />
+                            <img class="vector-3" src="./assets/img/Vector 2.svg" alt="Вектор 2" loading="lazy" />
+                        </article>
+                        <article class="div-18">
+                            <div class="text-wrapper-28">100%</div>
+                            <p class="text-wrapper-29">Каждое изделие проходит проверку собственной службы контроля.</p>
+                            <img class="vector-2" src="./assets/img/Vector 1.svg" alt="Вектор 1" loading="lazy" />
+                            <img class="vector-3" src="./assets/img/Vector 2.svg" alt="Вектор 2" loading="lazy" />
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="usage div-20">
+                <div class="container">
+                    <h2 class="div-11">Применение</h2>
+                    <div class="cards-3">
+                        <article class="div-21">
+                            <div class="element-wrapper">
+                                <div class="div-22"></div>
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/Таглер (15).webp 1x, ./assets/img/Таглер (15)-2x.webp 2x">
+                                    <img class="img" src="./assets/img/Таглер (15).webp"
+                                        srcset="./assets/img/Таглер (15)-2x.webp 2x" alt="Пищевые лаборатории"
+                                        loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="text-2">
+                                <div class="frame-7">
+                                    <h3 class="text-wrapper-32">Пищевые лаборатории</h3>
+                                </div>
+                                <p class="text-wrapper-33">
+                                    Контроль качества сырья и готовой продукции, определение безопасности и соответствия
+                                    стандартам пищевой
+                                    индустрии.
+                                </p>
+                            </div>
+                            <div class="text-wrapper-34">01</div>
+                        </article>
+                        <article class="div-21">
+                            <div class="element-wrapper">
+                                <div class="div-22"></div>
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/Таглер (15) (1).webp 1x, ./assets/img/Таглер (15) (1)-2x.webp 2x">
+                                    <img class="img" src="./assets/img/Таглер (15) (1).webp"
+                                        srcset="./assets/img/Таглер (15) (1)-2x.webp 2x" alt="Водные лаборатории"
+                                        loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="text-2">
+                                <div class="frame-7">
+                                    <h3 class="text-wrapper-32">Водные лаборатории</h3>
+                                </div>
+                                <p class="text-wrapper-33">
+                                    Анализ питьевой и сточных вод, мониторинг чистоты, выявление загрязнений и
+                                    соответствие
+                                    санитарным
+                                    нормам.
+                                </p>
+                            </div>
+                            <div class="text-wrapper-34">02</div>
+                        </article>
+                        <article class="div-21">
+                            <div class="element-wrapper">
+                                <div class="div-22"></div>
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/Таглер (15) (2).webp 1x, ./assets/img/Таглер (15) (2)-2x.webp 2x">
+                                    <img class="img" src="./assets/img/Таглер (15) (2).webp"
+                                        srcset="./assets/img/Таглер (15) (2)-2x.webp 2x" alt="Дезинфекция"
+                                        loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="text-2">
+                                <div class="frame-7">
+                                    <h3 class="text-wrapper-32">Дезинфекция</h3>
+                                </div>
+                                <p class="text-wrapper-33">
+                                    Эффективная обработка поверхностей&nbsp;&nbsp;и инструментов, поддержание
+                                    стерильности и
+                                    снижение риска
+                                    заражений.
+                                </p>
+                            </div>
+                            <div class="text-wrapper-34">03</div>
+                        </article>
+                        <article class="div-21">
+                            <div class="bg">
+                                <div class="div-22"></div>
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/Таглер (15) (3).webp 1x, ./assets/img/Таглер (15) (3)-2x.webp 2x">
+                                    <img class="img" src="./assets/img/Таглер (15) (3).webp"
+                                        srcset="./assets/img/Таглер (15) (3)-2x.webp 2x" alt="ПЦР-диагностика"
+                                        loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="text-2">
+                                <div class="frame-7">
+                                    <h3 class="text-wrapper-32">ПЦР-диагностика</h3>
+                                </div>
+                                <p class="text-wrapper-33">
+                                    Высокоточная идентификация вирусов и бактерий, молекулярная диагностика для медицины
+                                    и
+                                    научных
+                                    исследований.
+                                </p>
+                            </div>
+                            <div class="text-wrapper-34">04</div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="docs div-23">
+                <div class="container">
+                    <div class="titlle-2">
+                        <h2 class="text-wrapper-11">Документы</h2>
+                        <a href="" class="text-wrapper-35">Смотреть еще</a>
+                    </div>
+                    <div class="group-3">
+                        <button class="btn btn-left" aria-label="Предыдущий документ"><img src="./assets/img/arr.svg"
+                                alt="Стрелка влево" loading="lazy" /></button>
+                        <div class="row swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                            <div class="swiper-wrapper" id="swiper-wrapper-586b9b34173ea318" aria-live="polite">
+                                <article class="card swiper-slide swiper-slide-active" role="group" aria-label="1 / 5"
+                                    style="width: 440px; margin-right: 20px;">
+                                    <div class="content-4">
+                                        <div class="titlle-3">
+                                            <div class="frame-8">
+                                                <div class="text-wrapper-36">Сертификат</div>
+                                            </div>
+                                            <p class="text-wrapper-37">Сертификат соотвестивя качества продукции от
+                                                <time datetime="2015-01-14">14.01.2015</time>
+                                            </p>
+                                        </div>
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1823.webp 1x, ./assets/img/image 1823-2x.webp 2x">
+                                            <img class="image-8" src="./assets/img/image 1823.webp"
+                                                srcset="./assets/img/image 1823-2x.webp 2x"
+                                                alt="Изображение сертификата" loading="lazy">
+                                        </picture>
+                                        <div class="row-2">
+                                            <div class="div-24">
+                                                <div class="text-wrapper-38">pdf</div>
+                                                <div class="ellipse"></div>
+                                                <div class="text-wrapper-38">0.774 Mb</div>
+                                            </div>
+                                            <a href="" class="vuesax-bulk-document-wrapper"
+                                                aria-label="Скачать документ">
+                                                <svg class="download-icon" width="48" height="48" viewBox="0 0 48 48"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect class="bg" width="48" height="48" rx="24" fill="#F3F3F3" />
+                                                    <path class="icon-path" opacity="0.4"
+                                                        d="M32.5 22.19H29.61C27.24 22.19 25.31 20.26 25.31 17.89V15C25.31 14.45 24.86 14 24.31 14H20.07C16.99 14 14.5 16 14.5 19.57V28.43C14.5 32 16.99 34 20.07 34H27.93C31.01 34 33.5 32 33.5 28.43V23.19C33.5 22.64 33.05 22.19 32.5 22.19Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M27.7999 14.21C27.3899 13.8 26.6799 14.08 26.6799 14.65V18.14C26.6799 19.6 27.9199 20.81 29.4299 20.81C30.3799 20.82 31.6999 20.82 32.8299 20.82C33.3999 20.82 33.6999 20.15 33.2999 19.75C31.8599 18.3 29.2799 15.69 27.7999 14.21Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M24.2799 26.72C23.9899 26.43 23.5099 26.43 23.2199 26.72L22.4999 27.44V23.25C22.4999 22.84 22.1599 22.5 21.7499 22.5C21.3399 22.5 20.9999 22.84 20.9999 23.25V27.44L20.2799 26.72C19.9899 26.43 19.5099 26.43 19.2199 26.72C18.9299 27.01 18.9299 27.49 19.2199 27.78L21.2199 29.78C21.2299 29.79 21.2399 29.79 21.2399 29.8C21.2999 29.86 21.3799 29.91 21.4599 29.95C21.5599 29.98 21.6499 30 21.7499 30C21.8499 30 21.9399 29.98 22.0299 29.94C22.1199 29.9 22.1999 29.85 22.2799 29.78L24.2799 27.78C24.5699 27.49 24.5699 27.01 24.2799 26.72Z"
+                                                        fill="#A8A8A8" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card swiper-slide swiper-slide-next" role="group" aria-label="2 / 5"
+                                    style="width: 440px; margin-right: 20px;">
+                                    <div class="content-4">
+                                        <div class="titlle-3">
+                                            <div class="frame-9">
+                                                <div class="text-wrapper-36">Заключения</div>
+                                            </div>
+                                            <div class="text-wrapper-37">Аудиторское заключение ООО “Таглер”</div>
+                                        </div>
+                                        <!-- У вас здесь была та же картинка, я применил к ней правило. Если картинка другая, просто поменяйте имя файла -->
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1823.webp 1x, ./assets/img/image 1823-2x.webp 2x">
+                                            <img class="image-8" src="./assets/img/image 1823.webp"
+                                                srcset="./assets/img/image 1823-2x.webp 2x" alt="Изображение заключения"
+                                                loading="lazy">
+                                        </picture>
+                                        <div class="row-2">
+                                            <div class="div-24">
+                                                <div class="text-wrapper-38">pdf</div>
+                                                <div class="ellipse"></div>
+                                                <div class="text-wrapper-38">0.342 Mb</div>
+                                            </div>
+                                            <a href="" class="vuesax-bulk-document-wrapper"
+                                                aria-label="Скачать документ">
+                                                <svg class="download-icon" width="48" height="48" viewBox="0 0 48 48"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect class="bg" width="48" height="48" rx="24" fill="#F3F3F3" />
+                                                    <path class="icon-path" opacity="0.4"
+                                                        d="M32.5 22.19H29.61C27.24 22.19 25.31 20.26 25.31 17.89V15C25.31 14.45 24.86 14 24.31 14H20.07C16.99 14 14.5 16 14.5 19.57V28.43C14.5 32 16.99 34 20.07 34H27.93C31.01 34 33.5 32 33.5 28.43V23.19C33.5 22.64 33.05 22.19 32.5 22.19Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M27.7999 14.21C27.3899 13.8 26.6799 14.08 26.6799 14.65V18.14C26.6799 19.6 27.9199 20.81 29.4299 20.81C30.3799 20.82 31.6999 20.82 32.8299 20.82C33.3999 20.82 33.6999 20.15 33.2999 19.75C31.8599 18.3 29.2799 15.69 27.7999 14.21Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M24.2799 26.72C23.9899 26.43 23.5099 26.43 23.2199 26.72L22.4999 27.44V23.25C22.4999 22.84 22.1599 22.5 21.7499 22.5C21.3399 22.5 20.9999 22.84 20.9999 23.25V27.44L20.2799 26.72C19.9899 26.43 19.5099 26.43 19.2199 26.72C18.9299 27.01 18.9299 27.49 19.2199 27.78L21.2199 29.78C21.2299 29.79 21.2399 29.79 21.2399 29.8C21.2999 29.86 21.3799 29.91 21.4599 29.95C21.5599 29.98 21.6499 30 21.7499 30C21.8499 30 21.9399 29.98 22.0299 29.94C22.1199 29.9 22.1999 29.85 22.2799 29.78L24.2799 27.78C24.5699 27.49 24.5699 27.01 24.2799 26.72Z"
+                                                        fill="#A8A8A8" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card swiper-slide" role="group" aria-label="3 / 5"
+                                    style="width: 440px; margin-right: 20px;">
+                                    <div class="content-4">
+                                        <div class="titlle-3">
+                                            <div class="frame-10">
+                                                <div class="text-wrapper-39">Свидетельство</div>
+                                            </div>
+                                            <p class="text-wrapper-37">Свидетельство о регистрации ИНН.КПП <time
+                                                    datetime="2022-08-30">30.08.2022</time></p>
+                                        </div>
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1823.webp 1x, ./assets/img/image 1823-2x.webp 2x">
+                                            <img class="image-8" src="./assets/img/image 1823.webp"
+                                                srcset="./assets/img/image 1823-2x.webp 2x"
+                                                alt="Изображение свидетельства" loading="lazy">
+                                        </picture>
+                                        <div class="row-2">
+                                            <div class="div-24">
+                                                <div class="text-wrapper-38">pdf</div>
+                                                <div class="ellipse"></div>
+                                                <div class="text-wrapper-38">2,4 Mb</div>
+                                            </div>
+                                            <a href="" class="vuesax-bulk-document-wrapper"
+                                                aria-label="Скачать документ">
+                                                <svg class="download-icon" width="48" height="48" viewBox="0 0 48 48"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect class="bg" width="48" height="48" rx="24" fill="#F3F3F3" />
+                                                    <path class="icon-path" opacity="0.4"
+                                                        d="M32.5 22.19H29.61C27.24 22.19 25.31 20.26 25.31 17.89V15C25.31 14.45 24.86 14 24.31 14H20.07C16.99 14 14.5 16 14.5 19.57V28.43C14.5 32 16.99 34 20.07 34H27.93C31.01 34 33.5 32 33.5 28.43V23.19C33.5 22.64 33.05 22.19 32.5 22.19Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M27.7999 14.21C27.3899 13.8 26.6799 14.08 26.6799 14.65V18.14C26.6799 19.6 27.9199 20.81 29.4299 20.81C30.3799 20.82 31.6999 20.82 32.8299 20.82C33.3999 20.82 33.6999 20.15 33.2999 19.75C31.8599 18.3 29.2799 15.69 27.7999 14.21Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M24.2799 26.72C23.9899 26.43 23.5099 26.43 23.2199 26.72L22.4999 27.44V23.25C22.4999 22.84 22.1599 22.5 21.7499 22.5C21.3399 22.5 20.9999 22.84 20.9999 23.25V27.44L20.2799 26.72C19.9899 26.43 19.5099 26.43 19.2199 26.72C18.9299 27.01 18.9299 27.49 19.2199 27.78L21.2199 29.78C21.2299 29.79 21.2399 29.79 21.2399 29.8C21.2999 29.86 21.3799 29.91 21.4599 29.95C21.5599 29.98 21.6499 30 21.7499 30C21.8499 30 21.9399 29.98 22.0299 29.94C22.1199 29.9 22.1999 29.85 22.2799 29.78L24.2799 27.78C24.5699 27.49 24.5699 27.01 24.2799 26.72Z"
+                                                        fill="#A8A8A8" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card swiper-slide" role="group" aria-label="4 / 5"
+                                    style="width: 440px; margin-right: 20px;">
+                                    <div class="content-4">
+                                        <div class="titlle-3">
+                                            <div class="frame-10">
+                                                <div class="text-wrapper-39">Свидетельство</div>
+                                            </div>
+                                            <p class="text-wrapper-37">Свидетельство о регистрации ИНН.КПП <time
+                                                    datetime="2022-08-30">30.08.2022</time></p>
+                                        </div>
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1823.webp 1x, ./assets/img/image 1823-2x.webp 2x">
+                                            <img class="image-8" src="./assets/img/image 1823.webp"
+                                                srcset="./assets/img/image 1823-2x.webp 2x"
+                                                alt="Изображение свидетельства" loading="lazy">
+                                        </picture>
+                                        <div class="row-2">
+                                            <div class="div-24">
+                                                <div class="text-wrapper-38">pdf</div>
+                                                <div class="ellipse"></div>
+                                                <div class="text-wrapper-38">2,4 Mb</div>
+                                            </div>
+                                            <a href="" class="vuesax-bulk-document-wrapper"
+                                                aria-label="Скачать документ">
+                                                <svg class="download-icon" width="48" height="48" viewBox="0 0 48 48"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect class="bg" width="48" height="48" rx="24" fill="#F3F3F3" />
+                                                    <path class="icon-path" opacity="0.4"
+                                                        d="M32.5 22.19H29.61C27.24 22.19 25.31 20.26 25.31 17.89V15C25.31 14.45 24.86 14 24.31 14H20.07C16.99 14 14.5 16 14.5 19.57V28.43C14.5 32 16.99 34 20.07 34H27.93C31.01 34 33.5 32 33.5 28.43V23.19C33.5 22.64 33.05 22.19 32.5 22.19Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M27.7999 14.21C27.3899 13.8 26.6799 14.08 26.6799 14.65V18.14C26.6799 19.6 27.9199 20.81 29.4299 20.81C30.3799 20.82 31.6999 20.82 32.8299 20.82C33.3999 20.82 33.6999 20.15 33.2999 19.75C31.8599 18.3 29.2799 15.69 27.7999 14.21Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M24.2799 26.72C23.9899 26.43 23.5099 26.43 23.2199 26.72L22.4999 27.44V23.25C22.4999 22.84 22.1599 22.5 21.7499 22.5C21.3399 22.5 20.9999 22.84 20.9999 23.25V27.44L20.2799 26.72C19.9899 26.43 19.5099 26.43 19.2199 26.72C18.9299 27.01 18.9299 27.49 19.2199 27.78L21.2199 29.78C21.2299 29.79 21.2399 29.79 21.2399 29.8C21.2999 29.86 21.3799 29.91 21.4599 29.95C21.5599 29.98 21.6499 30 21.7499 30C21.8499 30 21.9399 29.98 22.0299 29.94C22.1199 29.9 22.1999 29.85 22.2799 29.78L24.2799 27.78C24.5699 27.49 24.5699 27.01 24.2799 26.72Z"
+                                                        fill="#A8A8A8" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card swiper-slide" role="group" aria-label="5 / 5"
+                                    style="width: 440px; margin-right: 20px;">
+                                    <div class="content-4">
+                                        <div class="titlle-3">
+                                            <div class="frame-10">
+                                                <div class="text-wrapper-39">Свидетельство</div>
+                                            </div>
+                                            <p class="text-wrapper-37">Свидетельство о регистрации ИНН.КПП <time
+                                                    datetime="2022-08-30">30.08.2022</time></p>
+                                        </div>
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1823.webp 1x, ./assets/img/image 1823-2x.webp 2x">
+                                            <img class="image-8" src="./assets/img/image 1823.webp"
+                                                srcset="./assets/img/image 1823-2x.webp 2x"
+                                                alt="Изображение свидетельства" loading="lazy">
+                                        </picture>
+                                        <div class="row-2">
+                                            <div class="div-24">
+                                                <div class="text-wrapper-38">pdf</div>
+                                                <div class="ellipse"></div>
+                                                <div class="text-wrapper-38">2,4 Mb</div>
+                                            </div>
+                                            <a href="" class="vuesax-bulk-document-wrapper"
+                                                aria-label="Скачать документ">
+                                                <svg class="download-icon" width="48" height="48" viewBox="0 0 48 48"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect class="bg" width="48" height="48" rx="24" fill="#F3F3F3" />
+                                                    <path class="icon-path" opacity="0.4"
+                                                        d="M32.5 22.19H29.61C27.24 22.19 25.31 20.26 25.31 17.89V15C25.31 14.45 24.86 14 24.31 14H20.07C16.99 14 14.5 16 14.5 19.57V28.43C14.5 32 16.99 34 20.07 34H27.93C31.01 34 33.5 32 33.5 28.43V23.19C33.5 22.64 33.05 22.19 32.5 22.19Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M27.7999 14.21C27.3899 13.8 26.6799 14.08 26.6799 14.65V18.14C26.6799 19.6 27.9199 20.81 29.4299 20.81C30.3799 20.82 31.6999 20.82 32.8299 20.82C33.3999 20.82 33.6999 20.15 33.2999 19.75C31.8599 18.3 29.2799 15.69 27.7999 14.21Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M24.2799 26.72C23.9899 26.43 23.5099 26.43 23.2199 26.72L22.4999 27.44V23.25C22.4999 22.84 22.1599 22.5 21.7499 22.5C21.3399 22.5 20.9999 22.84 20.9999 23.25V27.44L20.2799 26.72C19.9899 26.43 19.5099 26.43 19.2199 26.72C18.9299 27.01 18.9299 27.49 19.2199 27.78L21.2199 29.78C21.2299 29.79 21.2399 29.79 21.2399 29.8C21.2999 29.86 21.3799 29.91 21.4599 29.95C21.5599 29.98 21.6499 30 21.7499 30C21.8499 30 21.9399 29.98 22.0299 29.94C22.1199 29.9 22.1999 29.85 22.2799 29.78L24.2799 27.78C24.5699 27.49 24.5699 27.01 24.2799 26.72Z"
+                                                        fill="#A8A8A8" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                        <button class="btn btn-right" aria-label="Следующий документ"><img src="./assets/img/arr.svg"
+                                alt="Стрелка вправо" loading="lazy" /></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="questions">
+                <div class="container">
+                    <form action="" class="questions-form">
+                        <h2 class="questions-title">Остались вопросы?</h2>
+                        <p class="questions-info">Заполните форму, и наш специалист свяжется с вами в ближайшее время.
+                        </p>
+                        <div class="questions-inputs">
+                            <div class="question-input">
+                                <label for="name">Ваше имя</label>
+                                <input id="name" type="text">
+                            </div>
+                            <div class="question-input">
+                                <label for="mail">Ваш Email</label>
+                                <input type="email" id="mail">
+                            </div>
+                            <div class="question-submit">
+                                <input type="submit">
+                            </div>
+                        </div>
+                        <div class="questions-check">
+                            <input id="check" type="checkbox">
+                            <label for="check">Я даю свое согласие на обработку персональных данных в соответствии с ФЗ
+                                №152-ФЗ “О персональных данных” на условиях и для целей, определенных&nbsp;Политикой
+                                Конфиденциальности.</label>
+                        </div>
+                    </form>
+                    <div class="questions-bg"><img src="./assets/img/Group 444896.svg" alt=""></div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content-8">
+                    <div class="main">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img class="tagler-logotype-CMYK-2"
+                                    src="./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg" alt="Логотип Таглер"
+                                    loading="lazy" />
+                            </a>
+                            <p class="text-wrapper-49">Общество с ограниченной ответственностью «НПП Таглер»</p>
+                            <div class="list">
+                                <div class="text-wrapper-50">ОГРН: 1197746444565</div>
+                                <div class="text-wrapper-51">ИНН: 9702002446</div>
+                                <div class="text-wrapper-51">КПП: 772401001</div>
+                            </div>
+                        </div>
+                        <div class="div-28">
+                            <h3 class="text-wrapper-52">Медицинское оборудование</h3>
+                            <nav class="list-2" role="navigation" aria-label="Медицинское оборудование">
+                                <a href="./categories.html" class="text-wrapper-53">Медицинские центрифуги</a>
+                                <a href="./categories.html" class="text-wrapper-54">Боксы для ПЦР-диагностики</a>
+                                <a href="./categories.html" class="text-wrapper-55">Аспираторы</a>
+                                <a href="./categories.html" class="text-wrapper-54">УФ облучатели и рециркуляторы</a>
+                                <a href="./categories.html" class="text-wrapper-54">Негатоскопы</a>
+                                <a href="./categories.html" class="text-wrapper-54">Аппараты Ротта</a>
+                                <a href="./categories.html" class="text-wrapper-54">Столы с электроприводом</a>
+                                <a href="./categories.html" class="text-wrapper-54">Инактиваторы сыворотки</a>
+                                <a href="./categories.html" class="text-wrapper-54">Шкафы для эндоскопа</a>
+                            </nav>
+                        </div>
+                        <div class="div-29">
+                            <h3 class="text-wrapper-52">Лабораторное оборудование</h3>
+                            <div class="columns">
+                                <nav class="list-2" role="navigation" aria-label="Лабораторное оборудование часть 1">
+                                    <a href="./laboratory.html" class="text-wrapper-56">Люминисцентные анализаторы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">ПЦР-боксы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Лабораторные аспираторы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Лабораторные центрифуги</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Магнитные мешалки</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Шейкеры, встряхиватели</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Водяные бани</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Лабораторные плиты и песчаные
+                                        бани</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Твердотельные термостаты</a>
+                                </nav>
+                                <nav class="frame-14" role="navigation" aria-label="Лабораторное оборудование часть 2">
+                                    <a href="./laboratory.html" class="text-wrapper-53">Сушильные шкафы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Анализаторы влажности</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Спектрофотометры</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Рефрактометры</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Устройство для сушки посуды</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Рассевы и сита</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Лабораторные мельницы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Лабораторные принадлежности</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-wrapper-2">
+                        <div class="content-9">
+                            <nav class="links" role="navigation" aria-label="Дополнительные ссылки">
+                                <a href="./about.html" class="text-wrapper-57">О Таглер</a>
+                                <a href="./catalog.html" class="text-wrapper-57">Продукция Таглер</a>
+                                <a href="./buy.html" class="text-wrapper-57">Где Купить?</a>
+                                <a href="./dealers.html" class="text-wrapper-57">Дилерам</a>
+                                <a href="./contacts.html" class="text-wrapper-57">Контакты</a>
+                                <a href="./login.html" class="text-wrapper-57">Войти в кабинет</a>
+                            </nav>
+                            <address class="cards-6">
+                                <a href="" class="div-30">
+                                    <div class="text-wrapper-58"> г. Москва</div>
+                                    <div class="text-wrapper-59">Показать на карте</div>
+                                </a>
+                                <img class="line" src="./assets/img/Line 2.svg" alt="Линия разделитель"
+                                    loading="lazy" />
+                                <a href="mailto:info@tagler.ru" class="div-30">
+                                    <div class="text-wrapper-58">info@tagler.ru</div>
+                                    <div class="text-wrapper-59">Написать нам</div>
+                                </a>
+                                <img class="line" src="./assets/img/Line 2.svg" alt="Линия разделитель"
+                                    loading="lazy" />
+                                <a href="tel:+74994445174" class="div-30">
+                                    <div class="text-wrapper-5">+7 (499) 444-51-74</div>
+                                    <div class="text-wrapper-59">Заказать звонок</div>
+                                </a>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="div-31">
+                        <ul class="socials" role="list" aria-label="Социальные сети">
+                            <li class="socials-item"><a href="" aria-label="Telegram"><img
+                                        src="./assets/img/telegram.svg" alt="Telegram" loading="lazy" /></a></li>
+                            <li class="socials-item"><a href="" aria-label="VK"><img src="./assets/img/vk.svg" alt="VK"
+                                        loading="lazy" /></a></li>
+                            <li class="socials-item"><a href="" aria-label="YouTube"><img src="./assets/img/youtube.svg"
+                                        alt="YouTube" loading="lazy" /></a></li>
+                        </ul>
+                        <div class="right">
+                            <!-- 1. Обертка для позиционирования и отслеживания наведения -->
+                            <div class="footer-dropdown-wrapper">
+
+                                <!-- 2. Ваш исходный элемент, который будет триггером -->
+                                <div class="div-24" id="footer-dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="text-wrapper-60">Сайты партнеры</span>
+                                    <img class="vector-5" src="./assets/img/arr-down.svg" alt="Стрелка вниз"
+                                        loading="lazy" />
+                                </div>
+
+                                <!-- 3. Сам выпадающий список (по умолчанию скрыт) -->
+                                <ul id="footer-dropdown-menu" class="footer-dropdown-menu">
+                                    <li><a href="https://www.nv-lab.ru" target="_blank"
+                                            class="is-current">www.nv-lab.ru</a></li>
+                                    <li><a href="https://www.nv-lab.ru" target="_blank">www.nv-lab.ru</a></li>
+                                    <li><a href="https://www.nv-lab.kz" target="_blank">www.nv-lab.kz</a></li>
+                                    <li><a href="https://www.nv-med.ru" target="_blank">www.nv-med.ru</a></li>
+                                    <li><a href="https://www.biolab5.ru" target="_blank">www.biolab5.ru</a></li>
+                                    <li><a href="https://stegler.ru" target="_blank">stegler.ru</a></li>
+                                    <li><a href="https://soeks.ru" target="_blank">soeks.ru</a></li>
+                                </ul>
+
+                            </div>
+                            <div class="frame-15" role="navigation" aria-label="Языки">
+                                <a href="" class="frame-16" aria-current="true">
+                                    <span class="text-wrapper-61">RU</span>
+                                </a>
+                                <a href="" class="frame-17">
+                                    <span class="text-wrapper-61">EN</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-2">
+                        <ul class="logos" role="list" aria-label="Логотипы партнеров">
+                            <li class="logos-item"><a href=""><img src="./assets/img/Sk__Участник-block-ru_ 2.svg"
+                                        alt="Логотип партнера 1" loading="lazy" /></a></li>
+                            <li class="logos-item"><a href=""><img src="./assets/img/black_small_dark 1.svg"
+                                        alt="Логотип партнера 2" loading="lazy" /></a>
+                            </li>
+                        </ul>
+                        <a href="" class="text-wrapper-62">Политика обработки персональных данных</a>
+                        <a href="" class="text-wrapper-62">Оферта</a>
+                        <a href="./assets/styles/" class="div-3">
+                            <div class="text-wrapper-63">Сделано в</div>
+                            <img class="group-4" src="./assets/img/Group.svg" alt="Логотип разработчика"
+                                loading="lazy" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Находим все нужные элементы на странице
+            const modal = document.getElementById('contact-modal');
+            const openBtn = document.getElementById('open-form-btn');
+            const openBtn2 = document.getElementById('open-form-btn2');
+            const closeBtn = modal.querySelector('.close-btn');
+            const contactForm = document.getElementById('contact-form');
+
+            // Функция для открытия модального окна
+            const openModal = (event) => {
+                event.preventDefault(); // Отменяем стандартное действие ссылки
+                modal.classList.add('active'); // Показываем модальное окно
+            };
+
+            // Функция для закрытия модального окна
+            const closeModal = () => {
+                modal.classList.remove('active'); // Скрываем модальное окно
+            };
+
+            // 1. Открытие по клику на ссылку "Написать нам"
+            openBtn.addEventListener('click', openModal);
+            openBtn2.addEventListener('click', openModal);
+
+            // 2. Закрытие по клику на крестик
+            closeBtn.addEventListener('click', closeModal);
+            closeBtn2.addEventListener('click', closeModal);
+
+            // 3. Закрытие по клику на оверлей (темный фон)
+            modal.addEventListener('click', (event) => {
+                // Если клик был сделан именно по оверлею, а не по его содержимому
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // 4. Закрытие по нажатию на клавишу Escape
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+
+            // 5. Обработка отправки формы
+            contactForm.addEventListener('submit', (event) => {
+                event.preventDefault(); // Отменяем стандартную отправку формы
+
+                // Здесь вы можете добавить логику отправки данных на сервер (например, через fetch)
+                const formData = new FormData(contactForm);
+                const name = formData.get('name');
+                const email = formData.get('email');
+
+                console.log('Форма отправлена!');
+                console.log('Имя:', name);
+                console.log('Email:', email);
+
+                alert('Спасибо за ваше обращение! Мы скоро свяжемся с вами.');
+
+                // Очищаем форму и закрываем окно
+                contactForm.reset();
+                closeModal();
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.docs .swiper', {
+                // Указываем, сколько слайдов будет видно одновременно
+                slidesPerView: 3,
+                // Расстояние между слайдами
+                spaceBetween: 20,
+
+                // Подключаем ваши кастомные кнопки навигации
+                navigation: {
+                    nextEl: '.docs .btn-right',
+                    prevEl: '.docs .btn-left',
+                },
+
+                // Настройки для разных размеров экрана (адаптивность)
+                breakpoints: {
+                    // когда ширина экрана <= 320px
+                    320: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    },
+                    // когда ширина экрана <= 768px
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    // когда ширина экрана <= 1024px
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    // когда ширина экрана <= 1200px
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.news .swiper', {
+                // Указываем, сколько слайдов будет видно одновременно
+                slidesPerView: 2,
+                // Расстояние между слайдами
+                spaceBetween: 20,
+
+                // Подключаем ваши кастомные кнопки навигации
+                navigation: {
+                    nextEl: '.news .btn.next',
+                    prevEl: '.news .btn.prev',
+                },
+
+                // Настройки для разных размеров экрана (адаптивность)
+                breakpoints: {
+                    // когда ширина экрана <= 320px
+                    320: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    },
+                    // когда ширина экрана <= 768px
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    // когда ширина экрана <= 1024px
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    // когда ширина экрана <= 1200px
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerBtn = document.querySelector('.burger');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeBtn = document.querySelector('.mobile-menu__close');
+            const body = document.body;
+
+            // Функция открытия меню
+            const openMenu = () => {
+                mobileMenu.classList.add('is-open');
+            };
+
+            // Функция закрытия меню
+            const closeMenu = () => {
+                mobileMenu.classList.remove('is-open');
+            };
+
+            // Открываем меню по клику на бургер
+            if (burgerBtn && mobileMenu) {
+                burgerBtn.addEventListener('click', openMenu);
+            }
+
+            // Закрываем меню по клику на крестик
+            if (closeBtn && mobileMenu) {
+                closeBtn.addEventListener('click', closeMenu);
+            }
+
+            // Закрываем меню по клику вне его (на оверлей, если он есть)
+            // или по нажатию на Escape. Это улучшает UX.
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+                    closeMenu();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

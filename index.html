@@ -17,6 +17,8 @@
     <meta property="og:url" content="https://tagler.ru/" />
     <meta property="og:image" content="./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg" />
 
+    <link rel="preload" as="image" href="./assets/img/Bg.webp" fetchpriority="high" type="image/webp" />
+
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
@@ -44,7 +46,858 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .header {
+            z-index: 12;
+            margin-top: 19px;
+            width: 100%
+        }
+
+        .header .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px
+        }
+
+        .top {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            flex: 0 0 auto;
+            padding: 0 20px
+        }
+
+        .top a:hover {
+            text-decoration: none
+        }
+
+        .navbar a {
+            transition: all 300ms
+        }
+
+        .navbar a:hover {
+            text-decoration: none;
+            color: #00b4a0
+        }
+
+        .navbar a:active {
+            opacity: .8
+        }
+
+        .navbar {
+            display: flex;
+            width: 572px;
+            height: 17px;
+            align-items: center;
+            justify-content: space-between;
+            position: relative
+        }
+
+        .arrow-left {
+            transform: rotate(180deg)
+        }
+
+        .trigger {
+            display: flex;
+            gap: 10px;
+            align-items: center
+        }
+
+        .pagination {
+            background-color: #fff;
+            border-radius: 19px;
+            padding: 13px 11px
+        }
+
+        .pagination-list {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            justify-content: center
+        }
+
+        .pagination-item {
+            display: flex
+        }
+
+        .arrow {
+            display: flex;
+            cursor: pointer
+        }
+
+        .arrow-left {
+            opacity: .2
+        }
+
+        .pagination-item::before {
+            content: ' ';
+            border-radius: 100%;
+            padding: 3px 3px;
+            background-color: #DDD
+        }
+
+        .pagination-active::before {
+            border-radius: 10px;
+            padding: 3px 11px;
+            background: #00B4A0
+        }
+
+        .div-2 {
+            gap: 16px
+        }
+
+        .text-wrapper {
+            position: relative;
+            width: fit-content;
+            margin-top: -1.5px;
+            font-family: "CoFo Sans-Medium", Helvetica;
+            color: #848b8c;
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: normal
+        }
+
+        .contacts {
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            flex: 0 0 auto
+        }
+
+        .div {
+            position: relative;
+            width: fit-content;
+            margin-top: -1px;
+            font-family: "CoFo Sans-Medium", Helvetica;
+            font-weight: 500;
+            color: #00b4a0;
+            font-size: 15px;
+            letter-spacing: 0;
+            line-height: normal
+        }
+
+        .text-wrapper-2 {
+            position: relative;
+            width: fit-content;
+            margin-top: -1px;
+            font-family: "CoFo Sans-Medium", Helvetica;
+            font-weight: 500;
+            color: #848b8c;
+            font-size: 15px;
+            letter-spacing: 0;
+            line-height: normal
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 15px 20px;
+            position: relative;
+            align-self: stretch;
+            width: 100%;
+            flex: 0 0 auto;
+            background-color: #fff;
+            border-radius: 20px
+        }
+
+        .div-2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-self: stretch;
+            width: 100%;
+            flex: 0 0 auto
+        }
+
+        .div-2 a {
+            transition: all 300ms
+        }
+
+        .div-2 a:hover {
+            text-decoration: none;
+            opacity: .8
+        }
+
+        .frame {
+            transition: all 300ms;
+            display: inline-flex;
+            height: 73px;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            position: relative;
+            flex: 0 0 auto;
+            background-color: var(--black);
+            border-radius: 15px
+        }
+
+        .frame:hover {
+            background-color: #0e131aec
+        }
+
+        .vuesax-bulk-category {
+            position: relative;
+            width: 24px;
+            height: 24px
+        }
+
+        .text-wrapper-3 {
+            position: relative;
+            width: fit-content;
+            font-family: "CoFo Sans-Bold", Helvetica;
+            font-weight: 700;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: normal
+        }
+
+        .div-3 {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+            flex: 0 0 auto
+        }
+
+        .tagler-logotype-CMYK {
+            position: relative;
+            width: 145px;
+            height: 47px
+        }
+
+        .p {
+            position: relative;
+            width: 198px;
+            font-family: "CoFo Sans-Regular", Helvetica;
+            font-weight: 400;
+            color: #fff0;
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: normal
+        }
+
+        .span {
+            color: #848b8c
+        }
+
+        .frame-2 {
+            position: relative;
+            background-color: #fafafa;
+            border-radius: 15px;
+            overflow: hidden;
+            box-sizing: border-box
+        }
+
+        .vector {
+            position: absolute;
+            width: 18px;
+            top: calc(50.00% - 9px);
+            right: 20px;
+            height: 18px;
+            pointer-events: none
+        }
+
+        .search-wrapper {
+            max-width: 366px;
+            width: 100%
+        }
+
+        .frame-2 {
+            transition: all 300ms;
+            display: flex;
+            align-items: center;
+            background-color: #f7f7f7;
+            border-radius: 12px;
+            border: 1px solid #fff0;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease
+        }
+
+        .frame-2:hover {
+            background-color: #f4f4f4
+        }
+
+        .frame-2 .search-input {
+            border: none;
+            background: #fff0;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            height: 68px;
+            padding-left: 20px;
+            padding-right: 40px;
+            font-family: "CoFo Sans-Regular", Helvetica
+        }
+
+        .frame-2 .vector {
+            width: 20px;
+            height: 20px;
+            opacity: .6
+        }
+
+        .search-results {
+            display: none;
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgb(0 0 0 / .1);
+            z-index: 1000;
+            padding: 20px;
+            box-sizing: border-box;
+            max-height: 70vh;
+            overflow-y: auto;
+            overflow-x: hidden
+        }
+
+        .search-results.visible {
+            display: block
+        }
+
+        .result-item.category {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            text-decoration: none;
+            color: #333;
+            padding: 31px 29px
+        }
+
+        .result-item.category:hover {
+            background-color: #F9F9F9
+        }
+
+        .category-title {
+            display: flex;
+            font-family: "CoFo Sans-Regular", Helvetica;
+            align-items: center;
+            color: #0E131A
+        }
+
+        .category-title img {
+            width: 17px;
+            height: 17px;
+            margin-right: 20px
+        }
+
+        .category-count {
+            color: #0E131A;
+            font-size: 15px;
+            font-family: "CoFo Sans-Regular", Helvetica;
+            transform: translateY(2px)
+        }
+
+        .result-item.product {
+            display: flex;
+            align-items: center;
+            padding: 21px 8px;
+            text-decoration: none;
+            color: inherit;
+            font-family: "CoFo Sans-Regular", Helvetica;
+            transition: background-color 0.2s ease;
+            border-radius: 8px
+        }
+
+        .result-item.product:hover {
+            background-color: #F9F9F9
+        }
+
+        .product-image {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            margin-right: 16px;
+            flex-shrink: 0
+        }
+
+        .product-info {
+            flex-grow: 1
+        }
+
+        .product-category {
+            font-size: 15px;
+            color: #999;
+            margin-bottom: 4px
+        }
+
+        .product-title {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 48px
+        }
+
+        .product-price {
+            display: flex;
+            flex-direction: column;
+            gap: 5px
+        }
+
+        .product-price .current-price {
+            font-size: 20px;
+            font-weight: 700
+        }
+
+        .product-price .old-price {
+            font-size: 16px;
+            color: #aaa;
+            display: flex;
+            align-items: center;
+            gap: 5px
+        }
+
+        .product-add-btn {
+            background-color: #00b894;
+            color: #fff;
+            border: none;
+            padding: 18.5px 14px;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            font-family: "CoFo Sans-Regular", Helvetica;
+            white-space: nowrap;
+            font-size: 15px
+        }
+
+        .product-add-btn:hover {
+            background-color: #00a383
+        }
+
+        .no-results-container {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            font-family: "CoFo Sans-Regular", Helvetica
+        }
+
+        .search-history-title {
+            font-size: 17px;
+            color: #0E131A;
+            margin: 0 0 16px 0;
+            font-weight: 600
+        }
+
+        .search-history-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px
+        }
+
+        .search-history-tag {
+            background-color: #fff0;
+            border: 1px solid #4285fa23;
+            border-radius: 40px;
+            padding: 20px;
+            font-size: 15px;
+            color: #5D5D5D;
+            cursor: pointer;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+            font-family: "CoFo Sans-Regular", Helvetica
+        }
+
+        .search-history-tag:hover {
+            background-color: #f8f9fa;
+            border-color: #dee2e6
+        }
+
+        .no-results-message {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background-color: rgb(0 184 148 / .08);
+            border-radius: 12px;
+            padding: 28px 16px;
+            color: #00b894;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-family: "CoFo Sans-Regular", Helvetica
+        }
+
+        .no-results-message .icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            border: 0;
+            clip: rect(0 0 0 0)
+        }
+
+        .div-4 {
+            position: absolute;
+            top: calc(50.00% - 9px);
+            left: 21px;
+            font-family: "CoFo Sans-Regular", Helvetica;
+            font-weight: 400;
+            color: #fff0;
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: normal
+        }
+
+        .text-wrapper-4 {
+            color: #9f9f9f
+        }
+
+        .icon {
+            transition: all 300ms;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 20px;
+            position: relative;
+            background-color: #f7f7f7;
+            border-radius: 10px
+        }
+
+        .icon:hover {
+            background-color: #f4f4f4;
+            opacity: 1
+        }
+
+        .vuesax-bulk-bag {
+            position: relative;
+            width: 28px;
+            height: 28px
+        }
+
+        .frame-3 {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 5px;
+            position: relative;
+            flex: 0 0 auto
+        }
+
+        .text-wrapper-5 {
+            transition: all 300ms;
+            font-size: 17px;
+            position: relative;
+            width: fit-content;
+            margin-top: -1px;
+            font-family: "CoFo Sans-Bold", Helvetica;
+            font-weight: 700;
+            color: var(--black);
+            letter-spacing: 0;
+            line-height: normal
+        }
+
+        .text-wrapper-5:hover {
+            opacity: .8;
+            text-decoration: none
+        }
+
+        .text-wrapper-6 {
+            position: relative;
+            width: fit-content;
+            font-family: "CoFo Sans-Medium", Helvetica;
+            font-weight: 500;
+            color: #a0a0a0;
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: normal;
+            text-decoration: underline
+        }
+
+        .div-wrapper a {
+            transition: all 300ms;
+            display: flex;
+            flex-direction: column;
+            height: 73px;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 16px;
+            position: relative;
+            background-color: #00b4a0;
+            border-radius: 15px
+        }
+
+        .div-wrapper a:hover {
+            opacity: .8;
+            text-decoration: none
+        }
+
+        .text-wrapper-7 {
+            position: relative;
+            width: fit-content;
+            font-family: "CoFo Sans-Black", Helvetica;
+            font-weight: 900;
+            color: #fff;
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: normal
+        }
+
+        .burger {
+            display: none
+        }
+
+        .mobile-menu {
+            display: none
+        }
+
+        .bar {
+            display: none
+        }
+
+        .hero {
+            z-index: 1;
+            position: relative;
+            margin-top: 16px;
+            width: 100%;
+        }
+
+        .hero .container {
+            display: flex;
+            gap: 28px;
+            width: 100%;
+            flex-direction: column;
+            height: 545px;
+            align-items: center;
+        }
+
+        .hero .banner {
+            position: relative;
+            align-self: stretch;
+            width: 100%;
+            height: 486px;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+        .hero .swiper-slide {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* ⚡ ИЗМЕНЕНО: bg теперь <img> элемент */
+        .hero .bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Заменяет background-size: cover */
+            object-position: center;
+            /* Заменяет background-position: center */
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            /* img по умолчанию inline, меняем на block */
+        }
+
+        /* ⚡ НОВОЕ: Градиент теперь отдельный элемент */
+        .hero .bg-gradient {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgb(82, 82, 82) 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            /* Не блокирует клики */
+            z-index: 1;
+        }
+
+        /* УДАЛЕНО: .hero .div-6 больше не нужен */
+
+        .hero .group {
+            max-width: 536px;
+        }
+
+        .hero .div-wrapper-2 {
+            display: inline-flex;
+            height: 88px;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px;
+            background-color: #00b4a0;
+            border-radius: 15px;
+            transform: translateY(15px);
+            position: relative;
+            z-index: 2;
+            /* Поверх градиента */
+        }
+
+        .hero .div-7 {
+            position: relative;
+            width: fit-content;
+            font-family: "Stapel-Bold", Helvetica;
+            font-weight: 700;
+            color: #fff;
+            font-size: 35px;
+            letter-spacing: 0;
+            line-height: 45px;
+            white-space: nowrap;
+        }
+
+        .hero .text-wrapper-8 {
+            font-family: "Stapel-Bold", Helvetica;
+            color: #fff;
+            font-size: 35px;
+            letter-spacing: 0;
+            line-height: 45px;
+            font-weight: 900;
+        }
+
+        .hero .div-wrapper-3 {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1),
+                0 -11px 11px rgba(0, 0, 0, 0.09),
+                0 -24px 14px rgba(0, 0, 0, 0.05),
+                0 -42px 17px rgba(0, 0, 0, 0.01),
+                0 -66px 18px rgba(255, 255, 255, 0);
+            position: relative;
+            z-index: 3;
+            /* Самый верхний */
+        }
+
+        .hero .text-wrapper-9 {
+            position: relative;
+            width: fit-content;
+            margin-top: -1px;
+            font-family: "Stapel-Bold", Helvetica;
+            font-weight: 900;
+            color: var(--black);
+            font-size: 35px;
+            letter-spacing: 0;
+            line-height: 45px;
+            white-space: nowrap;
+        }
+
+        .hero .text-wrapper-10 {
+            max-width: 339px;
+            font-size: 16px;
+            line-height: normal;
+            font-family: "CoFo Sans-Regular", Helvetica;
+            font-weight: 500;
+            color: #fff;
+            letter-spacing: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: end;
+            position: relative;
+            z-index: 2;
+            /* Поверх градиента */
+        }
+
+        .hero-card {
+            display: flex;
+            align-items: end;
+            padding: 0 40px 40px;
+            position: relative;
+            /* Важно для позиционирования дочерних элементов */
+        }
+
+        .hero .trigger {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex: 0 0 auto;
+            margin-bottom: -22px;
+        }
+
+        .hero .arrow {
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .hero .arrow:hover {
+            opacity: 0.7;
+        }
+
+        .hero .arrow.swiper-button-disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            display: none;
+        }
+
+        .arrow-left {
+            position: absolute;
+            left: -30px;
+        }
+
+        .arrow-right {
+            position: absolute;
+            right: -30px;
+        }
+
+        .hero .swiper-pagination {
+            position: static;
+            width: auto;
+            display: flex;
+            gap: 6px;
+        }
+
+        .hero .swiper-pagination-bullet {
+            width: 6px;
+            height: 6px;
+            background-color: #d9d9d9;
+            border-radius: 50%;
+            opacity: 1;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+
+        .hero .swiper-pagination-bullet-active {
+            width: 18px;
+            border-radius: 10px;
+            background-color: #00b4a0;
+            transform: scale(1.2);
+        }
+    </style>
+
+    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="./assets/styles/globals.css" />
     <link rel="stylesheet" href="./assets/styles/styleguide.css" />
@@ -58,27 +911,27 @@
                 <div class="top">
                     <nav class="navbar" role="navigation" aria-label="Основная навигация">
                         <a href="./index.html" class="text-wrapper" aria-current="page">Главная</a>
-                        <a href="" class="text-wrapper">О Таглер</a>
-                        <a href="" class="text-wrapper">Продукция Таглер</a>
-                        <a href="" class="text-wrapper">Где Купить?</a>
-                        <a href="" class="text-wrapper">Дилерам</a>
-                        <a href="" class="text-wrapper">Контакты</a>
+                        <a href="./about.html" class="text-wrapper">О Таглер</a>
+                        <a href="./catalog.html" class="text-wrapper">Продукция Таглер</a>
+                        <a href="./buy.html" class="text-wrapper">Где Купить?</a>
+                        <a href="./dealers.html" class="text-wrapper">Дилерам</a>
+                        <a href="./contacts.html" class="text-wrapper">Контакты</a>
                     </nav>
                     <div class="contacts">
-                        <a href="" class="div">Войти</a>
-                        <a href="" class="text-wrapper-2">Зарегстрироваться</a>
+                        <a href="./login.html" class="div">Войти</a>
+                        <a href="./signup.html" class="text-wrapper-2">Зарегистрироваться</a>
                     </div>
                 </div>
                 <div class="content-wrapper">
                     <div class="div-2">
-                        <a href="" class="frame">
+                        <a href="./catalog.html" class="frame">
                             <img class="vuesax-bulk-category" src="./assets/img/category-2.svg" alt="Иконка каталога" />
                             <div class="text-wrapper-3">Каталог</div>
                         </a>
                         <div class="div-3">
                             <a class="tagler-logotype-CMYK" href="./index.html"><img class=""
-                                    src="./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg"
-                                    alt="Логотип Таглер" /></a>
+                                    src="./assets/img/Tagler_logotype-CMYK-svoy-ru-ALL 2.svg" alt="Логотип Таглер"
+                                    loading="lazy" /></a>
                             <p class="p">
                                 <span class="span">Российский производитель лабораторного оборудования</span>
                             </p>
@@ -98,12 +951,12 @@
                                 <!-- Результаты будут вставлены сюда -->
                             </div>
                         </div>
-                        <a href="" class="icon" aria-label="Корзина">
+                        <a href="./cart.html" class="icon" aria-label="Корзина">
                             <img class="vuesax-bulk-bag" src="./assets/img/bag.svg" alt="Иконка корзины" />
                         </a>
                         <div class="frame-3">
                             <a href="mailto:info@tagler.ru" class="text-wrapper-5">info@tagler.ru</a>
-                            <a href="mailto:info@tagler.ru" class="text-wrapper-6">Написать нам</a>
+                            <a href="#" id="open-form-btn" class="text-wrapper-6">Написать нам</a>
                         </div>
                         <div class="div-wrapper">
                             <a href="tel:+74994445174" class="text-wrapper-7">+7 (499) 444-51-74</a>
@@ -148,7 +1001,7 @@
                         </div>
 
                         <!-- Каталог из .div-2 -->
-                        <a href="" class="mobile-menu__catalog">
+                        <a href="./catalog.html" class="mobile-menu__catalog">
                             <img class="vuesax-bulk-category" src="./assets/img/category-2.svg" alt="Иконка каталога" />
                             <div class="text-wrapper-3">Каталог</div>
                         </a>
@@ -156,17 +1009,17 @@
                         <!-- Навигация из .top -->
                         <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
                             <a href="./index.html" class="mobile-menu__link" aria-current="page">Главная</a>
-                            <a href="" class="mobile-menu__link">О Таглер</a>
-                            <a href="" class="mobile-menu__link">Продукция Таглер</a>
-                            <a href="" class="mobile-menu__link">Где Купить?</a>
-                            <a href="" class="mobile-menu__link">Дилерам</a>
-                            <a href="" class="mobile-menu__link">Контакты</a>
+                            <a href="./about.html" class="mobile-menu__link">О Таглер</a>
+                            <a href="./catalog.html" class="mobile-menu__link">Продукция Таглер</a>
+                            <a href="./buy.html" class="mobile-menu__link">Где Купить?</a>
+                            <a href="./dealers.html" class="mobile-menu__link">Дилерам</a>
+                            <a href="./contacts.html" class="mobile-menu__link">Контакты</a>
                         </nav>
 
                         <!-- Авторизация из .top -->
                         <div class="mobile-menu__auth">
-                            <a href="" class="div">Войти</a>
-                            <a href="" class="text-wrapper-2">Зарегстрироваться</a>
+                            <a href="./login.html" class="div">Войти</a>
+                            <a href="./signup.html" class="text-wrapper-2">Зарегистрироваться</a>
                         </div>
 
                         <!-- Контакты из .div-2 -->
@@ -175,7 +1028,7 @@
                                 <a href="tel:+74994445174" class="text-wrapper-7">+7 (499) 444-51-74</a>
                             </div>
                             <div class="frame-3">
-                                <a href="mailto:info@tagler.ru" class="text-wrapper-6">Написать нам</a>
+                                <a href="#" class="text-wrapper-6 " id="open-form-btn2">Написать нам</a>
                             </div>
                         </div>
                     </div>
@@ -183,18 +1036,56 @@
             </div>
         </header>
 
+        <div id="contact-modal" class="modal-overlay">
+            <div class="modal-content">
+                <!-- Кнопка закрытия -->
+                <span class="close-btn"><img src="./assets/img/x.svg" alt=""></span>
+
+                <!-- Заголовок и подзаголовок -->
+                <h2>Остались вопросы?</h2>
+                <p>Заполните форму, и наш специалист свяжется с вами в ближайшее время.</p>
+
+                <!-- Форма -->
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="formname">Ваше имя</label>
+                        <input type="text" id="formname" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formemail">Ваш Email</label>
+                        <input type="email" id="formemail" name="email" required>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">
+                            Я даю свое согласие на обработку персональных данных в соответствии с ФЗ №152-ФЗ "О
+                            персональных данных" на условиях и для целей, определенных Политикой Конфиденциальности.
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+
         <main>
             <section class="hero div-5">
                 <div class="container">
-                    <!-- 1. Основной контейнер слайдера. Добавляем класс 'swiper' -->
                     <div class="banner swiper">
-                        <!-- 2. Обязательная обертка для слайдов -->
                         <div class="swiper-wrapper">
-                            <!-- 3. Первый слайд. Добавляем класс 'swiper-slide' -->
+
+                            <!-- 1. ПЕРВЫЙ СЛАЙД (критичный для LCP) -->
                             <div class="swiper-slide hero-card">
-                                <div class="bg" style="background-image: url(./assets/img/Bg.png);">
-                                    <div class="div-6"></div>
-                                </div>
+                                <picture>
+                                    <!-- Мобильная версия (< 576px) -->
+                                    <source media="(max-width: 575px)" srcset="./assets/img/Bg-mobile.webp" width="576"
+                                        height="400">
+
+                                    <!-- Десктопная версия (>= 576px) -->
+                                    <img src="./assets/img/Bg.webp" alt="Инновационное лабораторное оборудование"
+                                        class="bg bg1" fetchpriority="high" width="1920" height="486" loading="eager" />
+                                </picture>
+                                <div class="bg-gradient"></div>
+
                                 <div class="hero-text">
                                     <div class="group">
                                         <div class="div-wrapper-2">
@@ -206,18 +1097,22 @@
                                     </div>
                                     <p class="text-wrapper-10">
                                         Надежные решения для медицины, фармацевтики и научных исследований, созданные по
-                                        современным
-                                        стандартам качества и точности.
+                                        современным стандартам качества и точности.
                                     </p>
                                 </div>
                             </div>
 
-                            <!-- Второй слайд (копия с измененным текстом) -->
+                            <!-- 2. ВТОРОЙ СЛАЙД -->
                             <div class="swiper-slide hero-card">
-                                <div class="bg" style="background-image: url('./assets/img/Таглер (15).png');">
-                                    <!-- Предположим, другое изображение -->
-                                    <div class="div-6"></div>
-                                </div>
+                                <picture>
+                                    <source media="(max-width: 575px)" srcset="./assets/img/Таглер (15)-mobile.webp"
+                                        width="576" height="400">
+
+                                    <img src="./assets/img/Таглер (15)-2x.webp" alt="Современные медицинские приборы"
+                                        class="bg bg2" width="1920" height="486" loading="lazy" />
+                                </picture>
+                                <div class="bg-gradient"></div>
+
                                 <div class="hero-text">
                                     <div class="group">
                                         <div class="div-wrapper-2">
@@ -233,12 +1128,17 @@
                                 </div>
                             </div>
 
-                            <!-- Третий слайд (копия с измененным текстом) -->
+                            <!-- 3. ТРЕТИЙ СЛАЙД -->
                             <div class="swiper-slide hero-card">
-                                <div class="bg" style="background-image: url('./assets/img/Таглер (15) (1).png');">
-                                    <!-- И еще одно -->
-                                    <div class="div-6"></div>
-                                </div>
+                                <picture>
+                                    <source media="(max-width: 575px)" srcset="./assets/img/Таглер (15) (1)-mobile.webp"
+                                        width="576" height="400">
+
+                                    <img src="./assets/img/Таглер (15) (1)-2x.webp" alt="Надежные системы аналитики"
+                                        class="bg bg3" width="1920" height="486" loading="lazy" />
+                                </picture>
+                                <div class="bg-gradient"></div>
+
                                 <div class="hero-text">
                                     <div class="group">
                                         <div class="div-wrapper-2">
@@ -253,24 +1153,21 @@
                                     </p>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
-                    <!-- 4. Элементы управления -->
+                    <!-- Элементы управления -->
                     <div class="trigger">
-                        <!-- Стрелка влево с классом swiper-button-prev -->
                         <div class="arrow arrow-left swiper-button-prev">
-                            <img src="./assets/img/arr.svg" alt="Стрелка влево" />
+                            <img src="./assets/img/arr.svg" alt="Предыдущий слайд" />
                         </div>
 
-                        <!-- Контейнер для пагинации с классом swiper-pagination -->
                         <div class="pagination swiper-pagination" role="navigation" aria-label="Пагинация баннера">
-                            <!-- Swiper сам сгенерирует сюда точки (bullets) -->
                         </div>
 
-                        <!-- Стрелка вправо с классом swiper-button-next -->
                         <div class="arrow arrow-right swiper-button-next">
-                            <img src="./assets/img/arr.svg" alt="Стрелка вправо" />
+                            <img src="./assets/img/arr.svg" alt="Следующий слайд" />
                         </div>
                     </div>
                 </div>
@@ -291,8 +1188,16 @@
                         <div class="swiper-wrapper">
                             <div class="frame-4 swiper-slide">
                                 <article class="content">
-                                    <div class="photo"><img class="image" src="./assets/img/image 1819.png"
-                                            alt="Штатив для дозаторов ТАГЛЕР" /></div>
+                                    <div class="photo">
+                                        <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1819-2x.webp">
+                                            <img loading="lazy" class="image" src="./assets/img/image 1819.webp"
+                                                alt="Штатив для дозаторов ТАГЛЕР" />
+                                        </picture>
+                                    </div>
                                     <div class="content-2">
                                         <div class="content-3">
                                             <div class="text">
@@ -323,7 +1228,7 @@
                                                 <button class="text-wrapper-17">Добавить в заказ</button>
                                             </div>
                                             <div class="btns-3">
-                                                <button class="text-wrapper-18">Подробнее</button>
+                                                <a href="./product.html" class="text-wrapper-18">Подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -331,8 +1236,19 @@
                             </div>
                             <div class="frame-4 swiper-slide">
                                 <article class="content">
-                                    <div class="photo"><img class="image" src="./assets/img/image 1819.png"
-                                            alt="Штатив для дозаторов ТАГЛЕР" loading="lazy" /></div>
+                                    <div class="photo">
+                                        <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1819-2x.webp">
+                                            <!-- Все еще может не сработать, см. ниже -->
+                                            <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                            <img loading="lazy" class="image" src="./assets/img/image 1819.webp"
+                                                alt="Штатив для дозаторов ТАГЛЕР" />
+                                        </picture>
+                                    </div>
                                     <div class="content-2">
                                         <div class="content-3">
                                             <div class="text">
@@ -364,7 +1280,7 @@
                                                 <button class="text-wrapper-17">Добавить в заказ</button>
                                             </div>
                                             <div class="btns-3">
-                                                <button class="text-wrapper-18">Подробнее</button>
+                                                <a href="./product.html" class="text-wrapper-18">Подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -372,8 +1288,19 @@
                             </div>
                             <div class="frame-4 swiper-slide">
                                 <article class="content">
-                                    <div class="photo"><img class="image" src="./assets/img/image 1819.png"
-                                            alt="Штатив для дозаторов ТАГЛЕР" loading="lazy" /></div>
+                                    <div class="photo">
+                                        <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1819-2x.webp">
+                                            <!-- Все еще может не сработать, см. ниже -->
+                                            <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                            <img loading="lazy" class="image" src="./assets/img/image 1819.webp"
+                                                alt="Штатив для дозаторов ТАГЛЕР" />
+                                        </picture>
+                                    </div>
                                     <div class="content-2">
                                         <div class="content-3">
                                             <div class="text">
@@ -405,7 +1332,7 @@
                                                 <button class="text-wrapper-17">Добавить в заказ</button>
                                             </div>
                                             <div class="btns-3">
-                                                <button class="text-wrapper-18">Подробнее</button>
+                                                <a href="./product.html" class="text-wrapper-18">Подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -413,8 +1340,19 @@
                             </div>
                             <div class="frame-4 swiper-slide">
                                 <article class="content">
-                                    <div class="photo"><img class="image" src="./assets/img/image 1819.png"
-                                            alt="Штатив для дозаторов ТАГЛЕР" loading="lazy" /></div>
+                                    <div class="photo">
+                                        <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1819-2x.webp">
+                                            <!-- Все еще может не сработать, см. ниже -->
+                                            <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                            <img loading="lazy" class="image" src="./assets/img/image 1819.webp"
+                                                alt="Штатив для дозаторов ТАГЛЕР" />
+                                        </picture>
+                                    </div>
                                     <div class="content-2">
                                         <div class="content-3">
                                             <div class="text">
@@ -446,7 +1384,7 @@
                                                 <button class="text-wrapper-17">Добавить в заказ</button>
                                             </div>
                                             <div class="btns-3">
-                                                <button class="text-wrapper-18">Подробнее</button>
+                                                <a href="./product.html" class="text-wrapper-18">Подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -454,8 +1392,19 @@
                             </div>
                             <div class="frame-4 swiper-slide">
                                 <article class="content">
-                                    <div class="photo"><img class="image" src="./assets/img/image 1819.png"
-                                            alt="Штатив для дозаторов ТАГЛЕР" loading="lazy" /></div>
+                                    <div class="photo">
+                                        <button><img src="./assets/img/favourite.svg" alt=""></button>
+
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1819-2x.webp">
+                                            <!-- Все еще может не сработать, см. ниже -->
+                                            <!-- Лучше так: srcset="./assets/img/image 1819-2x.webp 1x" -->
+
+                                            <img loading="lazy" class="image" src="./assets/img/image 1819.webp"
+                                                alt="Штатив для дозаторов ТАГЛЕР" />
+                                        </picture>
+                                    </div>
                                     <div class="content-2">
                                         <div class="content-3">
                                             <div class="text">
@@ -487,7 +1436,7 @@
                                                 <button class="text-wrapper-17">Добавить в заказ</button>
                                             </div>
                                             <div class="btns-3">
-                                                <button class="text-wrapper-18">Подробнее</button>
+                                                <a href="./product.html" class="text-wrapper-18">Подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -495,7 +1444,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="" class="frame-5 text-wrapper-19">
+                    <a href="./catalog.html" class="frame-5 text-wrapper-19">
                         Перейти в каталог
                     </a>
                 </div>
@@ -507,43 +1456,87 @@
                     <div class="div-12">
                         <article class="div-13">
                             <h3 class="text-wrapper-20">Медицинские центрифуги</h3>
-                            <a href="" class="btn" aria-label="Подробнее о медицинских центрифугах"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" /></a>
-                            <div class="image-wrapper"><img class="image-3" src="./assets/img/image 6.png"
-                                    alt="Медицинские центрифуги" loading="lazy" /></div>
+                            <a href="" class="btn" aria-label="Подробнее о медицинских центрифугах">
+                                <img src="./assets/img/arr.svg" alt="Стрелка" />
+                            </a>
+                            <div class="image-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/image 6.webp 1x, ./assets/img/image 6-2x.webp 2x">
+                                    <img class="image-3" src="./assets/img/image 6.webp"
+                                        srcset="./assets/img/image 6-2x.webp 2x" alt="Медицинские центрифуги"
+                                        loading="lazy" />
+                                </picture>
+                            </div>
                         </article>
                         <article class="div-13">
                             <h3 class="text-wrapper-21">УФ облучатели рециркуляторы</h3>
-                            <a href="" class="btn" aria-label="Подробнее о УФ облучателях"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" /></a>
-                            <div class="image-wrapper"><img class="image-4" src="./assets/img/image 6 (1).png"
-                                    alt="УФ облучатели рециркуляторы" loading="lazy" /></div>
+                            <a href="" class="btn" aria-label="Подробнее о УФ облучателях">
+                                <img src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" />
+                            </a>
+                            <div class="image-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/image 6 (1).webp 1x, ./assets/img/image 6 (1)-2x.webp 2x">
+                                    <img class="image-4" src="./assets/img/image 6 (1).webp"
+                                        srcset="./assets/img/image 6 (1)-2x.webp 2x" alt="УФ облучатели рециркуляторы"
+                                        loading="lazy" />
+                                </picture>
+                            </div>
                         </article>
                         <article class="div-13">
                             <h3 class="text-wrapper-20">Негатоскопы</h3>
-                            <a href="" class="btn" aria-label="Подробнее о негатоскопах"><img src="./assets/img/arr.svg"
-                                    alt="Стрелка" loading="lazy" /></a>
-                            <div class="image-wrapper"><img class="image-5" src="./assets/img/image 6 (2).png"
-                                    alt="Негатоскопы" loading="lazy" /></div>
+                            <a href="" class="btn" aria-label="Подробнее о негатоскопах">
+                                <img src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" />
+                            </a>
+                            <div class="image-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/image 6 (2).webp 1x, ./assets/img/image 6 (2)-2x.webp 2x">
+                                    <img class="image-5" src="./assets/img/image 6 (2).webp"
+                                        srcset="./assets/img/image 6 (2)-2x.webp 2x" alt="Негатоскопы" loading="lazy" />
+                                </picture>
+                            </div>
                         </article>
                         <article class="div-13">
                             <h3 class="text-wrapper-20">Аппараты Ротта</h3>
-                            <a href="" class="btn" aria-label="Подробнее об аппаратах Ротта"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" /></a>
-                            <div class="image-wrapper"><img class="image-4" src="./assets/img/image 6 (3).png"
-                                    alt="Аппараты Ротта" loading="lazy" /></div>
+                            <a href="" class="btn" aria-label="Подробнее об аппаратах Ротта">
+                                <img src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" />
+                            </a>
+                            <div class="image-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/image 6 (3).webp 1x, ./assets/img/image 6 (3)-2x.webp 2x">
+                                    <img class="image-4" src="./assets/img/image 6 (3).webp"
+                                        srcset="./assets/img/image 6 (3)-2x.webp 2x" alt="Аппараты Ротта"
+                                        loading="lazy" />
+                                </picture>
+                            </div>
                         </article>
                         <article class="div-13">
                             <h3 class="text-wrapper-22">Столы с электроподъемом</h3>
-                            <a href="" class="btn" aria-label="Подробнее о столах с электроподъемом"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" /></a>
-                            <div class="img-wrapper"><img class="image-6" src="./assets/img/image 6 (4).png"
-                                    alt="Столы с электроподъемом" loading="lazy" /></div>
+                            <a href="" class="btn" aria-label="Подробнее о столах с электроподъемом">
+                                <img src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" />
+                            </a>
+                            <div class="img-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/image 6 (4).webp 1x, ./assets/img/image 6 (4)-2x.webp 2x">
+                                    <img class="image-6" src="./assets/img/image 6 (4).webp"
+                                        srcset="./assets/img/image 6 (4)-2x.webp 2x" alt="Столы с электроподъемом"
+                                        loading="lazy" />
+                                </picture>
+                            </div>
                         </article>
                         <article class="div-13 div-14">
                             <a href="" class="text-wrapper-23">Смотреть все</a>
                             <div class="photo-2">
-                                <img src="./assets/img/photo.png" alt="Все оборудование" loading="lazy" />
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/photo.webp 1x, ./assets/img/photo-2x.webp 2x">
+                                    <img src="./assets/img/photo.webp" srcset="./assets/img/photo-2x.webp 2x"
+                                        alt="Все оборудование" loading="lazy" />
+                                </picture>
                             </div>
                         </article>
                     </div>
@@ -552,47 +1545,91 @@
 
             <section class="equipments div-10">
                 <div class="container">
-                    <h2 class="div-11">Медицинское оборудование Таглер</h2>
+                    <h2 class="div-11">Лабораторное оборудование Таглер</h2>
                     <div class="div-12">
                         <article class="div-13">
                             <h3 class="text-wrapper-20">Медицинские центрифуги</h3>
-                            <a href="" class="btn" aria-label="Подробнее о медицинских центрифугах"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" /></a>
-                            <div class="image-wrapper"><img class="image-3" src="./assets/img/image 6.png"
-                                    alt="Медицинские центрифуги" loading="lazy" /></div>
+                            <a href="" class="btn" aria-label="Подробнее о медицинских центрифугах">
+                                <img src="./assets/img/arr.svg" alt="Стрелка" />
+                            </a>
+                            <div class="image-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/image 6.webp 1x, ./assets/img/image 6-2x.webp 2x">
+                                    <img class="image-3" src="./assets/img/image 6.webp"
+                                        srcset="./assets/img/image 6-2x.webp 2x" alt="Медицинские центрифуги"
+                                        loading="lazy" />
+                                </picture>
+                            </div>
                         </article>
                         <article class="div-13">
                             <h3 class="text-wrapper-21">УФ облучатели рециркуляторы</h3>
-                            <a href="" class="btn" aria-label="Подробнее о УФ облучателях"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" /></a>
-                            <div class="image-wrapper"><img class="image-4" src="./assets/img/image 6 (1).png"
-                                    alt="УФ облучатели рециркуляторы" loading="lazy" /></div>
+                            <a href="" class="btn" aria-label="Подробнее о УФ облучателях">
+                                <img src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" />
+                            </a>
+                            <div class="image-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/image 6 (1).webp 1x, ./assets/img/image 6 (1)-2x.webp 2x">
+                                    <img class="image-4" src="./assets/img/image 6 (1).webp"
+                                        srcset="./assets/img/image 6 (1)-2x.webp 2x" alt="УФ облучатели рециркуляторы"
+                                        loading="lazy" />
+                                </picture>
+                            </div>
                         </article>
                         <article class="div-13">
                             <h3 class="text-wrapper-20">Негатоскопы</h3>
-                            <a href="" class="btn" aria-label="Подробнее о негатоскопах"><img src="./assets/img/arr.svg"
-                                    alt="Стрелка" loading="lazy" /></a>
-                            <div class="image-wrapper"><img class="image-5" src="./assets/img/image 6 (2).png"
-                                    alt="Негатоскопы" loading="lazy" /></div>
+                            <a href="" class="btn" aria-label="Подробнее о негатоскопах">
+                                <img src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" />
+                            </a>
+                            <div class="image-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/image 6 (2).webp 1x, ./assets/img/image 6 (2)-2x.webp 2x">
+                                    <img class="image-5" src="./assets/img/image 6 (2).webp"
+                                        srcset="./assets/img/image 6 (2)-2x.webp 2x" alt="Негатоскопы" loading="lazy" />
+                                </picture>
+                            </div>
                         </article>
                         <article class="div-13">
                             <h3 class="text-wrapper-20">Аппараты Ротта</h3>
-                            <a href="" class="btn" aria-label="Подробнее об аппаратах Ротта"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" /></a>
-                            <div class="image-wrapper"><img class="image-4" src="./assets/img/image 6 (3).png"
-                                    alt="Аппараты Ротта" loading="lazy" /></div>
+                            <a href="" class="btn" aria-label="Подробнее об аппаратах Ротта">
+                                <img src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" />
+                            </a>
+                            <div class="image-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/image 6 (3).webp 1x, ./assets/img/image 6 (3)-2x.webp 2x">
+                                    <img class="image-4" src="./assets/img/image 6 (3).webp"
+                                        srcset="./assets/img/image 6 (3)-2x.webp 2x" alt="Аппараты Ротта"
+                                        loading="lazy" />
+                                </picture>
+                            </div>
                         </article>
                         <article class="div-13">
                             <h3 class="text-wrapper-22">Столы с электроподъемом</h3>
-                            <a href="" class="btn" aria-label="Подробнее о столах с электроподъемом"><img
-                                    src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" /></a>
-                            <div class="img-wrapper"><img class="image-6" src="./assets/img/image 6 (4).png"
-                                    alt="Столы с электроподъемом" loading="lazy" /></div>
+                            <a href="" class="btn" aria-label="Подробнее о столах с электроподъемом">
+                                <img src="./assets/img/arr.svg" alt="Стрелка" loading="lazy" />
+                            </a>
+                            <div class="img-wrapper">
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/image 6 (4).webp 1x, ./assets/img/image 6 (4)-2x.webp 2x">
+                                    <img class="image-6" src="./assets/img/image 6 (4).webp"
+                                        srcset="./assets/img/image 6 (4)-2x.webp 2x" alt="Столы с электроподъемом"
+                                        loading="lazy" />
+                                </picture>
+                            </div>
                         </article>
                         <article class="div-13 div-14">
                             <a href="" class="text-wrapper-23">Смотреть все</a>
                             <div class="photo-2">
-                                <img src="./assets/img/photo.png" alt="Все оборудование" loading="lazy" />
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/photo.webp 1x, ./assets/img/photo-2x.webp 2x">
+                                    <img src="./assets/img/photo.webp" srcset="./assets/img/photo-2x.webp 2x"
+                                        alt="Все оборудование" loading="lazy" />
+                                </picture>
                             </div>
                         </article>
                     </div>
@@ -631,8 +1668,15 @@
                         </div>
 
                         <div class="about-img">
-                            <img class="rectangle" src="./assets/img/Rectangle 7.png" alt="Изображение компании Таглер"
-                                loading="lazy" />
+                            <picture>
+
+                                <source media="(min-width: 1441px)"
+                                    srcset="./assets/img/Rectangle 7.webp 1x, ./assets/img/Rectangle 7-2x.webp 2x">
+
+                                <img class="rectangle" src="./assets/img/Rectangle 7.webp"
+                                    alt="Изображение компании Таглер" loading="lazy"
+                                    srcset="./assets/img/Rectangle 7-2x.webp 2x" />
+                            </picture>
                         </div>
                     </div>
                     <div class="cards-2">
@@ -659,8 +1703,13 @@
                         <article class="div-21">
                             <div class="element-wrapper">
                                 <div class="div-22"></div>
-                                <img class="img" src="./assets/img/Таглер (15).png" alt="Пищевые лаборатории"
-                                    loading="lazy" />
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/Таглер (15).webp 1x, ./assets/img/Таглер (15)-2x.webp 2x">
+                                    <img class="img" src="./assets/img/Таглер (15).webp"
+                                        srcset="./assets/img/Таглер (15)-2x.webp 2x" alt="Пищевые лаборатории"
+                                        loading="lazy">
+                                </picture>
                             </div>
                             <div class="text-2">
                                 <div class="frame-7">
@@ -677,8 +1726,13 @@
                         <article class="div-21">
                             <div class="element-wrapper">
                                 <div class="div-22"></div>
-                                <img class="img" src="./assets/img/Таглер (15) (1).png" alt="Водные лаборатории"
-                                    loading="lazy" />
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/Таглер (15) (1).webp 1x, ./assets/img/Таглер (15) (1)-2x.webp 2x">
+                                    <img class="img" src="./assets/img/Таглер (15) (1).webp"
+                                        srcset="./assets/img/Таглер (15) (1)-2x.webp 2x" alt="Водные лаборатории"
+                                        loading="lazy">
+                                </picture>
                             </div>
                             <div class="text-2">
                                 <div class="frame-7">
@@ -696,8 +1750,13 @@
                         <article class="div-21">
                             <div class="element-wrapper">
                                 <div class="div-22"></div>
-                                <img class="img" src="./assets/img/Таглер (15) (2).png" alt="Дезинфекция"
-                                    loading="lazy" />
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/Таглер (15) (2).webp 1x, ./assets/img/Таглер (15) (2)-2x.webp 2x">
+                                    <img class="img" src="./assets/img/Таглер (15) (2).webp"
+                                        srcset="./assets/img/Таглер (15) (2)-2x.webp 2x" alt="Дезинфекция"
+                                        loading="lazy">
+                                </picture>
                             </div>
                             <div class="text-2">
                                 <div class="frame-7">
@@ -715,8 +1774,13 @@
                         <article class="div-21">
                             <div class="bg">
                                 <div class="div-22"></div>
-                                <img class="img" src="./assets/img/Таглер (15) (3).png" alt="ПЦР-диагностика"
-                                    loading="lazy" />
+                                <picture>
+                                    <source media="(min-width: 1441px)"
+                                        srcset="./assets/img/Таглер (15) (3).webp 1x, ./assets/img/Таглер (15) (3)-2x.webp 2x">
+                                    <img class="img" src="./assets/img/Таглер (15) (3).webp"
+                                        srcset="./assets/img/Таглер (15) (3)-2x.webp 2x" alt="ПЦР-диагностика"
+                                        loading="lazy">
+                                </picture>
                             </div>
                             <div class="text-2">
                                 <div class="frame-7">
@@ -756,8 +1820,13 @@
                                                 <time datetime="2015-01-14">14.01.2015</time>
                                             </p>
                                         </div>
-                                        <img class="image-8" src="./assets/img/image 1823.png"
-                                            alt="Изображение сертификата" loading="lazy" />
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1823.webp 1x, ./assets/img/image 1823-2x.webp 2x">
+                                            <img class="image-8" src="./assets/img/image 1823.webp"
+                                                srcset="./assets/img/image 1823-2x.webp 2x"
+                                                alt="Изображение сертификата" loading="lazy" />
+                                        </picture>
                                         <div class="row-2">
                                             <div class="div-24">
                                                 <div class="text-wrapper-38">pdf</div>
@@ -766,9 +1835,19 @@
                                             </div>
                                             <a href="" class="vuesax-bulk-document-wrapper"
                                                 aria-label="Скачать документ">
-                                                <img class="vuesax-bulk-document"
-                                                    src="./assets/img/document-download.svg" alt="Иконка скачивания"
-                                                    loading="lazy" />
+                                                <svg class="download-icon" width="48" height="48" viewBox="0 0 48 48"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect class="bg" width="48" height="48" rx="24" fill="#F3F3F3" />
+                                                    <path class="icon-path" opacity="0.4"
+                                                        d="M32.5 22.19H29.61C27.24 22.19 25.31 20.26 25.31 17.89V15C25.31 14.45 24.86 14 24.31 14H20.07C16.99 14 14.5 16 14.5 19.57V28.43C14.5 32 16.99 34 20.07 34H27.93C31.01 34 33.5 32 33.5 28.43V23.19C33.5 22.64 33.05 22.19 32.5 22.19Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M27.7999 14.21C27.3899 13.8 26.6799 14.08 26.6799 14.65V18.14C26.6799 19.6 27.9199 20.81 29.4299 20.81C30.3799 20.82 31.6999 20.82 32.8299 20.82C33.3999 20.82 33.6999 20.15 33.2999 19.75C31.8599 18.3 29.2799 15.69 27.7999 14.21Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M24.2799 26.72C23.9899 26.43 23.5099 26.43 23.2199 26.72L22.4999 27.44V23.25C22.4999 22.84 22.1599 22.5 21.7499 22.5C21.3399 22.5 20.9999 22.84 20.9999 23.25V27.44L20.2799 26.72C19.9899 26.43 19.5099 26.43 19.2199 26.72C18.9299 27.01 18.9299 27.49 19.2199 27.78L21.2199 29.78C21.2299 29.79 21.2399 29.79 21.2399 29.8C21.2999 29.86 21.3799 29.91 21.4599 29.95C21.5599 29.98 21.6499 30 21.7499 30C21.8499 30 21.9399 29.98 22.0299 29.94C22.1199 29.9 22.1999 29.85 22.2799 29.78L24.2799 27.78C24.5699 27.49 24.5699 27.01 24.2799 26.72Z"
+                                                        fill="#A8A8A8" />
+                                                </svg>
                                             </a>
                                         </div>
                                     </div>
@@ -781,8 +1860,14 @@
                                             </div>
                                             <div class="text-wrapper-37">Аудиторское заключение ООО “Таглер”</div>
                                         </div>
-                                        <img class="image-8" src="./assets/img/image 1823.png"
-                                            alt="Изображение заключения" loading="lazy" />
+                                        <!-- У вас здесь была та же картинка, я применил к ней правило. Если картинка другая, просто поменяйте имя файла -->
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1823.webp 1x, ./assets/img/image 1823-2x.webp 2x">
+                                            <img class="image-8" src="./assets/img/image 1823.webp"
+                                                srcset="./assets/img/image 1823-2x.webp 2x" alt="Изображение заключения"
+                                                loading="lazy" />
+                                        </picture>
                                         <div class="row-2">
                                             <div class="div-24">
                                                 <div class="text-wrapper-38">pdf</div>
@@ -791,9 +1876,19 @@
                                             </div>
                                             <a href="" class="vuesax-bulk-document-wrapper"
                                                 aria-label="Скачать документ">
-                                                <img class="vuesax-bulk-document"
-                                                    src="./assets/img/document-download.svg" alt="Иконка скачивания"
-                                                    loading="lazy" />
+                                                <svg class="download-icon" width="48" height="48" viewBox="0 0 48 48"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect class="bg" width="48" height="48" rx="24" fill="#F3F3F3" />
+                                                    <path class="icon-path" opacity="0.4"
+                                                        d="M32.5 22.19H29.61C27.24 22.19 25.31 20.26 25.31 17.89V15C25.31 14.45 24.86 14 24.31 14H20.07C16.99 14 14.5 16 14.5 19.57V28.43C14.5 32 16.99 34 20.07 34H27.93C31.01 34 33.5 32 33.5 28.43V23.19C33.5 22.64 33.05 22.19 32.5 22.19Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M27.7999 14.21C27.3899 13.8 26.6799 14.08 26.6799 14.65V18.14C26.6799 19.6 27.9199 20.81 29.4299 20.81C30.3799 20.82 31.6999 20.82 32.8299 20.82C33.3999 20.82 33.6999 20.15 33.2999 19.75C31.8599 18.3 29.2799 15.69 27.7999 14.21Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M24.2799 26.72C23.9899 26.43 23.5099 26.43 23.2199 26.72L22.4999 27.44V23.25C22.4999 22.84 22.1599 22.5 21.7499 22.5C21.3399 22.5 20.9999 22.84 20.9999 23.25V27.44L20.2799 26.72C19.9899 26.43 19.5099 26.43 19.2199 26.72C18.9299 27.01 18.9299 27.49 19.2199 27.78L21.2199 29.78C21.2299 29.79 21.2399 29.79 21.2399 29.8C21.2999 29.86 21.3799 29.91 21.4599 29.95C21.5599 29.98 21.6499 30 21.7499 30C21.8499 30 21.9399 29.98 22.0299 29.94C22.1199 29.9 22.1999 29.85 22.2799 29.78L24.2799 27.78C24.5699 27.49 24.5699 27.01 24.2799 26.72Z"
+                                                        fill="#A8A8A8" />
+                                                </svg>
                                             </a>
                                         </div>
                                     </div>
@@ -807,8 +1902,13 @@
                                             <p class="text-wrapper-37">Свидетельство о регистрации ИНН.КПП <time
                                                     datetime="2022-08-30">30.08.2022</time></p>
                                         </div>
-                                        <img class="image-8" src="./assets/img/image 1823.png"
-                                            alt="Изображение свидетельства" loading="lazy" />
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1823.webp 1x, ./assets/img/image 1823-2x.webp 2x">
+                                            <img class="image-8" src="./assets/img/image 1823.webp"
+                                                srcset="./assets/img/image 1823-2x.webp 2x"
+                                                alt="Изображение свидетельства" loading="lazy" />
+                                        </picture>
                                         <div class="row-2">
                                             <div class="div-24">
                                                 <div class="text-wrapper-38">pdf</div>
@@ -817,9 +1917,19 @@
                                             </div>
                                             <a href="" class="vuesax-bulk-document-wrapper"
                                                 aria-label="Скачать документ">
-                                                <img class="vuesax-bulk-document"
-                                                    src="./assets/img/document-download.svg" alt="Иконка скачивания"
-                                                    loading="lazy" />
+                                                <svg class="download-icon" width="48" height="48" viewBox="0 0 48 48"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect class="bg" width="48" height="48" rx="24" fill="#F3F3F3" />
+                                                    <path class="icon-path" opacity="0.4"
+                                                        d="M32.5 22.19H29.61C27.24 22.19 25.31 20.26 25.31 17.89V15C25.31 14.45 24.86 14 24.31 14H20.07C16.99 14 14.5 16 14.5 19.57V28.43C14.5 32 16.99 34 20.07 34H27.93C31.01 34 33.5 32 33.5 28.43V23.19C33.5 22.64 33.05 22.19 32.5 22.19Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M27.7999 14.21C27.3899 13.8 26.6799 14.08 26.6799 14.65V18.14C26.6799 19.6 27.9199 20.81 29.4299 20.81C30.3799 20.82 31.6999 20.82 32.8299 20.82C33.3999 20.82 33.6999 20.15 33.2999 19.75C31.8599 18.3 29.2799 15.69 27.7999 14.21Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M24.2799 26.72C23.9899 26.43 23.5099 26.43 23.2199 26.72L22.4999 27.44V23.25C22.4999 22.84 22.1599 22.5 21.7499 22.5C21.3399 22.5 20.9999 22.84 20.9999 23.25V27.44L20.2799 26.72C19.9899 26.43 19.5099 26.43 19.2199 26.72C18.9299 27.01 18.9299 27.49 19.2199 27.78L21.2199 29.78C21.2299 29.79 21.2399 29.79 21.2399 29.8C21.2999 29.86 21.3799 29.91 21.4599 29.95C21.5599 29.98 21.6499 30 21.7499 30C21.8499 30 21.9399 29.98 22.0299 29.94C22.1199 29.9 22.1999 29.85 22.2799 29.78L24.2799 27.78C24.5699 27.49 24.5699 27.01 24.2799 26.72Z"
+                                                        fill="#A8A8A8" />
+                                                </svg>
                                             </a>
                                         </div>
                                     </div>
@@ -833,8 +1943,13 @@
                                             <p class="text-wrapper-37">Свидетельство о регистрации ИНН.КПП <time
                                                     datetime="2022-08-30">30.08.2022</time></p>
                                         </div>
-                                        <img class="image-8" src="./assets/img/image 1823.png"
-                                            alt="Изображение свидетельства" loading="lazy" />
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1823.webp 1x, ./assets/img/image 1823-2x.webp 2x">
+                                            <img class="image-8" src="./assets/img/image 1823.webp"
+                                                srcset="./assets/img/image 1823-2x.webp 2x"
+                                                alt="Изображение свидетельства" loading="lazy" />
+                                        </picture>
                                         <div class="row-2">
                                             <div class="div-24">
                                                 <div class="text-wrapper-38">pdf</div>
@@ -843,9 +1958,19 @@
                                             </div>
                                             <a href="" class="vuesax-bulk-document-wrapper"
                                                 aria-label="Скачать документ">
-                                                <img class="vuesax-bulk-document"
-                                                    src="./assets/img/document-download.svg" alt="Иконка скачивания"
-                                                    loading="lazy" />
+                                                <svg class="download-icon" width="48" height="48" viewBox="0 0 48 48"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect class="bg" width="48" height="48" rx="24" fill="#F3F3F3" />
+                                                    <path class="icon-path" opacity="0.4"
+                                                        d="M32.5 22.19H29.61C27.24 22.19 25.31 20.26 25.31 17.89V15C25.31 14.45 24.86 14 24.31 14H20.07C16.99 14 14.5 16 14.5 19.57V28.43C14.5 32 16.99 34 20.07 34H27.93C31.01 34 33.5 32 33.5 28.43V23.19C33.5 22.64 33.05 22.19 32.5 22.19Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M27.7999 14.21C27.3899 13.8 26.6799 14.08 26.6799 14.65V18.14C26.6799 19.6 27.9199 20.81 29.4299 20.81C30.3799 20.82 31.6999 20.82 32.8299 20.82C33.3999 20.82 33.6999 20.15 33.2999 19.75C31.8599 18.3 29.2799 15.69 27.7999 14.21Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M24.2799 26.72C23.9899 26.43 23.5099 26.43 23.2199 26.72L22.4999 27.44V23.25C22.4999 22.84 22.1599 22.5 21.7499 22.5C21.3399 22.5 20.9999 22.84 20.9999 23.25V27.44L20.2799 26.72C19.9899 26.43 19.5099 26.43 19.2199 26.72C18.9299 27.01 18.9299 27.49 19.2199 27.78L21.2199 29.78C21.2299 29.79 21.2399 29.79 21.2399 29.8C21.2999 29.86 21.3799 29.91 21.4599 29.95C21.5599 29.98 21.6499 30 21.7499 30C21.8499 30 21.9399 29.98 22.0299 29.94C22.1199 29.9 22.1999 29.85 22.2799 29.78L24.2799 27.78C24.5699 27.49 24.5699 27.01 24.2799 26.72Z"
+                                                        fill="#A8A8A8" />
+                                                </svg>
                                             </a>
                                         </div>
                                     </div>
@@ -859,8 +1984,13 @@
                                             <p class="text-wrapper-37">Свидетельство о регистрации ИНН.КПП <time
                                                     datetime="2022-08-30">30.08.2022</time></p>
                                         </div>
-                                        <img class="image-8" src="./assets/img/image 1823.png"
-                                            alt="Изображение свидетельства" loading="lazy" />
+                                        <picture>
+                                            <source media="(min-width: 1441px)"
+                                                srcset="./assets/img/image 1823.webp 1x, ./assets/img/image 1823-2x.webp 2x">
+                                            <img class="image-8" src="./assets/img/image 1823.webp"
+                                                srcset="./assets/img/image 1823-2x.webp 2x"
+                                                alt="Изображение свидетельства" loading="lazy" />
+                                        </picture>
                                         <div class="row-2">
                                             <div class="div-24">
                                                 <div class="text-wrapper-38">pdf</div>
@@ -869,9 +1999,19 @@
                                             </div>
                                             <a href="" class="vuesax-bulk-document-wrapper"
                                                 aria-label="Скачать документ">
-                                                <img class="vuesax-bulk-document"
-                                                    src="./assets/img/document-download.svg" alt="Иконка скачивания"
-                                                    loading="lazy" />
+                                                <svg class="download-icon" width="48" height="48" viewBox="0 0 48 48"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect class="bg" width="48" height="48" rx="24" fill="#F3F3F3" />
+                                                    <path class="icon-path" opacity="0.4"
+                                                        d="M32.5 22.19H29.61C27.24 22.19 25.31 20.26 25.31 17.89V15C25.31 14.45 24.86 14 24.31 14H20.07C16.99 14 14.5 16 14.5 19.57V28.43C14.5 32 16.99 34 20.07 34H27.93C31.01 34 33.5 32 33.5 28.43V23.19C33.5 22.64 33.05 22.19 32.5 22.19Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M27.7999 14.21C27.3899 13.8 26.6799 14.08 26.6799 14.65V18.14C26.6799 19.6 27.9199 20.81 29.4299 20.81C30.3799 20.82 31.6999 20.82 32.8299 20.82C33.3999 20.82 33.6999 20.15 33.2999 19.75C31.8599 18.3 29.2799 15.69 27.7999 14.21Z"
+                                                        fill="#A8A8A8" />
+                                                    <path class="icon-path"
+                                                        d="M24.2799 26.72C23.9899 26.43 23.5099 26.43 23.2199 26.72L22.4999 27.44V23.25C22.4999 22.84 22.1599 22.5 21.7499 22.5C21.3399 22.5 20.9999 22.84 20.9999 23.25V27.44L20.2799 26.72C19.9899 26.43 19.5099 26.43 19.2199 26.72C18.9299 27.01 18.9299 27.49 19.2199 27.78L21.2199 29.78C21.2299 29.79 21.2399 29.79 21.2399 29.8C21.2999 29.86 21.3799 29.91 21.4599 29.95C21.5599 29.98 21.6499 30 21.7499 30C21.8499 30 21.9399 29.98 22.0299 29.94C22.1199 29.9 22.1999 29.85 22.2799 29.78L24.2799 27.78C24.5699 27.49 24.5699 27.01 24.2799 26.72Z"
+                                                        fill="#A8A8A8" />
+                                                </svg>
                                             </a>
                                         </div>
                                     </div>
@@ -1187,40 +2327,41 @@
                         <div class="div-28">
                             <h3 class="text-wrapper-52">Медицинское оборудование</h3>
                             <nav class="list-2" role="navigation" aria-label="Медицинское оборудование">
-                                <a href="" class="text-wrapper-53">Медицинские центрифуги</a>
-                                <a href="" class="text-wrapper-54">Боксы для ПЦР-диагностики</a>
-                                <a href="" class="text-wrapper-55">Аспираторы</a>
-                                <a href="" class="text-wrapper-54">УФ облучатели и рециркуляторы</a>
-                                <a href="" class="text-wrapper-54">Негатоскопы</a>
-                                <a href="" class="text-wrapper-54">Аппараты Ротта</a>
-                                <a href="" class="text-wrapper-54">Столы с электроприводом</a>
-                                <a href="" class="text-wrapper-54">Инактиваторы сыворотки</a>
-                                <a href="" class="text-wrapper-54">Шкафы для эндоскопа</a>
+                                <a href="./categories.html" class="text-wrapper-53">Медицинские центрифуги</a>
+                                <a href="./categories.html" class="text-wrapper-54">Боксы для ПЦР-диагностики</a>
+                                <a href="./categories.html" class="text-wrapper-55">Аспираторы</a>
+                                <a href="./categories.html" class="text-wrapper-54">УФ облучатели и рециркуляторы</a>
+                                <a href="./categories.html" class="text-wrapper-54">Негатоскопы</a>
+                                <a href="./categories.html" class="text-wrapper-54">Аппараты Ротта</a>
+                                <a href="./categories.html" class="text-wrapper-54">Столы с электроприводом</a>
+                                <a href="./categories.html" class="text-wrapper-54">Инактиваторы сыворотки</a>
+                                <a href="./categories.html" class="text-wrapper-54">Шкафы для эндоскопа</a>
                             </nav>
                         </div>
                         <div class="div-29">
                             <h3 class="text-wrapper-52">Лабораторное оборудование</h3>
                             <div class="columns">
                                 <nav class="list-2" role="navigation" aria-label="Лабораторное оборудование часть 1">
-                                    <a href="" class="text-wrapper-56">Люминисцентные анализаторы</a>
-                                    <a href="" class="text-wrapper-54">ПЦР-боксы</a>
-                                    <a href="" class="text-wrapper-55">Лабораторные аспираторы</a>
-                                    <a href="" class="text-wrapper-54">Лабораторные центрифуги</a>
-                                    <a href="" class="text-wrapper-54">Магнитные мешалки</a>
-                                    <a href="" class="text-wrapper-54">Шейкеры, встряхиватели</a>
-                                    <a href="" class="text-wrapper-54">Водяные бани</a>
-                                    <a href="" class="text-wrapper-54">Лабораторные плиты и песчаные бани</a>
-                                    <a href="" class="text-wrapper-54">Твердотельные термостаты</a>
+                                    <a href="./laboratory.html" class="text-wrapper-56">Люминисцентные анализаторы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">ПЦР-боксы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Лабораторные аспираторы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Лабораторные центрифуги</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Магнитные мешалки</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Шейкеры, встряхиватели</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Водяные бани</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Лабораторные плиты и песчаные
+                                        бани</a>
+                                    <a href="./laboratory.html" class="text-wrapper-54">Твердотельные термостаты</a>
                                 </nav>
                                 <nav class="frame-14" role="navigation" aria-label="Лабораторное оборудование часть 2">
-                                    <a href="" class="text-wrapper-53">Сушильные шкафы</a>
-                                    <a href="" class="text-wrapper-55">Анализаторы влажности</a>
-                                    <a href="" class="text-wrapper-55">Спектрофотометры</a>
-                                    <a href="" class="text-wrapper-55">Рефрактометры</a>
-                                    <a href="" class="text-wrapper-55">Устройство для сушки посуды</a>
-                                    <a href="" class="text-wrapper-55">Рассевы и сита</a>
-                                    <a href="" class="text-wrapper-55">Лабораторные мельницы</a>
-                                    <a href="" class="text-wrapper-55">Лабораторные принадлежности</a>
+                                    <a href="./laboratory.html" class="text-wrapper-53">Сушильные шкафы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Анализаторы влажности</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Спектрофотометры</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Рефрактометры</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Устройство для сушки посуды</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Рассевы и сита</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Лабораторные мельницы</a>
+                                    <a href="./laboratory.html" class="text-wrapper-55">Лабораторные принадлежности</a>
                                 </nav>
                             </div>
                         </div>
@@ -1228,12 +2369,12 @@
                     <div class="content-wrapper-2">
                         <div class="content-9">
                             <nav class="links" role="navigation" aria-label="Дополнительные ссылки">
-                                <a href="" class="text-wrapper-57">О Таглер</a>
-                                <a href="" class="text-wrapper-57">Продукция Таглер</a>
-                                <a href="" class="text-wrapper-57">Где Купить?</a>
-                                <a href="" class="text-wrapper-57">Дилерам</a>
-                                <a href="" class="text-wrapper-57">Контакты</a>
-                                <a href="" class="text-wrapper-57">Войти в кабинет</a>
+                                <a href="./about.html" class="text-wrapper-57">О Таглер</a>
+                                <a href="./catalog.html" class="text-wrapper-57">Продукция Таглер</a>
+                                <a href="./buy.html" class="text-wrapper-57">Где Купить?</a>
+                                <a href="./dealers.html" class="text-wrapper-57">Дилерам</a>
+                                <a href="./contacts.html" class="text-wrapper-57">Контакты</a>
+                                <a href="./login.html" class="text-wrapper-57">Войти в кабинет</a>
                             </nav>
                             <address class="cards-6">
                                 <a href="" class="div-30">
@@ -1318,10 +2459,73 @@
             </div>
         </footer>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Находим все нужные элементы на странице
+            const modal = document.getElementById('contact-modal');
+            const openBtn = document.getElementById('open-form-btn');
+            const openBtn2 = document.getElementById('open-form-btn2');
+            const closeBtn = modal.querySelector('.close-btn');
+            const contactForm = document.getElementById('contact-form');
+
+            // Функция для открытия модального окна
+            const openModal = (event) => {
+                event.preventDefault(); // Отменяем стандартное действие ссылки
+                modal.classList.add('active'); // Показываем модальное окно
+            };
+
+            // Функция для закрытия модального окна
+            const closeModal = () => {
+                modal.classList.remove('active'); // Скрываем модальное окно
+            };
+
+            // 1. Открытие по клику на ссылку "Написать нам"
+            openBtn.addEventListener('click', openModal);
+            openBtn2.addEventListener('click', openModal);
+
+            // 2. Закрытие по клику на крестик
+            closeBtn.addEventListener('click', closeModal);
+            closeBtn2.addEventListener('click', closeModal);
+
+            // 3. Закрытие по клику на оверлей (темный фон)
+            modal.addEventListener('click', (event) => {
+                // Если клик был сделан именно по оверлею, а не по его содержимому
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // 4. Закрытие по нажатию на клавишу Escape
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+
+            // 5. Обработка отправки формы
+            contactForm.addEventListener('submit', (event) => {
+                event.preventDefault(); // Отменяем стандартную отправку формы
+
+                // Здесь вы можете добавить логику отправки данных на сервер (например, через fetch)
+                const formData = new FormData(contactForm);
+                const name = formData.get('name');
+                const email = formData.get('email');
+
+                console.log('Форма отправлена!');
+                console.log('Имя:', name);
+                console.log('Email:', email);
+
+                alert('Спасибо за ваше обращение! Мы скоро свяжемся с вами.');
+
+                // Очищаем форму и закрываем окно
+                contactForm.reset();
+                closeModal();
+            });
+        });
+    </script>
 
     <script>
         const swiper = new Swiper('.hero .swiper', {
@@ -1517,7 +2721,7 @@
                     },
                     // когда ширина экрана <= 1200px
                     1200: {
-                        slidesPerView: 3,
+                        slidesPerView: 4,
                         spaceBetween: 20
                     }
                 }
@@ -1602,10 +2806,6 @@
             });
         });
     </script>
-</body>
-
-</html>
-
 </body>
 
 </html>
