@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
         searchResultsContainer.classList.add('visible');
     }
 
-
     // --- 4. Обработчик ввода в поле поиска (ОБНОВЛЕН) ---
     searchInput.addEventListener('input', (event) => {
         const query = event.target.value.trim().toLowerCase();
@@ -155,4 +154,71 @@ document.addEventListener('DOMContentLoaded', () => {
             dropdownTrigger.setAttribute('aria-expanded', 'false');
         });
     }
+
+    // Получаем элементы
+    const promoLink = document.querySelector('.promo');
+    const promoModal = document.getElementById('promo-modal');
+    const closeBtn = promoModal.querySelector('.close-btn');
+    const promoForm = document.getElementById('promo-form');
+
+    // Открытие модального окна
+    promoLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        promoModal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Блокируем прокрутку страницы
+    });
+
+    // Закрытие модального окна при клике на крестик
+    closeBtn.addEventListener('click', function () {
+        promoModal.classList.remove('active');
+        document.body.style.overflow = ''; // Возвращаем прокрутку
+    });
+
+    // Закрытие модального окна при клике вне его
+    promoModal.addEventListener('click', function (e) {
+        if (e.target === promoModal) {
+            promoModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Закрытие по клавише Escape
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && promoModal.classList.contains('active')) {
+            promoModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Обработка отправки формы
+    promoForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const promocode = document.getElementById('promocode').value;
+
+        // Здесь можно добавить проверку промокода
+        console.log('Промокод:', promocode);
+
+        // Пример: отправка на сервер
+        // fetch('/api/apply-promo', {
+        //     method: 'POST',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify({ promocode })
+        // })
+        // .then(response => response.json())
+        // .then(data => {
+        //     if (data.success) {
+        //         alert('Промокод применен!');
+        //         promoModal.classList.remove('active');
+        //     } else {
+        //         alert('Неверный промокод');
+        //     }
+        // });
+
+        // Временная заглушка
+        alert('Промокод "' + promocode + '" применен!');
+        promoModal.classList.remove('active');
+        document.body.style.overflow = '';
+        promoForm.reset();
+    });
 });
